@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TilesFinders</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- style css -->
+    <link rel="stylesheet" href="./assest/css/nav-bar.css" />
+    <link rel="stylesheet" href="./assest/css/dev-style.css">
+  </head>
+  <body>
+    <div class="d-lg-block home-first-nav">
+      <!-- Home top navrbar  -->
+      <nav class="navbar navbar-expand-lg navbar-light top-nav">
+        <div class="container-fluid px-3">
+          <!-- Logo -->
+          <a class="navbar-brand" href="index.html">
+            <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder" />
+          </a>
+
+          <!-- Mobile Toggle Button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar Content -->
+          <div class="collapse navbar-collapse" id="navbarContent">
+            <!-- Navbar Content -->
+            <div
+              class="collapse navbar-collapse d-flex justify-content-center"
+              id="navbarContent"
+            >
+              <!-- Search Bar -->
+              <div class="search-container">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="search-icon"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"
+                  />
+                </svg>
+                <input type="text" placeholder="Search for tiles" />
+              </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info ms-auto">
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                  />
+                </svg>
+                <a href="mailto:mannhachkt08@gmail.com"
+                  >mannhachkt08@gmail.com</a
+                >
+              </div>
+              <div>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                  />
+                </svg>
+                <a href="tel:(308)555-0121">(308) 555-0121</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Home second navrbar  -->
+      <nav class="navbar navbar-expand-lg secondary-nav">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#secondaryNavContent"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse justify-content-center"
+            id="secondaryNavContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown" style="width: 150px">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="#"
+                  id="tilesDropdown"
+                >
+                  All Categories
+                  <svg
+                    id="chevron-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down ms-1 transition"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </a>
+                <!-- Full-Width Dropdown Menu -->
+                <div
+                  class="dropdown-menu mega-dropdown main-screen-second-navbar"
+                  style="width: 850px"
+                >
+                  <div class="row">
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Size</h6>
+                        <a class="dropdown-item" href="#">395×395 mm</a>
+                        <a class="dropdown-item" href="#">800×800 mm</a>
+                        <a class="dropdown-item" href="#">200×1200 mm</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Area</h6>
+                        <a class="dropdown-item" href="#">Bathroom</a>
+                        <a class="dropdown-item" href="#">Parking</a>
+                        <a class="dropdown-item" href="#">Kitchen</a>
+                        <a class="dropdown-item" href="#">WashBasin</a>
+                        <a class="dropdown-item" href="#">Room</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Look</h6>
+                        <a class="dropdown-item" href="#">Marble</a>
+                        <a class="dropdown-item" href="#">Texture</a>
+                        <a class="dropdown-item" href="#">Mosaic</a>
+                        <a class="dropdown-item" href="#">Pattern</a>
+                        <a class="dropdown-item" href="#">Stone</a>
+                        <a class="dropdown-item" href="#">Cement</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Finish</h6>
+                        <a class="dropdown-item" href="#">Matt</a>
+                        <a class="dropdown-item" href="#">Glossy</a>
+                        <a class="dropdown-item" href="#">Super Glossy</a>
+                        <a class="dropdown-item" href="#">Sugar Finish</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Category</h6>
+                        <a class="dropdown-item" href="#">Ceramic</a>
+                        <a class="dropdown-item" href="#">Digital</a>
+                        <a class="dropdown-item" href="#">PGVT</a>
+                        <a class="dropdown-item" href="#">GVT</a>
+                        <a class="dropdown-item" href="#">DGVT</a>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Color</h6>
+                        <a class="dropdown-item" href="#">Pink</a>
+                        <a class="dropdown-item" href="#">White</a>
+                        <a class="dropdown-item" href="#">Grey</a>
+                        <a class="dropdown-item" href="#">Brown</a>
+                        <a class="dropdown-item" href="#">Blue</a>
+                        <a class="dropdown-item" href="#">Yellow</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link d-flex align-items-center"
+                  href="#"
+                  id="tilesDropdown"
+                >
+                  By Design
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">By Mockup</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blogs</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- 768 after show  -->
+    <!-- Toggle Menu -->
+    <div class="d-lg-none d-md-block">
+      <div class="toggle-menu" id="toggleMenu">
+        <div class="">
+          <!-- Close Button -->
+          <button class="close-btn" onclick="toggleMenu()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              />
+            </svg>
+          </button>
+
+          <!-- Email -->
+          <div class="contact-item mt-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="#4169E1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+            <span>manhhachkt08@gmail.com</span>
+          </div>
+
+          <!-- Phone -->
+          <div class="contact-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="#4169E1"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+              ></path>
+            </svg>
+            <span>(308) 555-0121</span>
+          </div>
+        </div>
+        <hr />
+        <div class="toggle-menu-content">
+          <a href="#" class="toggle-menu-item"> About Us </a>
+          <a href="#" class="toggle-menu-item"> Contact Us </a>
+          <a href="#" class="toggle-menu-item"> Blogs </a>
+        </div>
+      </div>
+
+      <!-- Backdrop (Blur Background) -->
+      <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+      <!-- Top Navigation -->
+      <nav class="navbar mobile-nav">
+        <div class="container-fluid p-0">
+          <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand" href="#">
+            <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinders" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Search Bar -->
+      <!-- Search Bar with Filter Button -->
+      <div class="container-fluid px-3">
+        <div class="search-container">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            fill="#6D7076"
+            class="search-icon"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0"
+            />
+          </svg>
+          <input type="text" placeholder="Search for tiles" />
+          <span class="filter-container" onclick="openFilter()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="#6D7076"
+              class="bi bi-funnel"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+              />
+            </svg>
+          </span>
+        </div>
+      </div>
+
+      <!-- Filter Sidebar (Slider) -->
+      <div class="filter-menu" id="filterMenu">
+        <div class="filter-header">
+          <h5 class="mb-0">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="25"
+              height="25"
+              fill="#6D7076"
+              class="bi bi-funnel"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+              ></path>
+            </svg>
+            Filter
+          </h5>
+          <button class="filter-close" onclick="closeFilter()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-x-lg"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <hr />
+
+        <!-- Applied Filters -->
+        <div class="filter-section">
+          <h6 class="filter-header">
+            Applied filters <span class="count-cleare">Clear all</span>
+          </h6>
+          <div>
+            <div class="filter-options">
+              <span class="filter-badge">395×395 mm ×</span>
+              <span class="filter-badge">Ceramic ×</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- Filter Sections -->
+        <!-- by type -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byType"
+            role="button"
+            aria-controls="byType"
+          >
+            <div class="header-title">By Type <span class="count">3</span></div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byType">
+            <div class="filter-options">
+              <span class="filter-option">Manufacturer</span>
+              <span class="filter-option">Wholesaler</span>
+              <span class="filter-option">Admin</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by size -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#bySize"
+            role="button"
+            aria-controls="bySize"
+          >
+            <div class="header-title">By Size <span class="count">3</span></div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="bySize">
+            <div class="filter-options">
+              <span class="filter-option selected">395×395 mm</span>
+              <span class="filter-option">800×800 mm</span>
+              <span class="filter-option">200×1200 mm</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by category -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byCategory"
+            role="button"
+            aria-controls="byCategory"
+          >
+            <div class="header-title">
+              By Category <span class="count">5</span>
+            </div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byCategory">
+            <div class="filter-options">
+              <span class="filter-option">Marble</span>
+              <span class="filter-option">Texture</span>
+              <span class="filter-option">Mosaic</span>
+              <span class="filter-option">Pattern</span>
+              <span class="filter-option">Stone</span>
+              <span class="filter-option">Cement</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by Look -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byLook"
+            role="button"
+            aria-controls="byLook"
+          >
+            <div class="header-title">By Look <span class="count">6</span></div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byLook">
+            <div class="filter-options">
+              <span class="filter-option">Marble</span>
+              <span class="filter-option">Texture</span>
+              <span class="filter-option">Mosaic</span>
+              <span class="filter-option">Pattern</span>
+              <span class="filter-option">Stone</span>
+              <span class="filter-option">Cement</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by Finish -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byFinish"
+            role="button"
+            aria-controls="byFinish"
+          >
+            <div class="header-title">
+              By Finish <span class="count">4</span>
+            </div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byFinish">
+            <div class="filter-options">
+              <span class="filter-option">Matt</span>
+              <span class="filter-option">Glossy</span>
+              <span class="filter-option">Super Glossy</span>
+              <span class="filter-option">Sugar Finish</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by Color -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byColor"
+            role="button"
+            aria-controls="byColor"
+          >
+            <div class="header-title">
+              By Color <span class="count">6</span>
+            </div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byColor">
+            <div class="filter-options">
+              <span class="filter-option">Pink</span>
+              <span class="filter-option">White</span>
+              <span class="filter-option">Grey</span>
+              <span class="filter-option">Brown</span>
+              <span class="filter-option">Blue</span>
+              <span class="filter-option">Yellow</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- by Area -->
+        <div class="filter-section">
+          <h6
+            class="filter-header"
+            data-bs-toggle="collapse"
+            aria-expanded="false"
+            href="#byArea"
+            role="button"
+            aria-controls="byArea"
+          >
+            <div class="header-title">By Area <span class="count">5</span></div>
+            <svg
+              class="chevron"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+              />
+            </svg>
+          </h6>
+          <div class="collapse" id="byArea">
+            <div class="filter-options">
+              <span class="filter-option">Bathroom</span>
+              <span class="filter-option">Parking</span>
+              <span class="filter-option">Kitchen</span>
+              <span class="filter-option">WashBasin</span>
+              <span class="filter-option">Room</span>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <!-- apply btn -->
+        <div class="filter-section">
+          <div class="row apply-filter-btn">
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- second nab bar  -->
+      <nav class="navbar navbar-expand-lg secondary-nav">
+        <div class="">
+          <div
+            class="navbar-collapse justify-content-center"
+            id="secondaryNavContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link d-flex align-items-center navlink-width"
+                  href="#"
+                  id="tilesDropdown"
+                >
+                  All Categories
+                  <svg
+                    id="chevron-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="20"
+                    height="20"
+                    fill="currentColor"
+                    class="bi bi-chevron-down ms-1 transition"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </a>
+
+                <!-- Full-Width Dropdown Menu -->
+                <div class="dropdown-menu mega-dropdown">
+                  <div class="row">
+                    <div class="col-6">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Size</h6>
+                        <a class="dropdown-item" href="#">395×395 mm</a>
+                        <a class="dropdown-item" href="#">800×800 mm</a>
+                        <a class="dropdown-item" href="#">200×1200 mm</a>
+                      </div>
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Area</h6>
+                        <a class="dropdown-item" href="#">Bathroom</a>
+                        <a class="dropdown-item" href="#">Parking</a>
+                        <a class="dropdown-item" href="#">Kitchen</a>
+                        <a class="dropdown-item" href="#">WashBasin</a>
+                        <a class="dropdown-item" href="#">Room</a>
+                      </div>
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Look</h6>
+                        <a class="dropdown-item" href="#">Marble</a>
+                        <a class="dropdown-item" href="#">Texture</a>
+                        <a class="dropdown-item" href="#">Mosaic</a>
+                        <a class="dropdown-item" href="#">Pattern</a>
+                        <a class="dropdown-item" href="#">Stone</a>
+                        <a class="dropdown-item" href="#">Cement</a>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Finish</h6>
+                        <a class="dropdown-item" href="#">Matt</a>
+                        <a class="dropdown-item" href="#">Glossy</a>
+                        <a class="dropdown-item" href="#">Super Glossy</a>
+                        <a class="dropdown-item" href="#">Sugar Finish</a>
+                      </div>
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Category</h6>
+                        <a class="dropdown-item" href="#">Ceramic</a>
+                        <a class="dropdown-item" href="#">Digital</a>
+                        <a class="dropdown-item" href="#">PGVT</a>
+                        <a class="dropdown-item" href="#">GVT</a>
+                        <a class="dropdown-item" href="#">DGVT</a>
+                      </div>
+                      <div>
+                        <h6 class="dropdown-header">Tiles By Color</h6>
+                        <a class="dropdown-item" href="#">Pink</a>
+                        <a class="dropdown-item" href="#">White</a>
+                        <a class="dropdown-item" href="#">Grey</a>
+                        <a class="dropdown-item" href="#">Brown</a>
+                        <a class="dropdown-item" href="#">Blue</a>
+                        <a class="dropdown-item" href="#">Yellow</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <!-- Other Navbar Items -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">By Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link navlink-width-second" href="#">By Mockup</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- filter side bar -->
+    <section>
+      <div class="row">
+        <div class="col-md-2 filter-home-col-2 d-md-none d-sm-none d-lg-block" style="border: 1px solid #e0e0e0; border-bottom: none;">
+          <div class="filter-header p-3 pb-0">
+            <h5 class="mb-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="25"
+                height="25"
+                fill="#6D7076"
+                class="bi bi-funnel"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"
+                ></path>
+              </svg>
+              Filter
+            </h5>
+            </button>
+          </div>
+          <hr/>
+          <!-- Applied Filters -->
+          <div class="filter-section">
+            <h6 class="filter-header">
+              Applied filters <span class="count-cleare">Clear all</span>
+            </h6>
+            <div>
+              <div class="filter-options">
+                <span class="filter-badge ">395×395 mm ×</span>
+                <span class="filter-badge mt-3">Ceramic ×</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- Filter Sections -->
+          <!-- by type -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byType"
+              role="button"
+              aria-controls="byType"
+            >
+              <div class="header-title">
+                By Type <span class="count">3</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byType">
+              <div class="filter-options">
+                <span class="filter-option">Manufacturer</span>
+                <span class="filter-option">Wholesaler</span>
+                <span class="filter-option">Admin</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by size -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#bySize"
+              role="button"
+              aria-controls="bySize"
+            >
+              <div class="header-title">
+                By Size <span class="count">3</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="bySize">
+              <div class="filter-options">
+                <span class="filter-option selected">395×395 mm</span>
+                <span class="filter-option">800×800 mm</span>
+                <span class="filter-option">200×1200 mm</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by category -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byCategory"
+              role="button"
+              aria-controls="byCategory"
+            >
+              <div class="header-title">
+                By Category <span class="count">5</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byCategory">
+              <div class="filter-options">
+                <span class="filter-option">Marble</span>
+                <span class="filter-option">Texture</span>
+                <span class="filter-option">Mosaic</span>
+                <span class="filter-option">Pattern</span>
+                <span class="filter-option">Stone</span>
+                <span class="filter-option">Cement</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by Look -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byLook"
+              role="button"
+              aria-controls="byLook"
+            >
+              <div class="header-title">
+                By Look <span class="count">6</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byLook">
+              <div class="filter-options">
+                <span class="filter-option">Marble</span>
+                <span class="filter-option">Texture</span>
+                <span class="filter-option">Mosaic</span>
+                <span class="filter-option">Pattern</span>
+                <span class="filter-option">Stone</span>
+                <span class="filter-option">Cement</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by Finish -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byFinish"
+              role="button"
+              aria-controls="byFinish"
+            >
+              <div class="header-title">
+                By Finish <span class="count">4</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byFinish">
+              <div class="filter-options">
+                <span class="filter-option">Matt</span>
+                <span class="filter-option">Glossy</span>
+                <span class="filter-option">Super Glossy</span>
+                <span class="filter-option">Sugar Finish</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by Color -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byColor"
+              role="button"
+              aria-controls="byColor"
+            >
+              <div class="header-title">
+                By Color <span class="count">6</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byColor">
+              <div class="filter-options">
+                <span class="filter-option">Pink</span>
+                <span class="filter-option">White</span>
+                <span class="filter-option">Grey</span>
+                <span class="filter-option">Brown</span>
+                <span class="filter-option">Blue</span>
+                <span class="filter-option">Yellow</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- by Area -->
+          <div class="filter-section">
+            <h6
+              class="filter-header"
+              data-bs-toggle="collapse"
+              aria-expanded="false"
+              href="#byArea"
+              role="button"
+              aria-controls="byArea"
+            >
+              <div class="header-title">
+                By Area <span class="count">5</span>
+              </div>
+              <svg
+                class="chevron"
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                ></path>
+              </svg>
+            </h6>
+            <div class="collapse" id="byArea">
+              <div class="filter-options">
+                <span class="filter-option">Bathroom</span>
+                <span class="filter-option">Parking</span>
+                <span class="filter-option">Kitchen</span>
+                <span class="filter-option">WashBasin</span>
+                <span class="filter-option">Room</span>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <!-- apply btn -->
+          <!-- <div class="filter-section">
+            <div class="row apply-filter-btn">
+              <button>Apply</button>
+            </div>
+          </div> -->
+        </div>
+        <div class="col-md-10 filter-home-col-10" >
+          <div class="row">
+            <div class="col-md-2 image-container">
+              <img src="./assest/img/home/image.png" alt="Subway Tiles">
+              <div class="overlay-text">Subway Tiles</div>
+            </div>
+                
+            <div class="col-md-2 image-container">
+              <img src="./assest/img/home/2-image.png" alt="">
+              <div class="overlay-text">Mosaic Tiles</div>
+            </div>
+            <div class="col-md-2 image-container">
+              <img src="./assest/img/home/3-image.png" alt="">
+              <div class="overlay-text">Herringbone Pattern</div>
+            </div>
+            <div class="col-md-2 image-container">
+              <img src="./assest/img/home/4-image.png" alt="">
+              <div class="overlay-text">Checkerboard Tiles</div>
+            </div>
+            <div class="col-md-2 image-container">
+                <img src="./assest/img/home/4-image.png" alt="">
+                <div class="overlay-text">Checkerboard Tiles</div>
+              </div>
+              <div class="col-md-2 image-container">
+                <img src="./assest/img/home/4-image.png" alt="">
+                <div class="overlay-text">Checkerboard Tiles</div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/image.png" alt="">
+              <div class="overlay-text">Basketweave Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/2-image.png" alt="">
+              <div class="overlay-text">Hexagon Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/3-image.png" alt="">
+              <div class="overlay-text">Chevron Pattern Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/4-image.png" alt="">
+              <div class="overlay-text">Terrazzo Tiles</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/image.png" alt="">
+              <div class="overlay-text">Travertine Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/2-image.png" alt="">
+              <div class="overlay-text">Marble Effect Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/3-image.png" alt="">
+              <div class="overlay-text">Large Format Slab Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/4-image.png" alt="">
+              <div class="overlay-text">3D Geometric Tiles</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/image.png" alt="">
+              <div class="overlay-text">Wood-Look Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/2-image.png" alt="">
+              <div class="overlay-text">Stone-Look Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/3-image.png" alt="">
+              <div class="overlay-text">Moroccan/Encaustic Tiles</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/4-image.png" alt="">
+              <div class="overlay-text">Patchwork Pattern Tiles</div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/image.png" alt="">
+              <div class="overlay-text">Your</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/2-image.png" alt="">
+              <div class="overlay-text">Your</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/3-image.png" alt="">
+              <div class="overlay-text">Your</div>
+            </div>
+            <div class="col-md-3 image-container">
+              <img src="./assest/img/home/4-image.png" alt="">
+              <div class="overlay-text">Your</div>
+            </div>
+          </div>
+        </div>    
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+      <div class="container-fluid p-5 py-0">
+          <div class="row">
+              <!-- Tiles By Area -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Area</h5>
+                  <ul class="list-unstyled">
+                      <li>Bathroom</li>
+                      <li>Kitchen</li>
+                      <li>Parking</li>
+                      <li>Swimming Pool</li>
+                      <li>Balcony</li>
+                  </ul>
+              </div>
+
+              <!-- Tiles By Look -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Look</h5>
+                  <ul class="list-unstyled">
+                      <li>Marble</li>
+                      <li>Texture</li>
+                      <li>Mosaic</li>
+                      <li>Pattern</li>
+                      <li>Stone</li>
+                      <li>Cement</li>
+                  </ul>
+              </div>
+
+              <!-- Tiles By Category -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Category</h5>
+                  <ul class="list-unstyled">
+                      <li>Ceramic</li>
+                      <li>Digital</li>
+                      <li>PGVT</li>
+                      <li>GVT</li>
+                      <li>DGVT</li>
+                  </ul>
+              </div>
+
+              <!-- Tiles By Color -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Color</h5>
+                  <ul class="list-unstyled">
+                      <li>Pink</li>
+                      <li>White</li>
+                      <li>Grey</li>
+                      <li>Brown</li>
+                      <li>Blue</li>
+                      <li>Yellow</li>
+                  </ul>
+              </div>
+
+              <!-- Tiles By Size -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Size</h5>
+                  <ul class="list-unstyled">
+                      <li>395×395 mm</li>
+                      <li>800×800 mm</li>
+                      <li>200×1200 mm</li>
+                  </ul>
+              </div>
+
+              <!-- Tiles By Finish -->
+              <div class="col-md-2 col-6">
+                  <h5>Tiles By Finish</h5>
+                  <ul class="list-unstyled">
+                      <li>Matt</li>
+                      <li>Glossy</li>
+                      <li>Super Glossy</li>
+                      <li>Sugar Finish</li>
+                  </ul>
+              </div>
+          </div>
+
+          <hr class="divider">
+
+          <!-- Logo & Links -->
+          <div class="row align-items-center footer-section">
+            <!-- Logo on the Left -->
+            <div class="col-md-4 text-md-start text-center">
+                <h3 class="logo">
+                    <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                </h3>
+            </div>
+        
+            <!-- Menu Links in the Center -->
+            <div class="col-md-4 text-center">
+                <a href="#">About Us</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Blogs</a>
+            </div>
+        
+            <!-- Social Icons on the Right -->
+            <div class="col-md-4 text-md-end text-center">
+                <a href="#"><img src="./assest/img/icon/FacebookLogo.svg" alt="Facebook"></a>
+                <a href="#"><img src="./assest/img/icon/InstagramLogo.svg" alt="Instagram"></a>
+                <a href="#"><img src="./assest/img/icon/LinkedinLogo.svg" alt="LinkedIn"></a>
+                <a href="#"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                <a href="#"><img src="./assest/img/icon/YoutubeLogo.svg" alt="YouTube"></a>
+            </div>
+        </div>
+      </div>
+  </footer>
+
+  <footer class="second-footer">
+    <div class="container-fluid">
+          <!-- Copyright & Social Icons -->
+          <div class="row text-center">
+              <div class="col-md-12 mt-3">
+                  <p>Copyright © 2025 TilesFinders, All rights reserved.</p>
+              </div>
+          </div>
+    </div>
+  </footer>
+
+    <!-- script -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
+    <script src="./assest/js/script.js"></script>
+  </body>
+</html>

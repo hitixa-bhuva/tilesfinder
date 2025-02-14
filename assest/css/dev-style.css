@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Jersey+15&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap');
+
+
+* {
+    font-family: Figtree;
+}
+
+/* root */
+:root {
+    --primary-color: #1B1C1E;
+    --secondary-color: #4169E1;
+    --tertiary-color: #525459;
+    --blue-color: #4169E1;
+    --white-color: #ffffff;
+}
+.row {
+    margin: 0;
+    /* Ensures no extra spacing */
+    overflow: hidden;
+    /* Prevents overflow */
+}
+
+.text-sm-start {
+    text-align: start !important;
+}
+
+.p-sm-1 {
+    padding: 1rem !important;
+}
+
+.filter-home-col-2 {
+    width: 18.666667%;
+}
+
+.filter-home-col-10 {
+    width: 81.333333%;
+}
+
+@media (max-width: 1440px) {
+    .filter-home-col-10 {
+        width: 85.33333%;
+    }
+
+    .filter-home-col-2 {
+        width: 14.66667%;
+    }
+}
+
+/* After screen size 1024px */
+@media (max-width: 1030px) {
+    .image-container {
+        width: 209px !important;
+    }
+
+    .filter-home-col-2 {
+        width: 15.666666%;
+    }
+
+    .filter-home-col-10 {
+        width: 84.333333%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-home-col-2 {
+        display: none;
+    }
+
+    .image-container {
+        width: 186px !important;
+    }
+
+    .filter-home-col-10 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 430px) {
+    .image-container {
+        width: 200px !important;
+    }
+
+    .overlay-text {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 380px) {
+    .image-container {
+        width: 175px !important;
+    }
+
+    .overlay-text {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 330px) {
+    .image-container {
+        width: 148px !important;
+        padding: 2px;
+    }
+
+    .overlay-text {
+        padding: 0 !important;
+        font-size: 12px !important;
+    }
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+    margin-top: 25px;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+    border-radius: 16px;
+}
+
+.overlay-text {
+    font-family: Figtree;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.25%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--white-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+
+/* footer */
+.footer {
+    background: #F3F3F8;
+    padding: 40px 0;
+    color: #333;
+}
+
+.footer h5 {
+    font-family: Figtree;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #1B1C1E;
+}
+
+.footer ul li {
+    font-family: Figtree;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.25px;
+    color: #525459;
+}
+
+.footer ul li:hover {
+    color: var(--secondary-color);
+}
+
+.divider {
+    border-color: #ddd;
+    margin: 20px 0;
+}
+
+.footer .logo {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+@media (max-width: 430px) {
+    .footer .logo {
+        margin-bottom: 15px;
+    }
+
+    .follo-link-footer {
+        margin-bottom: 15px;
+    }
+
+    .menu-footer-a {
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+.footer .tile {
+    color: var(--secondary-color);
+}
+
+.footer a {
+    font-size: 14px;
+    color: #333;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-a-follo-link {
+    margin: 0 4px !important;
+}
+
+.footer a:hover {
+    color: var(--secondary-color);
+}
+
+.social-icons a {
+    font-size: 18px;
+    color: #333;
+    margin: 0 8px;
+    transition: 0.3s;
+}
+
+.social-icons a:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
+
+/* second footer */
+.second-footer {
+    background-color: #101828;
+    color: var(--white-color);
+}
+
+/*============================= mockup page style ==============================*/

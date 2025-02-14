@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest-like Dynamic Grid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .gg-container {
+        width: 90%;
+        max-width: 1400px;
+      }
+
+      .gg-box {
+        column-count: 5; 
+        column-gap: 10px;
+      }
+
+      .gg-box img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gg-box img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 1200px) {
+        .gg-box { column-count: 4; }
+      }
+
+      @media (max-width: 1024px) {
+        .gg-box { column-count: 3; }
+      }
+
+      @media (max-width: 768px) {
+        .gg-box { column-count: 2; }
+      }
+
+      @media (max-width: 480px) {
+        .gg-box { column-count: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gg-container">
+      <div class="gg-box" id="imageGrid">
+        <!-- Images will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageGrid = document.getElementById("imageGrid");
+        const imageCount = 150; // Now fetching 150 images
+
+        for (let i = 0; i < imageCount; i++) {
+          const width = Math.floor(Math.random() * (400 - 250 + 1)) + 250;
+          const height = Math.floor(Math.random() * (500 - 300 + 1)) + 300;
+
+          const img = document.createElement("img");
+          img.src = `https://picsum.photos/${width}/${height}?random=${i}`;
+          img.alt = `Random Image ${i + 1}`;
+          img.loading = "lazy"; // Lazy load for better performance
+          imageGrid.appendChild(img);
+        }
+      });
+    </script>
+  </body>
+</html>

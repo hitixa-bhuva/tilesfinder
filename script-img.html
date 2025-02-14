@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pinterest-like Dynamic Grid</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .gg-container {
+        width: 90%;
+        max-width: 1200px;
+      }
+
+      /* Masonry-style grid */
+      .gg-box {
+        column-count: 4;
+        column-gap: 10px;
+      }
+
+      .gg-box img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      .gg-box img:hover {
+        transform: scale(1.05);
+      }
+
+      @media (max-width: 1024px) {
+        .gg-box {
+          column-count: 3;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .gg-box {
+          column-count: 2;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .gg-box {
+          column-count: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="gg-container">
+      <div class="gg-box" id="imageGrid">
+        <!-- Images will be dynamically inserted here -->
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const imageGrid = document.getElementById("imageGrid");
+
+        // Replace with your 20 custom image URLs
+        const imageSources = [
+          "assest/img/img-grid/200x200/ARKLITE R1.jpg",
+          "assest/img/img-grid/200x300/ARKLITE R1.jpg",
+          "assest/img/img-grid/200x900/FLORENCE GREY R1.jpg",
+          "assest/img/img-grid/200x600/RAMOSA BROWN R1 copy.jpg",
+          "assest/img/img-grid/250x375/ARKLITE R1.jpg",
+          "assest/img/img-grid/300x450/ARKLITE R1.jpg",
+          "assest/img/img-grid/300x600/DORADO CREAM.jpg",
+          "assest/img/img-grid/300x900/ARKLITE R1.jpg",
+          "assest/img/img-grid/600x600 Parking Preview/1920.jpg",
+          "assest/img/img-grid/200x900/ROVERO TEAL R1.jpg",
+          "assest/img/img-grid/600x600 Parking Preview/5144.jpg",
+          "assest/img/img-grid/300x900/METRIX GREY R1.jpg",
+          "assest/img/img-grid/300x600/MEXICO GREY.jpg",
+          "assest/img/img-grid/300x450/FLORENCE GREY R1.jpg",
+          "assest/img/img-grid/250x375/METRIX GREY R1.jpg",
+          "assest/img/img-grid/200x200/RAMOSA BROWN R1 copy.jpg",
+          "assest/img/img-grid/200x900/MEXICO GREY.jpg",
+          "assest/img/img-grid/200x600/FLORENCE GREY R1.jpg",
+          "assest/img/img-grid/200x300/Staturio tanstatito R1.jpg",
+          "assest/img/img-grid/200x200/Fontana Gray.jpg",
+        ];
+
+        imageSources.forEach((src, index) => {
+          const img = document.createElement("img");
+          img.src = src;
+          img.alt = `Custom Image ${index + 1}`;
+          img.loading = "lazy"; // Improves performance
+          imageGrid.appendChild(img);
+        });
+      });
+    </script>
+  </body>
+</html>

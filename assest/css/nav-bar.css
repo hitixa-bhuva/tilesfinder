@@ -78,7 +78,7 @@
 /* home page second nav bar */
 
 .secondary-nav {
-    background-color: #101828;
+    background-color: #4169E1;
     padding: 0;
 }
 
@@ -93,7 +93,7 @@
     font-weight: 600;
     font-size: 14px;
     line-height: 22px;
-    letter-spacing: 0.25%;
+    letter-spacing: 0.25px;
 }
 
 .main-screen-second-navbar .dropdown-header {
@@ -114,12 +114,9 @@
     color: #36383B;
 
 }
-
 .secondary-nav .nav-item:hover .nav-link {
     background-color: #D9E1F929;
     border-radius: 28px;
-    padding: 9px 12px 9px 16px;
-    margin-top: 7%;
 }
 
 .secondary-nav .nav-item {
@@ -654,8 +651,8 @@
 }
 
 .filter-option.selected {
-    background: #FDEAD2;
-    border: 1px solid #FABF77;
+    background: #D9E1F9;
+    border: 1px solid #8DA5ED;
     color: var(--primary-color);
     font-weight: bold;
 }

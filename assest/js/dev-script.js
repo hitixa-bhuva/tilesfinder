@@ -1,5 +1,16 @@
+// all script description
+// 1. hover dropdown on desktop
+// 2. backdrop add in phone view nav
+// 3. filterbtn open sliderk
+// 4. Show Popup after 4 seconds
+// 5. Blogs
+// 6. 360 img preview
+// 7. product detail page
+// 8. about page
+// 9. image grid gallery
+// 10. tiles design page
 
-// Enable hover dropdown on desktop
+// 1. Enable hover dropdown on desktop
 document.addEventListener('DOMContentLoaded', function () {
     if (window.innerWidth > 768) {
         const dropdowns = document.querySelectorAll('.dropdown');
@@ -15,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-// backdrop add in phone view nav
+// 2. backdrop add in phone view nav
 
 function toggleMenu() {
     let menu = document.getElementById("toggleMenu");
@@ -25,7 +36,7 @@ function toggleMenu() {
     backdrop.style.display = menu.classList.contains("active") ? "block" : "none"; // Show/hide backdrop
 }
 
-// filterbtn open sliderk
+// 3. filterbtn open sliderk
 function openFilter() {
     document.getElementById("filterMenu").classList.add("active");
     document.getElementById("backdrop").style.display = "block";
@@ -38,7 +49,7 @@ function closeFilter() {
 
 
 
-// popup model script
+// 4. popup model script
 // Show Popup after 4 seconds
 document.addEventListener("DOMContentLoaded", function () {
     let modal = document.getElementById("modal");
@@ -60,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// <!-- Blogs -->
+// 5. <!-- Blogs -->
 function toggleBlogs() {
     const moreBlogs = document.getElementById("moreBlogs");
     const btn = document.getElementById("viewMoreBtnblog");
@@ -74,7 +85,7 @@ function toggleBlogs() {
     }
 }
 
-// 360 img preview
+// 6. 360 img preview
 // document.addEventListener("DOMContentLoaded", function() {
 //     var iframe = document.getElementById('iframe-360');
 //     var iframeDocument = iframe.contentWindow.document;
@@ -89,8 +100,9 @@ function toggleBlogs() {
 //     });
 // });
 
-// product detail page
+//7. product detail page
  // Thumbnail functionality
+
  document.addEventListener('DOMContentLoaded', function() {
     const thumbnails = document.querySelectorAll('.thumbnail');
     const mainImage = document.querySelector('.main-image');
@@ -114,4 +126,58 @@ function toggleBlogs() {
             this.classList.add('active');
         });
     });
+});
+
+
+// 8. about page
+let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function updateSlides(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active', 'prev', 'next');
+                if (i === index) {
+                    slide.classList.add('active');
+                } else if (i === (index - 1 + slides.length) % slides.length) {
+                    slide.classList.add('prev');
+                } else if (i === (index + 1) % slides.length) {
+                    slide.classList.add('next');
+                }
+            });
+
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === index);
+            });
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            updateSlides(currentSlide);
+        }
+
+        // Initial setup
+        updateSlides(currentSlide);
+
+        // Auto slide every 5 seconds
+        setInterval(nextSlide, 5000);
+
+        // Add click handlers for dots
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                currentSlide = index;
+                updateSlides(currentSlide);
+            });
+        });
+
+// 9. image grid gallery
+new CBPGridGallery(document.getElementById('grid-gallery'));
+
+
+//10.  tiles design page
+document.getElementById("viewMoreBtn").addEventListener("click", function() {
+    document.querySelectorAll(".hidden").forEach(item => {
+        item.classList.remove("hidden");
+    });
+    this.style.display = "none";
 });

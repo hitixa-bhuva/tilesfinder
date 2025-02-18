@@ -7,13 +7,14 @@
     <title>TilesFinders</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Pannellum CSS -->
-    <link rel="stylesheet" href="https://pannellum.org/css/pannellum.css">
+    <link href="https://cdn.pannellum.org/2.5/pannellum.css" rel="stylesheet">
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
     <script src="./assest/js/modernizr.custom.js"></script>
     <!-- style css -->
     <link rel="stylesheet" href="./assest/css/nav-bar.css" />
     <link rel="stylesheet" href="./assest/css/dev-style.css">
+    <link rel="stylesheet" href="./assest/css/dev-responsive.css">
 </head>
 
 <body>
@@ -80,7 +81,8 @@
                 <div class="collapse navbar-collapse justify-content-center" id="secondaryNavContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown" style="width: 150px">
-                            <a class="nav-link d-flex justify-content-center align-items-center" href="productDetails.html" id="tilesDropdown">
+                            <a class="nav-link d-flex justify-content-center align-items-center"
+                                href="productDetails.html" id="tilesDropdown">
                                 All Categories
                                 <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                     fill="currentColor" class="bi bi-chevron-down ms-1 transition" viewBox="0 0 16 16">
@@ -154,7 +156,8 @@
                             </div>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link d-flex justify-content-center align-items-center" href="productDetails.html" id="tilesDropdown">
+                            <a class="nav-link d-flex justify-content-center align-items-center"
+                                href="productDetails.html" id="tilesDropdown">
                                 By Design
                             </a>
                         </li>
@@ -454,7 +457,8 @@
                 <div class="navbar-collapse justify-content-center" id="secondaryNavContent">
                     <ul class="navbar-nav">
                         <li class="nav-item dropdown">
-                            <a class="nav-link d-flex justify-content-center align-items-center navlink-width" href="#" id="tilesDropdown">
+                            <a class="nav-link d-flex justify-content-center align-items-center navlink-width" href="#"
+                                id="tilesDropdown">
                                 All Categories
                                 <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
                                     fill="currentColor" class="bi bi-chevron-down ms-1 transition" viewBox="0 0 16 16">
@@ -757,7 +761,6 @@
                                 data-bs-toggle="modal" data-bs-target="#tileDesign360Modal">
                                 360° View
                             </button>
-
                             <!-- Modal Structure -->
                             <div class="modal fade" id="tileDesign360Modal" tabindex="-1"
                                 aria-labelledby="tileDesign360ModalLabel" aria-hidden="true">
@@ -767,9 +770,9 @@
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body text-center"  id="panorama">
-                                            <iframe src="./assest/img/tiles-design/360.jpg" width="100%"
-                                                height="500px" id="iframe-360"></iframe>
+                                        <div class="modal-body text-center" id="panorama">
+                                            <iframe src="./assest/img/tiles-design/360.jpg" width="100%" height="500px"
+                                                id="iframe-360"></iframe>
                                         </div>
                                     </div>
                                 </div>
@@ -777,6 +780,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- second content  -->
                 <div class="image-container tiles-design-image-container">
                     <div class="img-box">
                         <img src="./assest/img/home/image.png" alt="Subway Tiles">
@@ -799,6 +803,7 @@
                         <div class="tiles-design-overlay-text">Basketweave Tiles</div>
                     </div>
                 </div>
+                <!-- Description -->
                 <div class="Mockup-text-content p-3 pt-0">
                     <h2>Description</h2>
                     <p>That business, writer by a you involved. Improve blind that experiments as headboard way there
@@ -806,10 +811,11 @@
                         warp counter. Live gods, rewritten, to own problem to better we it may the and on when french
                         it's stupid be to size a know first pay you of least run as facility in case of has.</p>
                 </div>
+                <!-- Similar Mockups -->
                 <div class="Mockup-text-content p-2 pt-0">
                     <h2>Similar Mockups</h2>
                     <div class="container-fluid">
-                        <div  class="grid-gallery">
+                        <div class="grid-gallery">
                             <section class="grid-wrap grid-wrap-tiles p-0" id="tiles-section">
                                 <ul class="grid ps-0">
                                     <li class="grid-sizer"></li>
@@ -888,215 +894,209 @@
                                         </figure>
                                     </li>
                                     <!-- Hidden Images in Second Row -->
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/250x375/ARKLITE R1.jpg"
-                                                        alt="img05" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/250x375/ARKLITE R1.jpg" alt="img05" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/300x450/ARKLITE R1.jpg"
-                                                        alt="img06" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/300x450/ARKLITE R1.jpg" alt="img06" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/300x600/ARKLITE R1.jpg"
-                                                        alt="img01" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/300x600/ARKLITE R1.jpg" alt="img01" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/600x600 Parking Preview/1920.jpg"
-                                                        alt="img03" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/600x600 Parking Preview/1920.jpg"
+                                                    alt="img03" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/300x900/ARKLITE R1.jpg"
-                                                        alt="img04" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/300x900/ARKLITE R1.jpg" alt="img04" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/200x300/FLORENCE GREY R1.jpg"
-                                                        alt="img05" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/200x300/FLORENCE GREY R1.jpg"
+                                                    alt="img05" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/200x200/DORADO CREAM.jpg"
-                                                        alt="img01" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/200x200/DORADO CREAM.jpg" alt="img01" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/200x600/Fontana Gray.jpg"
-                                                        alt="img01" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/200x600/Fontana Gray.jpg" alt="img01" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/200x600/HELMAR BEIGE R1.jpg"
-                                                        alt="img02" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/200x600/HELMAR BEIGE R1.jpg"
+                                                    alt="img02" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/200x900/FLORENCE GREY R1.jpg"
-                                                        alt="img03" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/200x900/FLORENCE GREY R1.jpg"
+                                                    alt="img03" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
-                                        <li class="hidden">
-                                            <figure>
-                                                <div class="img-container">
-                                                    <img src="./assest/img/img-grid/250x375/FLORENCE GREY R1.jpg"
-                                                        alt="img04" />
-                                                    <div class="overlay mockup-overlay">
-                                                        <div class="mockup-icon">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                                                height="24" fill="currentColor" class="bi bi-eye-fill"
-                                                                viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path
-                                                                    d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </div>
+                                            </div>
+                                        </figure>
+                                    </li>
+                                    <li class="hidden">
+                                        <figure>
+                                            <div class="img-container">
+                                                <img src="./assest/img/img-grid/250x375/FLORENCE GREY R1.jpg"
+                                                    alt="img04" />
+                                                <div class="overlay mockup-overlay">
+                                                    <div class="mockup-icon">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                            fill="currentColor" class="bi bi-eye-fill"
+                                                            viewBox="0 0 16 16">
+                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                            <path
+                                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                        </svg>
                                                     </div>
                                                 </div>
-                                            </figure>
-                                        </li>
+                                            </div>
+                                        </figure>
+                                    </li>
                                 </ul>
                             </section>
                             <div class="text-center mt-4">
@@ -1116,7 +1116,8 @@
                         <!-- Blog Cards (First 3 visible) -->
                         <div class="col-md-4 ps-0">
                             <div class="card blog-card">
-                                <img src="./assest/img/mockup/blog/image (10).png" class="card-img-top" alt="Blog Image">
+                                <img src="./assest/img/mockup/blog/image (10).png" class="card-img-top"
+                                    alt="Blog Image">
                                 <div class="card-body">
                                     <h5 class="blog-card-title">General Tile Guides</h5>
                                     <p class="blog-card-text">Confused about which tiles to choose? This guide covers
@@ -1127,7 +1128,8 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card blog-card">
-                                <img src="./assest/img/mockup/blog/image (11).png" class="card-img-top" alt="Blog Image">
+                                <img src="./assest/img/mockup/blog/image (11).png" class="card-img-top"
+                                    alt="Blog Image">
                                 <div class="card-body">
                                     <h5 class="blog-card-title">General Tile Guides</h5>
                                     <p class="blog-card-text">Confused about which tiles to choose? This guide covers
@@ -1138,7 +1140,8 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card blog-card">
-                                <img src="./assest/img/mockup/blog/image (12).png" class="card-img-top" alt="Blog Image">
+                                <img src="./assest/img/mockup/blog/image (12).png" class="card-img-top"
+                                    alt="Blog Image">
                                 <div class="card-body">
                                     <h5 class="blog-card-title">General Tile Guides</h5>
                                     <p class="blog-card-text">Confused about which tiles to choose? This guide covers
@@ -1153,7 +1156,8 @@
                     <div id="moreBlogs" class="row mt-4">
                         <div class="col-md-4">
                             <div class="card blog-card">
-                                <img src="./assest/img/mockup/blog/image (10).png" class="card-img-top" alt="Blog Image">
+                                <img src="./assest/img/mockup/blog/image (10).png" class="card-img-top"
+                                    alt="Blog Image">
                                 <div class="card-body">
                                     <h5 class="blog-card-title">General Tile Guides</h5>
                                     <p class="blog-card-text">Confused about which tiles to choose? This guide covers
@@ -1164,7 +1168,8 @@
                         </div>
                         <div class="col-md-4">
                             <div class="card blog-card">
-                                <img src="./assest/img/mockup/blog/image (11).png" class="card-img-top" alt="Blog Image">
+                                <img src="./assest/img/mockup/blog/image (11).png" class="card-img-top"
+                                    alt="Blog Image">
                                 <div class="card-body">
                                     <h5 class="blog-card-title">General Tile Guides</h5>
                                     <p class="blog-card-text">Confused about which tiles to choose? This guide covers
@@ -1177,7 +1182,8 @@
 
                     <!-- View More Button -->
                     <div class="text-center mt-4">
-                        <button id="viewMoreBtnblog" class="btn btn-view-more" onclick="toggleBlogs()">View More →</button>
+                        <button id="viewMoreBtnblog" class="btn btn-view-more" onclick="toggleBlogs()">View More
+                            →</button>
                     </div>
                 </div>
             </div>
@@ -1293,14 +1299,16 @@
         </div>
     </footer>
 
-<footer class="second-footer mt-auto py-2 sticky-bottom">
+    <footer class="second-footer mt-auto py-2 sticky-bottom">
         <div class="container-fluid">
             <div class="row text-center">
                 <div class="col-md-12">
-                    <p class="m-0">Copyright © 2025 
-                        <a href="index.html" target="_blank" class="text-secondary text-decoration-none"> TilesFinders </a>, 
-                        All rights Developed by 
-                        <a href="https://theuniqueitsolution.com/" target="_blank" class="text-secondary text-decoration-none">Unique IT Solution</a> 
+                    <p class="m-0">Copyright © 2025
+                        <a href="index.html" target="_blank" class="text-secondary text-decoration-none"> TilesFinders
+                        </a>,
+                        All rights Developed by
+                        <a href="https://theuniqueitsolution.com/" target="_blank"
+                            class="text-secondary text-decoration-none">Unique IT Solution</a>
                     </p>
                 </div>
             </div>
@@ -1308,28 +1316,15 @@
     </footer>
 
 
-    
-    <!-- JavaScript -->
-    <script>
-        document.getElementById("viewMoreBtn").addEventListener("click", function() {
-            document.querySelectorAll(".hidden").forEach(item => {
-                item.classList.remove("hidden");
-            });
-            this.style.display = "none";
-        });
-    </script>
     <!-- img grid -->
     <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
     <!-- Automatically arranges grid as pair img height -->
     <script src="./assest/js/masonry.pkgd.min.js"></script>
     <script src="./assest/js/classie.js"></script>
     <script src="./assest/js/cbpGridGallery.js"></script>
-    <script>
-        new CBPGridGallery(document.getElementById('grid-gallery'));
-    </script>
-    <script src="https://pannellum.org/js/pannellum.js"></script>
+    <script src="https://cdn.pannellum.org/2.5/pannellum.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
-    <script src="./assest/js/script.js"></script>
+    <script src="./assest/js/dev-script.js"></script>
 </body>
 
 </html>

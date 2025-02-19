@@ -72,18 +72,18 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 // 5. <!-- Blogs -->
-function toggleBlogs() {
-    const moreBlogs = document.getElementById("moreBlogs");
-    const btn = document.getElementById("viewMoreBtnblog");
+// function toggleBlogs() {
+//     const moreBlogs = document.getElementById("moreBlogs");
+//     const btn = document.getElementById("viewMoreBtnblog");
 
-    if (moreBlogs.style.display === "none") {
-        moreBlogs.style.display = "flex";
-        btn.textContent = "View Less ←";
-    } else {
-        moreBlogs.style.display = "none";
-        btn.textContent = "View More →";
-    }
-}
+//     if (moreBlogs.style.display === "none") {
+//         moreBlogs.style.display = "flex";
+//         btn.textContent = "View Less ←";
+//     } else {
+//         moreBlogs.style.display = "none";
+//         btn.textContent = "View More →";
+//     }
+// }
 
 // 6. 360 img preview
 // document.addEventListener("DOMContentLoaded", function() {

@@ -385,6 +385,17 @@
     opacity: 1;
 }
 
+.grid-wrap-tiles::before {
+    content: "";
+    position: absolute;
+    right: 2%;
+    width: 82%;
+    top: 216%;
+    height: 30%;
+    background: linear-gradient(to bottom, #FFFFFF00, #ffffff);
+    opacity: 0.7;
+    z-index: 2;
+}
 /* Overlay Effect */
 .text-overlay {
     position: absolute;
@@ -789,9 +800,6 @@ body.modal-active {
     color: var(--secondary-color);
 }
 
-#moreBlogs {
-    display: none;
-}
 
 /*5. product details page */    
 /* 5.1. product detail */
@@ -939,8 +947,7 @@ body.modal-active {
     border: 2px solid transparent;
 }
 
-.color-option:hover,
-.color-option.active {
+.color-option:hover {
     border-color: #6c757d;
 }
 
@@ -1398,7 +1405,9 @@ body.modal-active {
     border-radius: 8px;
     color: var(--dark-gray);
 }
-
+.contact-info-item-page a{
+    color: #525459;
+}
 /* 8.2 contact form */
 
 .form-control-contact {
@@ -1944,26 +1953,26 @@ textarea.form-control-contact {
     color: #333;
 }
 
-.slider-dots {
-    position: relative;
-    margin-top: 28%;
-    display: flex;
-    gap: 8px;
-    justify-content: center;
-}
-
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #ddd;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.dot.active {
-    background-color: #6B7CFF;
-}
+.carousel-indicators {
+            bottom: -20%;
+        }
+        
+        .carousel-indicators button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: #dee2e6;
+            border: none;
+        }
+        .carousel-indicators [data-bs-target]{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #4e73df;
+        }
 
 /* 11 logo text */
 /* 11.1 logo section */

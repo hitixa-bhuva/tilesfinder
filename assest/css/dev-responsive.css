@@ -10,16 +10,90 @@
     .blog-search-container {
         margin-left: 17%;
     }
+    /* 1.6 tiles design  page */
+      /* 1.6.1 types images */
+    .img-box-450-last{
+        display: none;
+    }
+        /* 1.6.2 smiilar   mockup */
+    .about-ourmission-col-4-small{
+        display: none;
+    }
+    .grid-wrap-tiles::before {
+        top: 40%;
+    }
+
+    /* 1.7 mockup page  */
+     /* 1.7.1 image gallery grid */
+     .grid-gallery figure img{
+       
+     }
+
+     /* 1.8 product detial page */
+      /* 1.8.1 similar mockup */
+      .tiles-design-image-container img{
+        width: 400px;
+      }
+      .tiles-design-image-container .img-box{
+        max-width: 400px;
+      }
+      .tiles-design-image-container{
+        justify-content: left;
+      }
 }
 
+@media screen and (max-width: 1540px) {
+    .grid-wrap-tiles::before{
+        top: 175%;
+      }
+      .model-preview-view-btn{
+        right: 3%;
+        bottom: 32%;
+        border-radius: 22px;
+        border: none;
+        background-color: var(--white-color);
+        color: var(--secondary-color);
+        font-size: var(--normal-font-size);
+        font-weight: var(--font-weight-dark);
+      }
+      /* 2.8 product detial page */
+      /* 2.8.1 similar mockup */
+      .tiles-design-image-container img{
+        width: 100%;
+      }
+      .tiles-design-image-container .img-box{
+        max-width: 400px;
+      }
+}
 /* 2. 1440 screen size */
-
-/* 2.3 blog */
-/* 2.3.1 hero section search */
 @media screen and (max-width: 1440px) {
+    /* 2.3 blog */
+    /* 2.3.1 hero section search */
     .blog-search-container {
         margin-left: 31%;
     }
+
+     /* 2.6 tiles design  page */
+      /* 2.6.1 types images */
+
+      .grid-wrap-tiles::before{
+        top: 66%;
+      }
+
+      /* 2.6 tiles design  page */
+      /* 2.6.1 types images */
+      .img-box-450-last{
+        display: none;
+    }
+
+    /* 2.8 product detial page */
+      /* 2.8.1 similar mockup */
+      /* .tiles-design-image-container img{
+        width: 200px;
+      }
+      .tiles-design-image-container .img-box{
+        max-width: 200px;
+      } */
 }
 
 /* 3. 1024 screen size */
@@ -82,9 +156,7 @@
     .Blog-Card-5{
         display: none;
     }
-
-    /* 3.6 blog details */
-    /* 3.6.1 blog detail img grid */
+    /* 3.5.2 blog detail img grid */
     .tiles-design-image-container .img-box{
         max-width: 100%;
     }
@@ -92,8 +164,52 @@
         overflow: visible;
     }
     .tiles-design-image-container img{
-        width: 125px;
+        width: 160px;
     }
+    /* 3.5.3 Recommended Designs */
+    .image-container.tiles-design-image-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .img-box {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    /* 3.6 tiles design  page */
+      /* 3.6.1 Similar Mockups */
+    .grid-wrap-tiles::before {
+        top: 75%;
+    }
+     /* 3.6.2 typs */
+    .tiles-design-image-container-first img{
+        width: 149px;
+    }
+    .image-container.tiles-design-image-container-first{
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .img-box-450-last{
+        display: none;
+    }
+    /* 3.6.3 model button preview */
+    .img-overlay-360-preview img{
+        width: 520px;
+    }
+    .model-preview-view-btn {
+        right: 4%;
+        bottom: 19%;
+    }
+    /* 1.8 product detial page */
+      /* 1.8.1 similar mockup */
+      .tiles-design-image-container img{
+        width: 180px;
+      }
+      .tiles-design-image-container .img-box{
+        max-width: 180px;
+      }
 }
 
 /* 4. 768 screen size */
@@ -196,11 +312,6 @@
     .testimonial-card {
         padding: 20px;
     }
-
-    .slider-dots {
-        margin-top: 43%;
-    }
-
     .slider-container {
         height: auto;
     }
@@ -266,6 +377,50 @@
     .blog-search-container{
         max-width: 420px;
     }
+
+    /* 4.5 blog details page */
+    /* 4.5.1 Recommended Designs */
+    .image-container.tiles-design-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* 4.6 tiles design  page */
+      /* 4.6.1 Similar Mockups */
+      .grid-wrap-tiles::before {
+        top: 178%;
+    }
+    /* 4.6.2 model button preview */
+    .model-preview-view-btn {
+        right: 4%;
+        bottom: 1%;
+    }
+    /* 4.6.3 image typs  */
+    .image-container.tiles-design-image-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .tiles-design-image-container-first img {
+        width: 130px;
+    }
+    .tiles-design-overlay-text{
+        font-size: 12px;
+    }
+    .img-box-450-last{
+        display: none;
+    }
+     /* 4.6.4  Similar Mockups*/
+     .grid li {
+        width: 24.3%;
+    }
+    .grid-wrap-tiles::before {
+        top: 131%;
+        right: 8%;
+        width: 86%;
+    }
+    /* 4.8 product detial page */
+      /* 4.8.1 similar mockup */
+      .p-md-1{
+        padding: 1rem 1rem 4rem 1rem !important;
+      }
 }
 
 /* 5. 425 screen size */
@@ -371,10 +526,6 @@
         height: 100%;
     }
 
-    .slider-dots {
-        margin-top: 106%;
-    }
-
     .testimonials-section {
         height: 650px;
     }
@@ -439,14 +590,111 @@
     .ps-0{
         padding: 0 12px !important;
     }
-    .blogs-header{
-        display: none;
-    }
 
     /* 5.4 footer */
     /* 5.4.1 second footer  */
     .second-footer p{
         font-size: 8px;
+    }
+
+    /* 5.5 blog details page */
+     /* 5.5.1 Recommended Designs */
+     .image-container.tiles-design-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img-box img {
+        width: 150px;
+        height: auto;
+    }
+    .ps-sm-1{
+        padding-left: 5px !important;
+    }
+    .img-box-last{
+        display: none;
+    }
+    .mt-sm-1{
+        margin-top: 10px !important;
+    }
+    .Blog-Card-4{
+        display: block;
+    }
+    .Blog-Card-5{
+        display: block;
+    }
+    /* 5.5.2 More Blogs */
+    .blogdetails-col-4-blog-content{
+        padding: 22px 12px 20px 51px;
+    }
+    .blogdetails-col-4-read-more{
+        width: 65%;
+    }
+    .blogdetails-col-4-section{
+        margin-top: 10px;
+    }
+    .p-sm-0{
+        padding: 0;
+    }
+    /* 5.6 tiles design  page */
+      /* 5.6.1 Similar Mockups */
+      .model-preview-view-btn {
+        right: 4%;
+        bottom: -3%;
+    }
+    .about-ourmission-col-4-small{
+        display: block;
+    }
+     /* 5.6.2 images typ */
+    .img-box-450-last{
+        display: block;
+    }
+    .grid-gallery-second{
+        display: none;
+    }
+    .tiles-design-image-container-first img{
+        width: 189px;
+    }
+     /* 5.6.3 Similar Mockups */
+    .image-gallery-first::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to bottom, #FFFFFF00, #FFFFFF);
+        opacity: 0.7;
+        z-index: 2;
+        top: 322%;
+    }
+     .blog-card{
+        margin-top: 10px;
+    }
+     /* 5.8 product detial page */
+      /* 5.8.1 OHG Kitchen Niche Fruit Walnut HL */
+      .btn-inquiry{
+        width: 60%;
+      }
+      .d-md-none{
+        display: none;
+      }
+      .main-image{
+        margin: 0;
+        height: 310px;
+        width: 100%;
+      }
+       /* 5.8.2 Similar Mockups */
+      .tiles-design-image-container .img-box{
+        width: 170px;
+      }
+      .tiles-design-image-container-first img{
+        width: 170px;
+      }
+       /* 5.6.3 model popup */
+    .modal-content{
+        width: 300px;
+    }
+    .grid figure{
+        padding: 5px !important;
     }
 }
 
@@ -492,10 +740,6 @@
         height: 661px;
     }
 
-    .slider-dots {
-        margin-top: 126%;
-    }
-
     /* 6.1.5 Strong Connections, Stronger Results */
     .logo-item {
         padding: 10px;
@@ -521,6 +765,41 @@
         padding-top: 2rem !important;
     }
 
+    /* 6.5 blog details page */
+    /* 6.5.1 More Blogs */
+    .blogdetails-col-4-blog-content{
+        padding: 19px 4px 11px 67px;
+    }
+    .blogdetails-col-4-read-more{
+        width: 79%;
+    }
+
+    /* 6.6 tiles design  page */
+      /* 6.6.1 types images */
+      .img-box-450-last{
+        display: block;
+    }
+
+    .about-ourmission-col-4-small{
+        display: block;
+    }
+    .grid-gallery-second{
+        display: none;
+    }
+     /* 6.6.2 Similar Mockups */
+     .py-sm-1{
+        padding: 0 1px;
+     }
+     .ps-0{
+        padding: 0 5px !important;
+     }
+      /* 5.8 product detial page */
+      /* 5.8.1 OHG Kitchen Niche Fruit Walnut HL */
+      .thumbnail{
+        width: 40px;
+    height: 40px;
+      }
+     
 }
 
 /* 7. 320 screen size */
@@ -566,10 +845,6 @@
 
     .testimonial-slide {
         padding: 20px;
-    }
-
-    .slider-dots {
-        margin-top: 130%;
     }
 
     .testimonials-section {
@@ -657,5 +932,78 @@
     .blog-search-container{
         max-width: 242px;
     }
+
+    /* 7.5 blog details page */
+    /* 7.5.1 More Blogs */
+    .blogdetails-col-4-blog-content{
+        padding: 19px 4px 11px 67px;
+    }
+    .blogdetails-col-4-read-more{
+        width: 100%;
+    }
+    .blogdetails-col-4-blog-card img{
+        width: 112px;
+    }
+    .blogdetails-col-4-blog-content{
+        padding: 11px 4px 1px 38px;
+    }
+    .img-box img {
+        width: 126px;
+        height: auto;
+    }
+
+    /* 7.6 tiles design  page */
+      /* 7.6.1 types images */
+      .img-box-450-last{
+        display: block;
+    }
+    .about-ourmission-col-4-small{
+        display: block;
+    }
+    .grid-gallery-second{
+        display: none;
+    }
+     /* 7.6.2 Similar Mockups */
+     .image-gallery-first::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        background: linear-gradient(to bottom, #FFFFFF00, #FFFFFF);
+        opacity: 0.7;
+        z-index: 2;
+        top: 287%;
+    }
+
+   
+     /* 5.8 product detial page */
+      /* 5.8.1 OHG Kitchen Niche Fruit Walnut HL */
+      .btn-inquiry{
+        width: 60%;
+      }
+      .d-md-none{
+        display: none;
+      }
+      .main-image{
+        margin: 0;
+        height: 310px;
+        width: 100%;
+      }
+       /* 5.8.2 Similar Mockups */
+       .tiles-design-image-container .img-box{
+        width: 126px;
+      }
+      .tiles-design-overlay-text{
+        font-size: 10px;
+      }
+      .text-sm-start {
+        text-align: start;
+      }
+      .mt-sm-0 {
+        margin-top: 0;
+      }
 }
+
+
 

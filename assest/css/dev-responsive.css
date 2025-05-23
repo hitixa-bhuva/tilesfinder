@@ -34,7 +34,7 @@
 
     /* 1.7 mockup page  */
     /* 1.7.1 image gallery grid */
-    .grid-gallery figure img {}
+    /* .grid-gallery figure img {} */
 
     /* 1.8 product detial page */
     /* 1.8.1 similar mockup */
@@ -56,7 +56,7 @@
         top: 175%;
     }
 
-    .model-preview-view-btn {
+    /* .model-preview-view-btn {
         right: 3%;
         bottom: 32%;
         border-radius: 22px;
@@ -65,7 +65,7 @@
         color: var(--secondary-color);
         font-size: var(--normal-font-size);
         font-weight: var(--font-weight-dark);
-    }
+    } */
 
     /* 2.8 product detial page */
     /* 2.8.1 similar mockup */
@@ -79,9 +79,9 @@
 }
 
 @media screen and (max-width: 1490px) {
-    .blog-search-container {
+    /* .blog-search-container {
         margin-left: 25% !important;
-    }
+    } */
 }
 
 /* 2. 1440 screen size */
@@ -89,9 +89,9 @@
 
     /* 2.3 blog */
     /* 2.3.1 hero section search */
-    .blog-search-container {
+    /* .blog-search-container {
         margin-left: 26% !important;
-    }
+    } */
 
     /* 2.6 tiles design  page */
     /* 2.6.1 types images */
@@ -184,7 +184,7 @@
     /* 3.3 blog */
     /* 3.3.1 hero section search */
     .blog-search-container {
-        margin-left: 22% !important;
+        /* margin-left: 22% !important; */
         margin-top: 3%;
     }
 
@@ -254,25 +254,25 @@
     .img-overlay-360-preview img {
         width: 520px;
     }
-
+/* 
     .model-preview-view-btn {
         right: 4%;
         bottom: 19%;
-    }
+    } */
 
     /* 1.8 product detial page */
     /* 1.8.1 similar mockup */
-    .tiles-design-image-container img {
-        width: 180px;
+     .tiles-design-image-container img {
+        width: 100%;
     }
 
     .tiles-design-image-container .img-box {
-        max-width: 160px;
+        max-width: 100%;
     }
 
     .tiles-design-image-container-first .img-box img {
-        width: 159px;
-    }
+        width: 100%;
+    } 
 
     /* home page side nav  */
     .filter-section h6 {
@@ -468,7 +468,7 @@
     /* 4.3 blog */
     /* 4.3.1 hero section search */
     .blog-search-container {
-        margin-left: 18% !important;
+        /* margin-left: 18% !important; */
         margin-top: 5%;
     }
 
@@ -489,10 +489,10 @@
     }
 
     /* 4.6.2 model button preview */
-    .model-preview-view-btn {
+    /* .model-preview-view-btn {
         right: 4%;
         bottom: 1%;
-    }
+    } */
 
     /* 4.6.3 image typs  */
     .image-container.tiles-design-image-container {
@@ -538,8 +538,8 @@
     }
 
     .tiles-design-image-container-first .img-box img {
-        width: 140px;
-    }
+        width: 100%;
+    } 
 
     .image-container.tiles-design-image-container-blog-details {
         display: grid !important;
@@ -740,7 +740,7 @@
     /* 5.3 blog */
     /* 5.3.1 hero section search */
     .blog-search-container {
-        margin-left: 9% !important;
+        /* margin-left: 9% !important; */
         margin-top: 8%;
     }
 
@@ -824,10 +824,10 @@
 
     /* 5.6 tiles design  page */
     /* 5.6.1 Similar Mockups */
-    .model-preview-view-btn {
+    /* .model-preview-view-btn {
         right: 4%;
         bottom: -3%;
-    }
+    } */
 
     .about-ourmission-col-4-small {
         display: block;
@@ -957,11 +957,11 @@
     }
 
     .tiles-design-image-container-first .img-box img {
-        width: 185px;
+        width: 100%;
     }
 
     .tiles-design-image-container-first .overlay {
-        height: 104%;
+        height: 100%;
     }
 
     .Mockup-text-content h2 {
@@ -1089,7 +1089,7 @@
     /* 6.3 blog */
     /* 6.3.1 hero section search */
     .blog-search-container {
-        margin-left: 5% !important;
+        /* margin-left: 5% !important; */
         margin-top: 8%;
     }
 
@@ -1154,17 +1154,17 @@
     }
 
     .tiles-design-image-container-first .img-box img {
-        width: 162px;
+        width: 100%;
     }
 
     .tiles-design-image-container-first .overlay {
-        height: 104%;
+        height: 100%;
     }
 
-    .model-preview-view-btn {
+    /* .model-preview-view-btn {
         right: 7%;
         bottom: 3%;
-    }
+    } */
 
     .tiles-design-image-container-blog-details .img-box {
         height: 173px;
@@ -1301,7 +1301,7 @@
     /* 7.3 blog */
     /* 7.3.1 hero section search */
     .blog-search-container {
-        margin-left: 5% !important;
+        /* margin-left: 5% !important; */
         margin-top: 10%;
     }
 
@@ -1399,7 +1399,7 @@
     }
 
     .tiles-design-image-container-first .img-box img {
-        width: 137px;
+        width: 100%;
     }
 
     .tiles-design-image-container .img-box {

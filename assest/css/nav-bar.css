@@ -564,7 +564,7 @@ color: #1B1C1E;
 
 .filter-badge {
     background: var(--secondary-color);
-    padding: 6px 10px;
+    padding: 2px 10px;
     border-radius: 20px;
     font-size: 14px;
     color: var(--white-color);
@@ -619,6 +619,7 @@ color: #1B1C1E;
     font-weight: 700;
     font-size: 14px;
     line-height: 22px;
+    text-transform: capitalize;
 }
 
 /* Chevron Icon Rotation */
@@ -646,7 +647,7 @@ color: #1B1C1E;
 
 .filter-option {
     border: 1px solid #DFDFE8;
-    padding: 6px 12px;
+    padding: 2px 10px;
     border-radius: 20px;
     font-size: 14px;
     cursor: pointer;
@@ -658,7 +659,6 @@ color: #1B1C1E;
     background: #D9E1F9;
     border: 1px solid #8DA5ED;
     color: var(--primary-color);
-    font-weight: bold;
 }
 
 .apply-filter-btn button {

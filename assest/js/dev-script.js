@@ -81,7 +81,9 @@ document.addEventListener("DOMContentLoaded", function () {
 //         btn.textContent = "View Less ←";
 //     } else {
 //         moreBlogs.style.display = "none";
-//         btn.textContent = "View More →";
+//         btn.textContent = "View More <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right arrow-icon" viewBox="0 0 16 16">
+                        //     <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        // </svg>";
 //     }
 // }
 
@@ -127,53 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
-
-
-// 8. about page
-let currentSlide = 0;
-        const slides = document.querySelectorAll('.testimonial-slide');
-        const dots = document.querySelectorAll('.dot');
-
-        function updateSlides(index) {
-            slides.forEach((slide, i) => {
-                slide.classList.remove('active', 'prev', 'next');
-                if (i === index) {
-                    slide.classList.add('active');
-                } else if (i === (index - 1 + slides.length) % slides.length) {
-                    slide.classList.add('prev');
-                } else if (i === (index + 1) % slides.length) {
-                    slide.classList.add('next');
-                }
-            });
-
-            dots.forEach((dot, i) => {
-                dot.classList.toggle('active', i === index);
-            });
-        }
-
-        function nextSlide() {
-            currentSlide = (currentSlide + 1) % slides.length;
-            updateSlides(currentSlide);
-        }
-
-        // Initial setup
-        updateSlides(currentSlide);
-
-        // Auto slide every 5 seconds
-        setInterval(nextSlide, 5000);
-
-        // Add click handlers for dots
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                currentSlide = index;
-                updateSlides(currentSlide);
-            });
-        });
-
-// 9. image grid gallery
-new CBPGridGallery(document.getElementById('grid-gallery'));
-
-
+    
 //10.  tiles design page
 document.getElementById("viewMoreBtn").addEventListener("click", function() {
     document.querySelectorAll(".hidden").forEach(item => {
@@ -181,3 +137,4 @@ document.getElementById("viewMoreBtn").addEventListener("click", function() {
     });
     this.style.display = "none";
 });
+

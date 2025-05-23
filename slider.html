@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonials Slider</title>
+    <style>
+        :root {
+            --primary-color: #333333;
+            --secondary-color: #FF4444;
+            --white-color: #FFFFFF;
+            --font-weight-normal-dark: 500;
+            --font-weight-dark: 700;
+            --font-weight-light: 400;
+            --sansation-font: 'Arial', sans-serif;
+            --letter-spacing: 0.02em;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--sansation-font);
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .testimonials-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #F3F3F8;
+            border-radius: 40px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .section-header {
+            margin-bottom: 50px;
+        }
+
+        .testimonials-small-header {
+            background-color: var(--white-color);
+            color: var(--secondary-color);
+            font-size: 12px;
+            font-weight: var(--font-weight-normal-dark);
+            padding: 8px 16px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-heading {
+            font-family: var(--sansation-font);
+            font-weight: var(--font-weight-dark);
+            font-size: 40px;
+            line-height: 52px;
+            color: var(--primary-color);
+            margin-bottom: 0;
+        }
+
+        .slider-container {
+            position: relative;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            perspective: 1000px;
+        }
+
+        .testimonial-slide {
+            position: absolute;
+            width: 600px;
+            max-width: 80%;
+            transition: all 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            transform-origin: center center;
+        }
+
+        .testimonial-slide.prev {
+            transform: translateX(-100%) scale(0.85);
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .testimonial-slide.active {
+            transform: translateX(0) scale(1);
+            opacity: 1;
+            z-index: 3;
+        }
+
+        .testimonial-slide.next {
+            transform: translateX(100%) scale(0.85);
+            opacity: 0.5;
+            z-index: 1;
+        }
+
+        .testimonial-slide.hidden {
+            transform: translateX(0) scale(0.7);
+            opacity: 0;
+            z-index: 0;
+        }
+
+        .testimonial-card {
+            background: var(--white-color);
+            border-radius: 20px;
+            padding: 40px 30px;
+            margin: 0 auto;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .quote-icon {
+            margin-bottom: 20px;
+        }
+
+        .quote-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: #FF8A9B;
+        }
+
+        .stars {
+            display: flex;
+            justify-content: center;
+            gap: 5px;
+            margin-bottom: 25px;
+            font-size: 20px;
+        }
+
+        .star-filled {
+            color: #FFB800;
+        }
+
+        .star-empty {
+            color: #E0E0E0;
+        }
+
+        .testimonial-text {
+            font-family: var(--sansation-font);
+            font-weight: var(--font-weight-light);
+            font-style: italic;
+            font-size: 18px;
+            line-height: 28px;
+            color: var(--primary-color);
+            margin-bottom: 30px;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .author-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid #f0f0f0;
+        }
+
+        .author-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .customer-name {
+            font-weight: var(--font-weight-dark);
+            font-size: 16px;
+            color: var(--primary-color);
+        }
+
+        .slider-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        .slider-dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: #D1D5DB;
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .slider-dot.active {
+            background-color: #4F46E5;
+            transform: scale(1.2);
+        }
+
+        .slider-dot:hover {
+            background-color: #9CA3AF;
+        }
+
+        /* Navigation arrows */
+        .nav-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: var(--primary-color);
+            transition: all 0.3s ease;
+            z-index: 4;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-arrow:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .nav-arrow.prev-arrow {
+            left: 20px;
+        }
+
+        .nav-arrow.next-arrow {
+            right: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .testimonials-section {
+                padding: 30px 15px;
+                margin: 15px;
+            }
+
+            .testimonial-heading {
+                font-size: 28px;
+                line-height: 36px;
+            }
+
+            .slider-container {
+                height: 350px;
+            }
+
+            .testimonial-slide {
+                width: 90%;
+            }
+
+            .testimonial-card {
+                padding: 25px 20px;
+            }
+
+            .testimonial-text {
+                font-size: 16px;
+                line-height: 24px;
+            }
+
+            .nav-arrow {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="testimonials-section">
+        <div class="section-header">
+            <div class="testimonials-small-header">TESTIMONIALS</div>
+            <h2 class="testimonial-heading">What Our Happy Customers Say!</h2>
+        </div>
+        
+        <div class="slider-container">
+            <!-- Navigation Arrows -->
+            <button class="nav-arrow prev-arrow" onclick="changeSlide(-1)">‹</button>
+            <button class="nav-arrow next-arrow" onclick="changeSlide(1)">›</button>
+
+            <!-- Testimonial 1 -->
+            <div class="testimonial-slide active">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-empty">☆</span>
+                    </div>
+                    
+                    <p class="testimonial-text">"Tiles Finder made choosing tiles so easy! The mockups helped me visualize my space perfectly before purchasing"</p>
+                    
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/60/60" alt="Aarav S.">
+                        </div>
+                        <div class="customer-name">Aarav S.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 -->
+            <div class="testimonial-slide next">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    
+                    <p class="testimonial-text">"I was able to find the perfect floor tiles for my kitchen renovation. The customer service team was incredibly helpful!"</p>
+                    
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/60/60" alt="Sara M.">
+                        </div>
+                        <div class="customer-name">Sara M.</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 -->
+            <div class="testimonial-slide hidden">
+                <div class="testimonial-card">
+                    <div class="quote-icon">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    
+                    <div class="stars">
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                        <span class="star-filled">★</span>
+                    </div>
+                    
+                    <p class="testimonial-text">"The variety of options and quick delivery made my bathroom remodel so much easier. Highly recommend Tiles Finder!"</p>
+                    
+                    <div class="testimonial-author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/60/60" alt="Raj P.">
+                        </div>
+                        <div class="customer-name">Raj P.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <div class="slider-controls">
+            <button class="slider-dot active" onclick="goToSlide(0)"></button>
+            <button class="slider-dot" onclick="goToSlide(1)"></button>
+            <button class="slider-dot" onclick="goToSlide(2)"></button>
+        </div>
+    </section>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.testimonial-slide');
+        const dots = document.querySelectorAll('.slider-dot');
+        const totalSlides = slides.length;
+
+        function updateSlider() {
+            slides.forEach((slide, index) => {
+                slide.classList.remove('prev', 'active', 'next', 'hidden');
+                
+                if (index === currentSlide) {
+                    slide.classList.add('active');
+                } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
+                    slide.classList.add('prev');
+                } else if (index === (currentSlide + 1) % totalSlides) {
+                    slide.classList.add('next');
+                } else {
+                    slide.classList.add('hidden');
+                }
+            });
+
+            // Update dots
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function goToSlide(slideIndex) {
+            currentSlide = slideIndex;
+            updateSlider();
+        }
+
+        // Auto-play functionality
+        let autoPlay = setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Pause auto-play on hover
+        const sliderContainer = document.querySelector('.slider-container');
+        sliderContainer.addEventListener('mouseenter', () => {
+            clearInterval(autoPlay);
+        });
+
+        sliderContainer.addEventListener('mouseleave', () => {
+            autoPlay = setInterval(() => {
+                changeSlide(1);
+            }, 5000);
+        });
+
+        // Touch/swipe support for mobile
+        let startX = 0;
+        let endX = 0;
+
+        sliderContainer.addEventListener('touchstart', (e) => {
+            startX = e.touches[0].clientX;
+        });
+
+        sliderContainer.addEventListener('touchend', (e) => {
+            endX = e.changedTouches[0].clientX;
+            handleSwipe();
+        });
+
+        function handleSwipe() {
+            const swipeThreshold = 50;
+            const diff = startX - endX;
+
+            if (Math.abs(diff) > swipeThreshold) {
+                if (diff > 0) {
+                    changeSlide(1); // Swipe left - next slide
+                } else {
+                    changeSlide(-1); // Swipe right - previous slide
+                }
+            }
+        }
+
+        // Initialize slider
+        updateSlider();
+    </script>
+</body>
+</html>

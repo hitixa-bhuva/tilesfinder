@@ -2,15 +2,25 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TilesFinders</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
-  
-  <link rel="stylesheet" href="./assest/css/nav-bar.css" />
-  <link rel="stylesheet" href="./assest/css/dev-style.css"><link rel="stylesheet" href="./assest/css/dev-responsive.css">
-  <meta name="robots" content="noindex">
-  <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg">
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TilesFinder</title>
+	<meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+	<meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+	<meta name="author" content="Codrops" />
+<meta name="robots" content="noindex">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+	
+	<link rel="stylesheet" href="./assest/css/nav-bar.css" />
+	<link rel="stylesheet" href="./assest/css/dev-style.css">
+	<link rel="stylesheet" href="./assest/css/dev-responsive.css">
+
+	<link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg">
+	<link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
+	<script src="./assest/js/modernizr.custom.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -527,7 +537,7 @@
   <!-- filter side bar -->
   <section class="mb-5">
     <div class="row">
-     <div class="col-md-2 filter-home-col-2 d-md-none d-sm-none d-lg-block"
+      <div class="col-md-2 filter-home-col-2 d-md-none d-sm-none d-lg-block"
         style="border: 1px solid #e0e0e0; border-bottom: none;">
         <div class="filter-header p-3 pb-0">
           <h5 class="mb-0 filter-title">
@@ -714,89 +724,202 @@
         <hr />
       
       </div>
-      <div class="col-md-10 filter-home-col-10">
-        <div class="row home-page-images-grid-row">
+      <div class="col-md-10 filter-home-col-10 p-0">
+				<div class="container-fluid">
+					<div id="grid-gallery" class="grid-gallery">
+						<section class="grid-wrap m-0 p-0">
+							<ul class="grid main-product-page">
+								<li class="grid-sizer"></li>
+								<li>
+                                    <a href="productDetails.html">
+                                        <figure>
+                                          <div class="img-container">
+                                            <img src="./assest/img/img-grid/200x200/ARKLITE R1.jpg" alt="ARKLITE R1" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                          </div>
+                                        </figure>
+                                   </a>
+                                </li>
 
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://www.nitco.in/nitcomedia/tiles/swatch/thumb/TLL033MPL11904.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://4.imimg.com/data4/OD/XC/GLADMIN-3778719/7-250x250.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323279347/DI/NY/BI/99086918/avis-white-01-500x500.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://www.tilelook.com/system/tile_picture/resource/17364085/d3d_default_40812_3.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x300/DORADO CREAM.jpg" alt="img02" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+										</div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x600/ARKLITE R1.jpg" alt="img03" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+										</div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/250x375/ARKLITE R1.jpg" alt="img04" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/250x375/ARKLITE R1.jpg" alt="img05" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x450/ARKLITE R1.jpg" alt="img06" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x600/ARKLITE R1.jpg" alt="img01" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x900/ARKLITE R1.jpg" alt="img04" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x300/FLORENCE GREY R1.jpg" alt="img05" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x200/DORADO CREAM.jpg" alt="img01" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x600/Fontana Gray.jpg" alt="img01" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x600/HELMAR BEIGE R1.jpg" alt="img02" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x900/FLORENCE GREY R1.jpg" alt="img03" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/250x375/FLORENCE GREY R1.jpg" alt="img04" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x600/HELMAR BEIGE R1.jpg" alt="img05" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x900/MEXICO GREY.jpg" alt="img06" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x900/MEXICO GREY.jpg" alt="img01" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="https://3.imimg.com/data3/BQ/XK/MY-4149562/matt-white-ivory-series-tile-250x250.jpg"
+												alt="img02" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+										</div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/200x600/MEXICO GREY.jpg" alt="img03" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+                                        </div>
+									</figure>
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="./assest/img/img-grid/300x600/RAMOSA BROWN R1 copy.jpg"
+												alt="img04" />
+                                            <div class="overlay-text">ARKLITE R1</div>
 
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="data:image/jpeg;base64,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" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="data:image/jpeg;base64,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" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323279347/DI/NY/BI/99086918/avis-white-01-500x500.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-           <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323279347/DI/NY/BI/99086918/avis-white-01-500x500.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>
-           <div class="col-md-4 col-lg-4 col-xl-5 col-xxl-5 col-sm-6 image-container">
-            <a href="productDetails.html">
-             <div class="img-wrapper">
-                <img src="https://5.imimg.com/data5/SELLER/Default/2023/7/323279347/DI/NY/BI/99086918/avis-white-01-500x500.jpg" alt="Subway Tiles">
-                  <div class="overlay-text">Subway Tiles</div>
-              </div>
-            </a>
-          </div>          
-        </div>
-      </div>
+											
+										</div>
+									</figure>   
+								</li>
+								<li>
+									<figure>
+										<div class="img-container">
+											<img src="https://img.freepik.com/free-photo/close-up-marble-textured-tiles_53876-88522.jpg?semt=ais_hybrid&w=740"
+												alt="img01" />
+                                            <div class="overlay-text">ARKLITE R1</div>
+
+											
+										</div>
+									</figure>
+								</li>
+							</ul>
+						</section>
+						<section class="slideshow d-none">
+							<ul></ul>
+						</section>
+					</div>
+				</div>
+	</div>
     </div>
   </section>
 
-  <!-- footer -->
-    <!-- footer -->
+   <!-- footer -->
   <footer class="footer">
     <div class="container-fluid">
       <div class="row">
@@ -911,8 +1034,20 @@
 </div>
 
  
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
-  <script src="./assest/js/dev-script.js"></script>
+	<script src="./assest/js/imagesloaded.pkgd.min.js"></script>
+
+	<script src="./assest/js/masonry.pkgd.min.js"></script>
+	<script src="./assest/js/classie.js"></script>
+	<script src="./assest/js/cbpGridGallery.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
+	<script src="./assest/js/dev-script.js"></script>
+<script>
+	
+// 9. image grid gallery
+new CBPGridGallery(document.getElementById('grid-gallery'));
+
+</script>
 </body>
 
 </html>

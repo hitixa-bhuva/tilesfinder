@@ -1,29 +1,18 @@
 @import url("./dev-style.css");
 
-
-/* responsive style  */
-
 /* 1. 2524 screen size */
-/* 1.3 blog */
-/* 1.3.1 hero section search */
 @media screen and (max-width: 2560px) {
 
     /* 1.9 home page style */
-    /* 1.9.1 home page gallary img */
     .home-page-images-grid-row .image-container {
         width: 25%;
     }
 
-    /* .blog-search-container {
-        margin-left: 14% !important;
-    } */
     /* 1.6 tiles design  page */
-    /* 1.6.1 types images */
     .img-box-450-last {
         display: none;
     }
 
-    /* 1.6.2 smiilar   mockup */
     .about-ourmission-col-4-small {
         display: none;
     }
@@ -32,12 +21,7 @@
         top: 40%;
     }
 
-    /* 1.7 mockup page  */
-    /* 1.7.1 image gallery grid */
-    /* .grid-gallery figure img {} */
-
     /* 1.8 product detial page */
-    /* 1.8.1 similar mockup */
     .tiles-design-image-container img {
         width: 400px;
     }
@@ -56,19 +40,7 @@
         top: 175%;
     }
 
-    /* .model-preview-view-btn {
-        right: 3%;
-        bottom: 32%;
-        border-radius: 22px;
-        border: none;
-        background-color: var(--white-color);
-        color: var(--secondary-color);
-        font-size: var(--normal-font-size);
-        font-weight: var(--font-weight-dark);
-    } */
-
     /* 2.8 product detial page */
-    /* 2.8.1 similar mockup */
     .tiles-design-image-container img {
         width: 100%;
     }
@@ -78,49 +50,25 @@
     }
 }
 
-@media screen and (max-width: 1490px) {
-    /* .blog-search-container {
-        margin-left: 25% !important;
-    } */
-}
 
 /* 2. 1440 screen size */
 @media screen and (max-width: 1440px) {
 
     /* 2.3 blog */
-    /* 2.3.1 hero section search */
-    /* .blog-search-container {
-        margin-left: 26% !important;
-    } */
-
-    /* 2.6 tiles design  page */
-    /* 2.6.1 types images */
-
     .grid-wrap-tiles::before {
         top: 66%;
     }
 
-    /* 2.6 tiles design  page */
     /* 2.6.1 types images */
     .img-box-450-last {
         display: none;
     }
-
-    /* 2.8 product detial page */
-    /* 2.8.1 similar mockup */
-    /* .tiles-design-image-container img{
-        width: 200px;
-      }
-      .tiles-design-image-container .img-box{
-        max-width: 200px;
-      } */
 }
 
 /* 3. 1024 screen size */
 @media (max-width: 1024px) {
 
     /* 3.1 about us page */
-    /* 3.1.1 testimonial slider */
     .testimonials-section {
         margin: 30px;
         text-align: center;
@@ -131,7 +79,6 @@
         margin: auto;
     }
 
-    /* 3.1.2 HOW TO CONNECT AS A PARTNER */
     .partners-section {
         margin: 30px;
     }
@@ -154,19 +101,24 @@
         bottom: -7%;
         left: 4px;
     }
-    .why-choose-blue-accent{
+
+    .why-choose-blue-accent {
         bottom: -21%;
         left: 1%;
     }
-    .who-we-are-col-6{
+
+    .who-we-are-col-6 {
         padding: 0;
     }
-    .who-we-are-badge{
+
+    .who-we-are-badge {
         margin-top: 35px;
     }
-    .about-section{
+
+    .about-section {
         padding: 1rem 0;
     }
+
     .team-image-container {
         display: flex;
         justify-content: center;
@@ -176,15 +128,12 @@
     }
 
     /* 3.2 contact page */
-    /* 3.2.1 contact form */
     .contact-container {
         width: 992px;
     }
 
     /* 3.3 blog */
-    /* 3.3.1 hero section search */
     .blog-search-container {
-        /* margin-left: 22% !important; */
         margin-top: 3%;
     }
 
@@ -192,11 +141,6 @@
         width: 85%;
     }
 
-    
-
-    
-
-    /* 3.5 blog details page */
     /* 3.5.1 blog detail col 3 */
     .Blog-Card-4 {
         display: none;
@@ -231,13 +175,11 @@
         margin-top: 0;
     }
 
-    /* 3.6 tiles design  page */
     /* 3.6.1 Similar Mockups */
     .grid-wrap-tiles::before {
         top: 75%;
     }
 
-    /* 3.6.2 typs */
     .tiles-design-image-container-first img {
         width: 149px;
     }
@@ -254,15 +196,9 @@
     .img-overlay-360-preview img {
         width: 520px;
     }
-/* 
-    .model-preview-view-btn {
-        right: 4%;
-        bottom: 19%;
-    } */
 
     /* 1.8 product detial page */
-    /* 1.8.1 similar mockup */
-     .tiles-design-image-container img {
+    .tiles-design-image-container img {
         width: 100%;
     }
 
@@ -272,7 +208,7 @@
 
     .tiles-design-image-container-first .img-box img {
         width: 100%;
-    } 
+    }
 
     /* home page side nav  */
     .filter-section h6 {
@@ -307,9 +243,14 @@
 
 /* 4. 768 screen size */
 @media (max-width: 768px) {
+    .tiles-design-page .tiles-design-image-container .img-box {
+        max-width: 100%;
+        height: 100%;
+        max-height: 300px;
+    }
+
     /* 4.1 about us page */
     /* 4.1.1  About TilesFinders */
-
     .about-section {
         padding: 2rem 0 0 0;
     }
@@ -328,8 +269,6 @@
     .team-image-container img {
         width: 90%;
     }
-
-
 
     /* 4.1.2 OUR MISSION */
     .mission-section {
@@ -373,9 +312,6 @@
         text-align: center;
     }
 
-    /* .feature-item{
-        justify-content: center;
-    } */
     .why-choose-blue-accent {
         width: 227px !important;
         left: -2%;
@@ -468,7 +404,6 @@
     /* 4.3 blog */
     /* 4.3.1 hero section search */
     .blog-search-container {
-        /* margin-left: 18% !important; */
         margin-top: 5%;
     }
 
@@ -477,22 +412,14 @@
     }
 
     /* 4.5 blog details page */
-    /* 4.5.1 Recommended Designs */
     .image-container.tiles-design-image-container {
         grid-template-columns: repeat(2, 1fr);
     }
 
     /* 4.6 tiles design  page */
-    /* 4.6.1 Similar Mockups */
     .grid-wrap-tiles::before {
         top: 178%;
     }
-
-    /* 4.6.2 model button preview */
-    /* .model-preview-view-btn {
-        right: 4%;
-        bottom: 1%;
-    } */
 
     /* 4.6.3 image typs  */
     .image-container.tiles-design-image-container {
@@ -539,7 +466,7 @@
 
     .tiles-design-image-container-first .img-box img {
         width: 100%;
-    } 
+    }
 
     .image-container.tiles-design-image-container-blog-details {
         display: grid !important;
@@ -562,19 +489,23 @@
     .blogdetails-col-4-read-more {
         width: 70%;
     }
+
     .who-we-are-about-section-row {
         flex-direction: column-reverse;
     }
+
     .blue-accent {
         width: 227px !important;
         bottom: -6%;
         left: 80px;
     }
+
     .why-choose-blue-accent {
         left: 8%;
         top: 62%;
     }
-    .choose-badge{
+
+    .choose-badge {
         margin-top: 35px;
     }
 
@@ -584,8 +515,6 @@
 @media (max-width: 428px) {
 
     /* 5.1 about us page */
-    /* 5.1.2 About TilesFinders */
-
     .team-image-container img {
         width: 85%;
     }
@@ -609,17 +538,15 @@
         position: absolute;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 20%;
         background: linear-gradient(to bottom, #0F1833, #0F183300);
         opacity: 0.7;
-        /* Adjust transparency */
         z-index: 2;
     }
 
     .gallery-image {
         position: relative;
         z-index: 1;
-        /* Ensures images appear above the gradient */
         border-radius: 12px;
         transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
@@ -680,8 +607,33 @@
         line-height: 44px;
     }
 
+    .about-section {
+        padding: 5px 0 0 0;
+    }
+
+    .logo-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2px;
+    }
+
     .slider-container {
-        height: 100%;
+        height: 350px;
+    }
+
+    .testimonials-section {
+        margin: 23px;
+        padding: 40px 20px 40px 20px;
+    }
+
+    .what-we-offer {
+        margin-top: 5px;
+    }
+
+    .testimonials-section {
+        margin-right: 0;
+        margin-left: 0;
+        border-radius: 0;
     }
 
     .testimonials-section {
@@ -712,6 +664,8 @@
 
     .partner-cta {
         margin: 15px;
+        margin-bottom: 50px;
+        margin-top: 50px;
     }
 
     /* 5.2 contact us page */
@@ -740,7 +694,6 @@
     /* 5.3 blog */
     /* 5.3.1 hero section search */
     .blog-search-container {
-        /* margin-left: 9% !important; */
         margin-top: 8%;
     }
 
@@ -759,7 +712,7 @@
     }
 
     .menu-footer-a {
-        text-align: left !important;
+        text-align: center !important;
     }
 
     .footer h5 {
@@ -770,8 +723,12 @@
         text-align: left;
     }
 
+    .footer .logo {
+        text-align: center;
+    }
+
     .footer .follo-link-footer {
-        text-align: left !important;
+        text-align: center !important;
     }
 
     /* 5.5 blog details page */
@@ -805,13 +762,21 @@
         display: block;
     }
 
+    .custom-width-small-screen-col-3 {
+        width: 40% !important;
+    }
+
+    .custom-width-small-screen-col-9 {
+        width: 60% !important;
+    }
+
     /* 5.5.2 More Blogs */
-    .blogdetails-col-4-blog-content {
-        padding: 22px 12px 20px 51px;
+    s .blogdetails-col-4-blog-content {
+        padding: 22px 12px 20px 5px;
     }
 
     .blogdetails-col-4-read-more {
-        width: 65%;
+        width: 85%;
     }
 
     .blogdetails-col-4-section {
@@ -824,10 +789,6 @@
 
     /* 5.6 tiles design  page */
     /* 5.6.1 Similar Mockups */
-    /* .model-preview-view-btn {
-        right: 4%;
-        bottom: -3%;
-    } */
 
     .about-ourmission-col-4-small {
         display: block;
@@ -879,10 +840,22 @@
         width: 100%;
     }
 
+    .who-we-are-about-section-row {
+        margin-top: 4rem;
+    }
+
     /* 5.8.2 Similar Mockups */
     .tiles-design-image-container .img-box {
-        width: 207px;
-        height: 185px;
+        height: 300px;
+    }
+
+    .why-choose-about-col-6 {
+        margin-top: 3rem;
+        text-align: left;
+    }
+
+    .tiles-design-page .tiles-design-image-container {
+        gap: 15px;
     }
 
     .tiles-design-image-container-first img {
@@ -968,6 +941,11 @@
         margin-top: 15px;
     }
 
+    .Mockup-text-content {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
     .image-gallery-first::before {
         top: 496%;
     }
@@ -1026,6 +1004,54 @@
         top: 128%;
         height: 20%;
     }
+
+    .logo-grid .two {
+        border-right: 0;
+    }
+
+    .logo-grid .three {
+        border-right: 1px solid var(--ligh-gray);
+    }
+
+    .logo-grid .four {
+        border-right: 0;
+    }
+
+    .logo-grid .seven {
+        border-bottom: 1px solid var(--ligh-gray);
+    }
+
+    .logo-grid .eight {
+        border-right: 0;
+        border-bottom: 1px solid var(--ligh-gray);
+    }
+
+    .logo-grid .nine {
+        border-right: 1px solid var(--ligh-gray);
+    }
+
+    .contact-container::before {
+        display: none;
+    }
+
+    .contect-margin-bottom-small {
+        margin-bottom: 0 !important;
+    }
+
+    .custom-padding-top-right {
+        padding-top: 0;
+    }
+
+    .blog-main-title {
+        font-family: Sansation;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 64px;
+        letter-spacing: 0px;
+        text-align: center;
+
+    }
+
 }
 
 /* 6. 375 screen size */
@@ -1160,11 +1186,6 @@
     .tiles-design-image-container-first .overlay {
         height: 100%;
     }
-
-    /* .model-preview-view-btn {
-        right: 7%;
-        bottom: 3%;
-    } */
 
     .tiles-design-image-container-blog-details .img-box {
         height: 173px;
@@ -1301,7 +1322,6 @@
     /* 7.3 blog */
     /* 7.3.1 hero section search */
     .blog-search-container {
-        /* margin-left: 5% !important; */
         margin-top: 10%;
     }
 
@@ -1411,11 +1431,297 @@
     }
 }
 
-/* 7. 320 screen size */
-@media (max-width: 319px) {
 
-    /* 1.9 home page style */
-    /* 1.9.1 home page gallary img */
+@media (max-width: 1440px) {
+    .filter-home-col-10 {
+        width: 82%;
+    }
 
+    .filter-home-col-2 {
+        width: 18%;
+    }
+}
 
+/* After screen size 1024px */
+@media (max-width: 1030px) {
+    .image-container {
+        width: 209px !important;
+    }
+
+    .filter-home-col-2 {
+        width: 20%;
+    }
+
+    .filter-home-col-10 {
+        width: 80%;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-home-col-2 {
+        display: none;
+    }
+
+    .image-container {
+        width: 186px !important;
+    }
+
+    .filter-home-col-10 {
+        width: var(--full-width);
+    }
+}
+
+@media (max-width: 430px) {
+    .image-container {
+        width: 200px !important;
+    }
+
+    .overlay-text {
+        padding: 0 !important;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .image-container {
+        width: 175px !important;
+    }
+
+    .overlay-text {
+        padding: 0 !important;
+    }
+}
+
+@media (max-width: 430px) {
+    .footer .logo {
+        margin-bottom: 15px;
+    }
+
+    .follo-link-footer {
+        margin-bottom: 15px;
+    }
+
+    .menu-footer-a {
+        margin-bottom: 15px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer .row {
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .thumbnail-container {
+        flex-direction: row;
+        padding: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main-image-container {
+        order: -1;
+    }
+
+    .product-title {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .btn-inquiry {
+        width: var(--full-width);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .productdetails-page .tiles-design-image-container {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .productdetails-page .tiles-design-image-container {
+        grid-template-columns: repeat(5, 1fr) !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .productdetails-page .tiles-design-image-container {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+}
+
+@media (max-width: 425px) {
+    .productdetails-page .tiles-design-image-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    .Similar-Mockups .tiles-design-image-container .img-box {
+        height: 100%;
+        max-height: 200px !important;
+    }
+}
+
+@media (max-width: 968px) {
+
+    .partner-cta-content-wrapper {
+        max-width: var(--full-width);
+    }
+}
+
+@media (max-width: 768px) {
+    .partner-cta-partner-cta {
+        padding: 40px 20px;
+    }
+
+    .partner-cta-heading {
+        font-size: 32px;
+    }
+
+    .partner-cta-description {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-sm-12 {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-main-title {
+        font-size: 32px;
+    }
+
+    .blog-search-input {
+        padding: 12px 15px 12px 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 30px 15px;
+        margin: 15px;
+    }
+
+    .testimonial-heading {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .slider-container {
+        height: 350px;
+    }
+
+    .testimonial-slide {
+        width: 90%;
+    }
+
+    .testimonial-card {
+        padding: 25px 20px;
+    }
+
+    .testimonial-text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 40px 0;
+    }
+
+    .contact-page-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .tiles-design-page .tiles-design-image-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .tiles-design-page .tiles-design-image-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .tiles-design-page .tiles-design-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .tiles-design-page .tiles-design-image-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 993px) {
+    .min-screen-991-display-none {
+        display: none !important;
+    }
+
+    .mobile-nav {
+        padding: 1rem;
+        background: white;
+        position: relative;
+    }
+
+    .search-container {
+        background: #dfdfdf;
+        border-radius: 25px;
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .filter-home-col-10 {
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .grid-gallery .grid li {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-gallery .grid li {
+        width: calc(50% - 10px);
+    }
 }

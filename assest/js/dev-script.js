@@ -12,92 +12,90 @@
 
 // 1. Enable hover dropdown on desktop
 document.addEventListener('DOMContentLoaded', function () {
-    if (window.innerWidth > 768) {
-        const dropdowns = document.querySelectorAll('.dropdown');
-        dropdowns.forEach(dropdown => {
-            dropdown.addEventListener('mouseover', function () {
-                this.querySelector('.dropdown-menu').classList.add('show');
-            });
-            dropdown.addEventListener('mouseleave', function () {
-                this.querySelector('.dropdown-menu').classList.remove('show');
-            });
-        });
-    }
+   if (window.innerWidth > 768) {
+      const dropdowns = document.querySelectorAll('.dropdown');
+      dropdowns.forEach(dropdown => {
+         dropdown.addEventListener('mouseover', function () {
+            this.querySelector('.dropdown-menu').classList.add('show');
+         });
+         dropdown.addEventListener('mouseleave', function () {
+            this.querySelector('.dropdown-menu').classList.remove('show');
+         });
+      });
+   }
 });
 
 
 // 2. backdrop add in phone view nav
 
 function toggleMenu() {
-    let menu = document.getElementById("toggleMenu");
-    let backdrop = document.getElementById("backdrop");
+   let menu = document.getElementById("toggleMenu");
+   let backdrop = document.getElementById("backdrop");
 
-    menu.classList.toggle("active"); 
-    backdrop.style.display = menu.classList.contains("active") ? "block" : "none"; 
+   menu.classList.toggle("active");
+   backdrop.style.display = menu.classList.contains("active") ? "block" : "none";
 }
 
 // 3. filterbtn open sliderk
 function openFilter() {
-    document.getElementById("filterMenu").classList.add("active");
-    document.getElementById("backdrop").style.display = "block";
+   document.getElementById("filterMenu").classList.add("active");
+   document.getElementById("backdrop").style.display = "block";
 }
 
 function closeFilter() {
-    document.getElementById("filterMenu").classList.remove("active");
-    document.getElementById("backdrop").style.display = "none";
+   document.getElementById("filterMenu").classList.remove("active");
+   document.getElementById("backdrop").style.display = "none";
 }
-
 
 
 // 4. popup model script
 document.addEventListener("DOMContentLoaded", function () {
-    let modal = document.getElementById("modal");
-    let closeBtn = document.querySelector(".modal-close-btn");
+   let modal = document.getElementById("modal");
+   let closeBtn = document.querySelector(".modal-close-btn");
 
-    if (modal) {
-        setTimeout(function () {
-            modal.style.display = "block";
-            document.body.classList.add("modal-open");
-        }, 5000);
-    }
+   if (modal) {
+      setTimeout(function () {
+         modal.style.display = "block";
+         document.body.classList.add("modal-open");
+      }, 5000);
+   }
 
-    if (closeBtn) {
-        closeBtn.onclick = function () {
-            modal.style.display = "none";
-            document.body.classList.remove("modal-open");
-        };
-    }
+   if (closeBtn) {
+      closeBtn.onclick = function () {
+         modal.style.display = "none";
+         document.body.classList.remove("modal-open");
+      };
+   }
 });
 
 
 //7. product detail page
 
- document.addEventListener('DOMContentLoaded', function() {
-    const thumbnails = document.querySelectorAll('.thumbnail');
-    const mainImage = document.querySelector('.main-image');
-    
-    thumbnails.forEach(thumb => {
-        thumb.addEventListener('click', function() {
-            thumbnails.forEach(t => t.classList.remove('active'));
-            this.classList.add('active');
-            mainImage.src = this.src.replace('60/60', '500/500');
-        });
-    });
-    
-    const colorOptions = document.querySelectorAll('.color-option');
-    colorOptions.forEach(option => {
-        option.addEventListener('click', function() {
-            colorOptions.forEach(o => o.classList.remove('active'));
-            this.classList.add('active');
-        });
-    });
-});
-    
-//10.  tiles design page
-document.getElementById("viewMoreBtn").addEventListener("click", function() {
-    document.querySelectorAll(".hidden").forEach(item => {
-        item.classList.remove("hidden");
-    });
-    this.style.display = "none";
+document.addEventListener('DOMContentLoaded', function () {
+   const thumbnails = document.querySelectorAll('.thumbnail');
+   const mainImage = document.querySelector('.main-image');
+
+   thumbnails.forEach(thumb => {
+      thumb.addEventListener('click', function () {
+         thumbnails.forEach(t => t.classList.remove('active'));
+         this.classList.add('active');
+         mainImage.src = this.src.replace('60/60', '500/500');
+      });
+   });
+
+   const colorOptions = document.querySelectorAll('.color-option');
+   colorOptions.forEach(option => {
+      option.addEventListener('click', function () {
+         colorOptions.forEach(o => o.classList.remove('active'));
+         this.classList.add('active');
+      });
+   });
 });
 
+//10.  tiles design page
+document.getElementById("viewMoreBtn").addEventListener("click", function () {
+   document.querySelectorAll(".hidden").forEach(item => {
+      item.classList.remove("hidden");
+   });
+   this.style.display = "none";
+});

@@ -139,6 +139,7 @@ body {
 
 .filter-home-col-2 {
 	width: 18.666667%;
+	border: 1px solid #e0e0e0; border-bottom: none;
 }
 
 .filter-home-col-10 {
@@ -537,8 +538,9 @@ body.modal-active::after {
 	right: 0;
 	bottom: 0;
 	background-color: rgba(0, 0, 0, 0.7);
-	z-index: 2;
+	z-index: 1; /* ↓ Lower than Bootstrap modal backdrop (1050) */
 	border-radius: var(--normal-border-radius);
+	position: absolute; /* make sure it's positioned correctly */
 }
 
 .tiles-design-image-container-first .img-box {
@@ -600,24 +602,26 @@ body.modal-active::after {
 	background-color: var(--white-color);
 	color: var(--secondary-color);
 	font-size: var(--normal-font-size);
-	font-weight: var(--font-weight-dark);
+	font-weight: 500;
 	bottom: 20px;
 	right: 20px;
-	z-index: 10;
+	z-index: 1; /* ↓ Lower than backdrop */
 	padding: 5px 16px;
-	font-weight: 500;
-	font-size: 14px;
+	position: absolute; /* ensure this is positioned right */
 }
 
 .backgournd-img-overlay {
 	background-image: url('../img/tiles-design/9c585b943de015c0db6bd2dc1fdd4e84.jpg');
 	width: 99%;
 	height: 340px;
-	border-radius: var(--normal-border-radius);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
+	border-radius: var(--normal-border-radius);
+	position: relative; /* needed for stacking context */
+	z-index: 0; /* explicitly put it at the bottom */
 }
+
 
 .modal-content-360-preview {
 	position: fixed;
@@ -630,8 +634,11 @@ body.modal-active::after {
 	width: 600px;
 	text-align: start;
 	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+	z-index: 1060; /* ✅ Ensure it's above backdrop */
 }
-
+.modal.show {
+	z-index: 1055; /* Bootstrap default */
+}
 /*4.3 second content  */
 
 .tiles-design-image-container {
@@ -2435,9 +2442,13 @@ textarea.form-control-contact {
 }
 
 .modal-backdrop {
-	z-index: 0 !important;
+	z-index: 1050 !important;
 }
 
+.z-index-custom{
+	position: relative;
+	z-index: -1;
+}
 
 .main-product-page .img-container {
 	position: relative;
@@ -2509,4 +2520,39 @@ textarea.form-control-contact {
 	100% {
 		left: 120%;
 	}
+}
+#filterMenu {
+  display: none; /* Hidden by default */
+}
+
+#filterMenu.active {
+  display: block; /* Show when active */
+}
+
+#backdrop {
+  display: none; /* Backdrop hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+.home-backdrop{
+	z-index: 3 !important;
+}
+.custom-width-150{
+	width: 150px
+}
+.custom-width-850{
+	width: 850px;
+}
+.custom-border-right{
+	border-right: 1px solid #dfdfe8;
+}
+.custom-border-mockup-all{
+	border: 1px solid #e0e0e0; border-bottom: none;
+}
+.backgound-dark{
+	background-color: #101828cc;
 }

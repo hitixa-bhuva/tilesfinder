@@ -204,7 +204,7 @@
             </div>
          </div>
          <!-- Backdrop (Blur Background) -->
-         <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+         <div class="modal-backdrop" id="backdrop" onclick="toggleMenu()"></div>
          <nav class="navbar mobile-nav">
             <div class="container-fluid p-0">
                <button class="navbar-toggler" type="button" onclick="toggleMenu()">
@@ -499,7 +499,7 @@
       <section>
          <div class="row">
          <div class="col-md-2 filter-home-col-2 d-md-none d-sm-none d-lg-block"
-            style="border: 1px solid #e0e0e0; border-bottom: none;">
+>
             <div class="filter-header p-3 pb-0">
           
                <h5 class="mb-0 filter-title">
@@ -697,8 +697,7 @@
                         data-bs-toggle="modal" data-bs-target="#tileDesign360Modal">
                      360° View
                      </button>
-                     <div class="modal fade" id="tileDesign360Modal" tabindex="-1"
-                        aria-labelledby="tileDesign360ModalLabel" aria-hidden="true">
+                     <div class="modal fade" id="tileDesign360Modal"  aria-labelledby="tileDesign360ModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                            <div class="modal-content-360-preview">
                               <div class="modal-header-360-preview">
@@ -716,7 +715,7 @@
                </div>
             </div>
             <!-- second content  -->
-            <div class="tiles-design-page">
+            <div class="tiles-design-page z-index-custom">
                <div class=" tiles-design-image-container tiles-design-image-container-first">
                   <div class="img-box">
                      <img src="https://i.pinimg.com/736x/6e/52/f3/6e52f31081fd622e891990aae09285e8.jpg" class="tiles-design-img" alt="Subway Tiles">

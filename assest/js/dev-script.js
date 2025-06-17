@@ -37,16 +37,13 @@ function toggleMenu() {
 }
 
 // 3. filterbtn open sliderk
-function openFilter() {
-   document.getElementById("filterMenu").classList.add("active");
-   document.getElementById("backdrop").style.display = "block";
-}
+  function openFilter() {
+    document.querySelector('.filter-home-col-2').classList.add('active');
+  }
 
-function closeFilter() {
-   document.getElementById("filterMenu").classList.remove("active");
-   document.getElementById("backdrop").style.display = "none";
-}
-
+  function closeFilter() {
+    document.querySelector('.filter-home-col-2').classList.remove('active');
+  }
 
 // 4. popup model script
 document.addEventListener("DOMContentLoaded", function () {

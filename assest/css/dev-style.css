@@ -808,15 +808,20 @@ body.modal-active::after {
 }
 
 .btn-view-more:hover {
-	border: 1px solid var(--secondary-color);
-	color: var(--secondary-color);
+    transform: scale(1.03); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    background-color: var(--secondary-color); /* Keep the same background color */
+	color: #fff;
 }
 
-.btn-view-more img:hover {
-	color: var(--secondary-color);
+/* Optional: Slight movement for the arrow icon */
+.btn-view-more:hover img {
+    transform: translateX(3px); /* Move arrow slightly to the right */
+	color: #fff;
 }
 
-/*5. product details page */
+
+/*5. product details p	age */
 /* 5.1. product detail */
 
 .product-container {
@@ -834,7 +839,7 @@ body.modal-active::after {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	padding: 15px 0;
+	padding: 20px 11px 20px 11px;
 	background-color: #F4F3F8;
 }
 
@@ -865,7 +870,7 @@ body.modal-active::after {
 	border-radius: var(--normal-border-radius);
 	object-fit: var(--object-fit);
 	transition: transform 0.3s;
-	margin: 1rem;
+	margin: 28px 1rem 28px 1rem;
 }
 
 .main-image:hover {
@@ -997,9 +1002,14 @@ body.modal-active::after {
 }
 
 .btn-inquiry:hover {
-	border: 1px solid var(--secondary-color);
-	color: var(--secondary-color);
-	background-color: var(--white-color);
+    transform: scale(1.03); /* Slightly increase size */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a soft shadow */
+    background-color: var(--secondary-color); /* Keep the same background color */
+}
+
+/* Optional: Slight movement for the arrow icon */
+.btn-inquiry:hover img {
+    transform: translateX(3px); /* Move arrow slightly to the right */
 }
 
 .arrow-icon {
@@ -1227,7 +1237,16 @@ body.modal-active::after {
 	height: 360px;
 	border-radius: var(--normal-border-radius);
 }
-
+.blog-details-introduction{
+	width:100% !important;
+	word-wrap:break-word;
+}
+ 
+.blog-details-introduction img {
+	width: var(--full-width);
+	height: 360px;
+	border-radius: var(--normal-border-radius);
+}
 /* 7.5 blog details introduction section */
 .blog-details-introduction h1 {
 	font-family: var(--sansation-font);
@@ -1334,14 +1353,12 @@ body.modal-active::after {
 .blogdetails-col-4-read-more {
 	display: flex;
 	align-items: center;
-	color: #4B5563;
 	text-decoration: none;
 	font-size: var(--normal-font-size);
 	font-weight: 500;
 	border: 1px solid var(--ligh-gray);
 	padding: 5px 8px 5px 12px;
 	border-radius: 24px;
-	width: 15vh;
 	color: #061508;
 }
 
@@ -2296,12 +2313,14 @@ textarea.form-control-contact {
 	position: relative;
 	overflow: hidden;
 	border-radius: 10px;
+	max-height: 220px;
 	width: 100%;
 	height: 100%;
 }
 
 .img-box-blogdetails img {
 	width: 100%;
+	max-height: 220px;
 	height: 100%;
 	display: block;
 	object-fit: cover;
@@ -2515,13 +2534,13 @@ textarea.form-control-contact {
 		left: 120%;
 	}
 }
-#filterMenu {
-  display: none; /* Hidden by default */
+/* #filterMenu {
+  display: none; 
 }
 
 #filterMenu.active {
-  display: block; /* Show when active */
-}
+  display: block; 
+} */
 
 #backdrop {
   display: none; /* Backdrop hidden by default */
@@ -2539,7 +2558,12 @@ textarea.form-control-contact {
 	width: 150px
 }
 .custom-width-850{
-	width: 850px;
+	width: 1000px;
+}
+@media (max-width: 1024px) {
+    .custom-width-850 {
+        width: 800px;
+    }
 }
 .custom-border-right{
 	border-right: 1px solid #dfdfe8;
@@ -2549,4 +2573,13 @@ textarea.form-control-contact {
 }
 .backgound-dark{
 	background-color: #101828cc;
+}
+
+/*=================================================== 05-06-2025 change=================================================== */
+.custompadding-border{
+	padding: 30px 28px 35px 0px;
+}
+.dropdown-item.text-break {
+	white-space:inherit !important; 
+	word-wrap: break-word;
 }

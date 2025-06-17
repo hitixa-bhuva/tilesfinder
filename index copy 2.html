@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TilesFinder</title>
+        <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+        <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+        <meta name="author" content="Codrops" />
+        <meta name="robots" content="noindex, nofollow" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assest/css/nav-bar.css" />
+        <link rel="stylesheet" href="./assest/css/dev-style.css" />
+        <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+          <style>
+/* Hide mobile sidebar (if exists) */
+.filter-menu-mobile {
+  display: none !important;
+}   
+
+/* Make desktop sidebar act as slide-in on mobile */
+@media (max-width: 991px) {
+  .filter-home-col-2 {
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    background: #fff;
+    z-index: 1050;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  }
+
+  .filter-home-col-2.active {
+    transform: translateX(0);
+  }
+
+  .filter-toggle {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1100;
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+
+  .filter-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: #000;
+  }
+}
+
+/* On desktop: show sidebar always */
+@media (min-width: 992px) {
+  .filter-home-col-2 {
+    transform: none !important;
+    position: static !important;
+    width: auto !important;
+    height: auto !important;
+    background: none !important;
+    box-shadow: none !important;
+  }
+
+  .filter-toggle {
+    display: none !important;
+  }
+}
+
+
+    </style>
+    </head>
+    <body>
+        <div class="d-lg-block home-first-nav">
+            <!-- Home top navrbar  -->
+            <nav class="navbar navbar-expand-lg navbar-light top-nav">
+                <div class="container-fluid px-3">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder" />
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarContent">
+                        <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
+                            <div class="search-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                                </svg>
+                                <input type="text" placeholder="Search for tiles" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- 768 after show  -->
+        <div class="">
+          
+            <div class="backdrop home-backdrop" id="backdrop"></div>
+        </div>
+        <section class="mb-5">
+            <div class="row">
+                <!-- desktop view side bar -->
+                <div class="col-md-2 filter-home-col-2">
+  <div id="filterMenu" class="filter-sidebar">
+    <div class="filter-header">
+      <h5>
+        <!-- SVG funnel icon -->
+        Filter
+      </h5>
+      <!-- Close button (mobile only) -->
+      <button class="filter-close d-block d-lg-none" onclick="closeFilter()">✕</button>
+    </div>
+    <hr />
+    <div class="filter-section">
+                    <h6 class="filter-header">Applied filters <span class="count-cleare">Clear all</span></h6>
+                    <div>
+                        <div class="filter-options">
+                            <span class="filter-badge">395×395 mm ×</span>
+                            <span class="filter-badge">Ceramic ×</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="filter-section">
+                    <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byType" role="button" aria-controls="byType">
+                        <div class="header-title">By Type <span class="count">3</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </h6>
+                    <div class="collapse" id="byType">
+                        <div class="filter-options">
+                            <span class="filter-option">Manufacturer</span>
+                            <span class="filter-option">Wholesaler</span>
+                            <span class="filter-option">Admin</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="filter-section">
+                    <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button" aria-controls="bySize">
+                        <div class="header-title">By Size <span class="count">3</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </h6>
+                    <div class="collapse" id="bySize">
+                        <div class="filter-options">
+                            <span class="filter-option selected">395×395 mm</span>
+                            <span class="filter-option">800×800 mm</span>
+                            <span class="filter-option">200×1200 mm</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="filter-section">
+                    <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria-controls="byCategory">
+                        <div class="header-title">By Category <span class="count">5</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </h6>
+                    <div class="collapse" id="byCategory">
+                        <div class="filter-options">
+                            <span class="filter-option">Marble</span>
+                            <span class="filter-option">Texture</span>
+                            <span class="filter-option">Mosaic</span>
+                            <span class="filter-option">Pattern</span>
+                            <span class="filter-option">Stone</span>
+                            <span class="filter-option">Cement</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="filter-section">
+                    <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button" aria-controls="byLook">
+                        <div class="header-title">By Look <span class="count">6</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </h6>
+                    <div class="collapse" id="byLook">
+                        <div class="filter-options">
+                            <span class="filter-option">Marble</span>
+                            <span class="filter-option">Texture</span>
+                            <span class="filter-option">Mosaic</span>
+                            <span class="filter-option">Pattern</span>
+                            <span class="filter-option">Stone</span>
+                            <span class="filter-option">Cement</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="filter-section">
+                    <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button" aria-controls="byFinish">
+                        <div class="header-title">By Finish <span class="count">4</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </h6>
+                    <div class="collapse" id="byFinish">
+                        <div class="filter-options">
+                            <span class="filter-option">Matt</span>
+                            <span class="filter-option">Glossy</span>
+                            <span class="filter-option">Super Glossy</span>
+                            <span class="filter-option">Sugar Finish</span>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+  </div>
+</div>
+<!-- Filter toggle button (for mobile) -->
+<button class="filter-toggle d-block d-lg-none" onclick="openFilter()">☰ Open Filters</button>
+            </div>
+        </section>
+        <script>
+  function openFilter() {
+    document.querySelector('.filter-home-col-2').classList.add('active');
+  }
+
+  function closeFilter() {
+    document.querySelector('.filter-home-col-2').classList.remove('active');
+  }
+        </script>
+    </body>
+</html>

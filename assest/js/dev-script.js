@@ -11,19 +11,19 @@
 // 10. tiles design page
 
 // 1. Enable hover dropdown on desktop
-document.addEventListener('DOMContentLoaded', function () {
-   if (window.innerWidth > 768) {
-      const dropdowns = document.querySelectorAll('.dropdown');
-      dropdowns.forEach(dropdown => {
-         dropdown.addEventListener('mouseover', function () {
-            this.querySelector('.dropdown-menu').classList.add('show');
-         });
-         dropdown.addEventListener('mouseleave', function () {
-            this.querySelector('.dropdown-menu').classList.remove('show');
-         });
-      });
-   }
-});
+// document.addEventListener('DOMContentLoaded', function () {
+//    if (window.innerWidth > 768) {
+//       const dropdowns = document.querySelectorAll('.dropdown');
+//       dropdowns.forEach(dropdown => {
+//          dropdown.addEventListener('mouseover', function () {
+//             this.querySelector('.dropdown-menu').classList.add('show');
+//          });
+//          dropdown.addEventListener('mouseleave', function () {
+//             this.querySelector('.dropdown-menu').classList.remove('show');
+//          });
+//       });
+//    }
+// });
 
 
 // 2. backdrop add in phone view nav
@@ -90,9 +90,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 //10.  tiles design page
-document.getElementById("viewMoreBtn").addEventListener("click", function () {
-   document.querySelectorAll(".hidden").forEach(item => {
-      item.classList.remove("hidden");
-   });
-   this.style.display = "none";
-});
+// document.getElementById("viewMoreBtn").addEventListener("click", function () {
+//    document.querySelectorAll(".hidden").forEach(item => {
+//       item.classList.remove("hidden");
+//    });
+//    this.style.display = "none";
+// });

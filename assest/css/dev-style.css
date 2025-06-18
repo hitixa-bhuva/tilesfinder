@@ -304,7 +304,7 @@ body {
 }
 
 .mockup-icon {
-	background-color: var(--secondary-color);
+	background-color: #4169E1;
 	color: white;
 	width: 40px;
 	height: 40px;
@@ -933,7 +933,8 @@ body.modal-active::after {
 	border-radius: 50%;
 	margin-right: 8px;
 	cursor: pointer;
-	border: 2px solid transparent;
+	border: 2px solid ;
+	border-color: #6c757d !important;
 }
 
 /* Pieces per box styling */
@@ -1094,7 +1095,7 @@ body.modal-active::after {
 	content: '';
 	position: absolute;
 	inset: 0;
-	background-image: url(/assest/img/contact/Backgroundpattern.png);
+	background-image: url(/tilesfinder/assest/img/contact/Backgroundpattern.png);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: contain;
@@ -1163,7 +1164,7 @@ body.modal-active::after {
 	width: var(--full-width);
 	font-size: 16px;
 	color: #6D7076;
-	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 6px rgb(0 0 0 / 22%);
 	border-radius: 30px;
 	padding: 18px 16px 18px 50px;
 	border: none;
@@ -2195,7 +2196,7 @@ textarea.form-control-contact {
 /* 12. HOW TO CONNECT AS A PARTNER */
 /* 12.1 cta section */
 .partner-cta {
-	background: linear-gradient(45deg, #4169E1, #4B7BFF);
+	background: #4169E1;
 	border-radius: 24px;
 	position: relative;
 	overflow: hidden;
@@ -2244,12 +2245,12 @@ textarea.form-control-contact {
 
 .partner-cta-connect-image::before {
 	left: 0;
-	background: linear-gradient(to right, #5077ed, #4169E100);
+	background: linear-gradient(to right, #4169E1, #4169E100);
 }
 
 .partner-cta-connect-image::after {
 	right: -15px;
-	background: linear-gradient(to left, #5077ed, #4169E100);
+	background: linear-gradient(to left, #4169E1, #4169E100);
 }
 
 .partner-cta-description {
@@ -2582,4 +2583,33 @@ textarea.form-control-contact {
 .dropdown-item.text-break {
 	white-space:inherit !important; 
 	word-wrap: break-word;
+}
+.accordion-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: var(--bs-accordion-btn-padding-y) var(--bs-accordion-btn-padding-x);
+    font-size: 1rem;
+    color: var(--bs-accordion-btn-color);
+    text-align: left;
+    background-color: #F3F3F8 !important;
+    border: 0;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: var(--bs-accordion-transition);
+}
+.mega-dropdown-full {
+    left: 0 !important;
+    right: 0 !important;
+    width: 100vw;
+    max-width: 100vw;
+    border-radius: 0;
+    top: 100%; /* position below nav */
+    padding: 2rem;
+    position: absolute;
+    z-index: 1000;
+}
+.nav-item.dropdown {
+    position: relative;
 }

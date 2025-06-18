@@ -18,6 +18,7 @@
         <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
         <script src="./assest/js/modernizr.custom.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
     </head>
     <body>
         <div class="d-lg-block home-first-nav">
@@ -210,8 +211,6 @@
                             />
                         </svg>
                     </span>
-<!-- <button class="filter-toggle d-block d-lg-none" onclick="openFilter()">☰ Open Filters</button> -->
-
                 </div>
             </div>
             <!-- Filter Sidebar (Slider) -->
@@ -299,19 +298,19 @@
             <div class="row">
                 <!-- desktop view side bar -->
                 <div class="col-md-2 filter-home-col-2">
-  <div id="filterMenu" class="filter-sidebar">
-    <div class="filter-header Filter-custom-space">
-      <h5>
-        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
-                        </svg>
-        Filter
-      </h5>
-      <!-- Close button (mobile only) -->
-      <button class="filter-close d-block d-lg-none" onclick="closeFilter()">✕</button>
-    </div>
-    <hr />
-    <div class="filter-section">
+                    <div id="filterMenu" class="filter-sidebar">
+                      <div class="filter-header Filter-custom-space">
+                        <h5>
+                          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
+                                              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
+                                          </svg>
+                          Filter
+                        </h5>
+                        <!-- Close button (mobile only) -->
+                        <button class="filter-close d-block d-lg-none" onclick="closeFilter()">✕</button>
+                      </div>
+                      <hr />
+                   <div class="filter-section">
                     <h6 class="filter-header">Applied filters <span class="count-cleare">Clear all</span></h6>
                     <div>
                         <div class="filter-options">
@@ -444,10 +443,9 @@
                         </div>
                     </div>
                 </div>
-                <hr />
-
-  </div>
-</div>
+                <hr/>
+            </div>
+        </div>
                 <div class="col-md-10 filter-home-col-10 p-0">
                     <div class="container-fluid">
                         <div id="grid-gallery" class="grid-gallery">
@@ -925,5 +923,6 @@
                 new CBPGridGallery(document.getElementById("grid-gallery"));
             });
         </script>
+
     </body>
 </html>

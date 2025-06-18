@@ -1,0 +1,449 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 - Page Not Found | TilesFinder</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: #f8f8f8;
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+            }
+
+            /* Header Styles */
+            .header {
+                background: #4169E1;
+                padding: 0.5rem 0;
+                box-shadow: 0 2px 10px rgba(65, 105, 225, 0.3);
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+            }
+
+            .header-container {
+                max-width: 1800px;
+                margin: 0 auto;
+                padding: 0 1rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .logo {
+                width: 150px;
+                height: auto;
+                background: white;
+                padding: 8px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            .nav-menu {
+                display: flex;
+                list-style: none;
+                gap: 2rem;
+            }
+
+            .nav-menu li a {
+                color: white;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.1rem;
+                padding: 0.5rem 1rem;
+                border-radius: 6px;
+                transition: all 0.3s ease;
+                position: relative;
+            }
+
+            .nav-menu li a:hover {
+                background: rgba(255, 255, 255, 0.2);
+                transform: translateY(-2px);
+            }
+
+            .mobile-menu-toggle {
+                display: none;
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            /* Main Content */
+            .main-content {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 4rem 2rem;
+                text-align: center;
+            }
+
+            .error-section {
+                max-width: 800px;
+                margin: 0 auto;
+            }
+        
+            /* Action Buttons */
+            .action-buttons {
+                display: flex;
+                gap: 1rem;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .btn {
+                padding: 1rem 2rem;
+                font-size: 1.1rem;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                text-decoration: none;
+                font-weight: 600;
+                transition: all 0.3s ease;
+                display: inline-flex;
+                align-items: center;
+                gap: 0.5rem;
+            }
+
+            .btn-primary {
+                background: #4169E1;
+                color: white;
+                box-shadow: 0 4px 15px rgba(65, 105, 225, 0.4);
+            }
+
+            .btn-primary:hover {
+                transform: translateY(-3px);
+                box-shadow: 0 8px 25px rgba(65, 105, 225, 0.5);
+            }
+
+            .btn-secondary {
+                background: white;
+                color: #4169E1;
+                border: 2px solid #4169E1;
+            }
+
+            .btn-secondary:hover {
+                background: #4169E1;
+                color: white;
+                transform: translateY(-3px);
+            }
+            .text-secondary{
+                color: #6c757d;
+            }
+            .text-decoration-none{
+                text-decoration: none;
+            }
+            /* Footer */
+            .second-footer {
+                background-color: #101828;
+                color: #ffffff;
+                padding: 5px;
+            }
+            .justify-content-space-between{
+                display: flex;
+                justify-content: space-between;
+            }
+            .text-center{
+                text-align: center;
+            }
+            .privacypolicy-text{
+                color: #ffffff;
+                text-decoration: none;
+            }
+            
+    .logo {
+        width: 200px;
+    }
+    
+    h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+        color: #333;
+    }
+    
+    .message {
+        font-size: 1.1rem;
+        margin: 0.5rem 0 2rem;
+        color: #555;
+    }
+    
+    .stack-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        perspective: 1000px;
+    }
+    
+    .tile {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 0.6s ease;
+        cursor: pointer;
+    }
+    
+    .flip-stack .tile:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .front, .back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        backface-visibility: hidden;
+        padding-bottom: 15px;
+        transition: background 0.3s, color 0.3s;
+    }
+    
+    .front {
+        border: 1px solid #4169E1;
+        background-color: #ffffff;
+        color: #4169E1;
+    }
+    
+    .back {
+        background-color: #4169E1;
+        color: #ffffff;
+        transform: rotateY(180deg);
+    }
+    
+    .bigFonts {
+        font-size: 160px;
+    }
+    
+    .home-button {
+        padding: 0.8rem 2rem;
+        font-size: 1rem;
+        background-color: #4169E1;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+        text-decoration: none;
+    }
+    
+        .home-button:hover {
+            background-color: #274bbf;
+        }
+    
+    .image-wrapper {
+        background-color: white;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 12px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+    
+        .image-wrapper img {
+            display: block;
+            border-radius: 8px;
+            max-width: 100%;
+            height: auto;
+        }
+    
+    @media (max-width: 430px) {
+        .tile {
+            width: 100px;
+            height: 100px;
+        }
+    
+        .bigFonts {
+            font-size: 100px;
+        }
+    
+        h2 {
+            font-size: 1.5rem;
+        }
+    
+        .message {
+            font-size: 1rem;
+        }
+    
+        .home-button {
+            font-size: 0.9rem;
+            padding: 0.6rem 1.5rem;
+        }
+    
+        .logo {
+            width: 140px;
+        }
+    }
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                .nav-menu {
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    right: 0;
+                    background: #4169E1;
+                    flex-direction: column;
+                    padding: 1rem;
+                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+                }
+
+                .mobile-menu-toggle {
+                    display: block;
+                }
+
+                .header-container {
+                    padding: 0 1rem;
+                    position: relative;
+                }
+
+                .logo {
+                    width: 120px;
+                }
+
+                .main-content {
+                    padding: 2rem 1rem;
+                }
+            }
+
+
+            /* Animation */
+            @keyframes fadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .error-section > * {
+                animation: fadeIn 0.8s ease forwards;
+            }
+
+        body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f8f8f8;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem;
+        flex-direction: column;
+    }
+
+        </style>
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <img src="./assest/img/logo/TilesFinder 1.png" alt="TilesFinder Logo" class="logo" />
+                
+                <nav>
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="#">By Design</a></li>
+                        <li><a href="#">By Mockup</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                    <button class="mobile-menu-toggle" id="mobileToggle">☰</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- 404 Flip Tiles -->
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="error-section">
+                <div class="stack-container flip-stack">
+                    <div class="tile" style="--delay: 0.1s">
+                        <div class="front bigFonts">4</div>
+                        <div class="back bigFonts">4</div>
+                    </div>
+                    <div class="tile" style="--delay: 0.3s">
+                        <div class="front bigFonts">0</div>
+                        <div class="back bigFonts">0</div>
+                    </div>
+                    <div class="tile"  style="--delay: 0.5s">
+                        <div class="front bigFonts">4</div>
+                        <div class="back bigFonts">4</div>
+                    </div>
+                </div>
+
+                <h2>Oops! Page not found</h2>
+                <p class="message">The page you’re looking for doesn’t exist or has been moved.</p>
+                <a href="index.html" class="home-button">Go Back Home</a>
+            </div>
+        </main>
+
+
+    <footer class="second-footer">
+                    <div class="container-fluid">
+                        <div class="row text-center">
+                            <div class="col-md-12 justify-content-space-between p-2">
+                                <p class="mb-0">
+                                    Copyright © 2025 <a href="index.html" target="_blank" class="text-secondary text-decoration-none"> TilesFinders </a>, All rights Developed by
+                                    <a href="https://theuniqueitsolution.com/" target="_blank" class="text-secondary text-decoration-none">Unique IT Solution</a>
+                                </p>
+                                <p class="mb-0"><a href="privacypolicy.html" class="privacypolicy-text">Privacy Policy</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+        <script>
+            // Mobile menu toggle
+            const mobileToggle = document.getElementById('mobileToggle');
+            const navMenu = document.getElementById('navMenu');
+
+            mobileToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                mobileToggle.textContent = navMenu.classList.contains('active') ? '✕' : '☰';
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-menu a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                    mobileToggle.textContent = '☰';
+                });
+            });
+
+            // Add some interactive effects
+            document.querySelectorAll('.tile').forEach((tile, index) => {
+                tile.addEventListener('mouseenter', () => {
+                    // Add subtle scale effect
+                    tile.style.transform = 'scale(1.05) rotateY(180deg)';
+                });
+                
+                tile.addEventListener('mouseleave', () => {
+                    tile.style.transform = 'scale(1) rotateY(0deg)';
+                });
+            });
+        </script>
+    </body>
+    </html>

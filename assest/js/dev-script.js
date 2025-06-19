@@ -27,42 +27,73 @@
 
 
 // 2. backdrop add in phone view nav
+  function toggleMenu() {
+    const menu = document.getElementById("toggleMenu");
+    const backdrop = document.getElementById("backdrop");
+    const isOpen = menu.classList.toggle("active");
+    backdrop.style.display = isOpen ? "block" : "none";
+    closeFdsilter();
+  }
+  
+function closeFimklkmlter() {
+  const filter = document.getElementById("filterSidebar");
 
-function toggleMenu() {
-   let menu = document.getElementById("toggleMenu");
-   let backdrop = document.getElementById("backdrop");
-
-   menu.classList.toggle("active");
-   backdrop.style.display = menu.classList.contains("active") ? "block" : "none";
+  filter.classList.remove("active");
+  backdrop.classList.remove("show");
 }
 
-// 3. filterbtn open sliderk
-  function openFilter() {
-    document.querySelector('.filter-home-col-2').classList.add('active');
-  }
 
-  function closeFilter() {
-    document.querySelector('.filter-home-col-2').classList.remove('active');
-  }
+// 3. filterbtn open sliderk
+//   function openFilter() {
+//     document.querySelector('.filter-home-col-2').classList.add('active');
+//   }
+
+//   function closeFilter() {
+//     document.querySelector('.filter-home-col-2').classList.remove('active');
+//   }
 
 // 4. popup model script
+
 document.addEventListener("DOMContentLoaded", function () {
-   let modal = document.getElementById("modal");
-   let closeBtn = document.querySelector(".modal-close-btn");
+  let modal = document.getElementById("modal");
+  let closeBtn = document.querySelector(".modal-close-btn");
 
-   if (modal) {
-      setTimeout(function () {
-         modal.style.display = "block";
-         document.body.classList.add("modal-open");
-      }, 5000);
-   }
+  if (modal) {
+    setTimeout(function () {
+      closeAllSidebars();
 
-   if (closeBtn) {
-      closeBtn.onclick = function () {
-         modal.style.display = "none";
-         document.body.classList.remove("modal-open");
-      };
-   }
+      modal.style.display = "block";
+      document.body.classList.add("modal-open");
+    }, 5000);
+  }
+
+  if (closeBtn) {
+    closeBtn.onclick = function () {
+      modal.style.display = "none";
+      document.body.classList.remove("modal-open");
+    };
+  }
+  function closeAllSidebars() {
+    const menu = document.getElementById("toggleMenu");
+    const backdrop = document.getElementById("backdrop");
+    if (menu && menu.classList.contains("active")) {
+      menu.classList.remove("active");
+    }
+    if (backdrop) {
+      backdrop.style.display = "none";
+    }
+
+    const filterSidebar = document.getElementById("filterSidebar");
+    const filterBackdrop = document.getElementById("filterBackdrop");
+    if (filterSidebar && filterSidebar.classList.contains("show")) {
+      filterSidebar.classList.remove("show");
+    }
+    if (filterBackdrop && filterBackdrop.classList.contains("show")) {
+      filterBackdrop.classList.remove("show");
+    }
+
+    document.body.classList.remove("no-scroll");
+  }
 });
 
 

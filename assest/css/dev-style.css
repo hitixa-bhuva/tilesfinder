@@ -1,7 +1,6 @@
-@import url('https://fonts.cdnfonts.com/css/sansation');
 
 * {
-	font-family: 'Sansation', sans-serif !important;
+	font-family: "Rubik", sans-serif !important; 
 }
 
 /* 1.home page css
@@ -206,7 +205,6 @@ body {
 }
 
 .footer h5 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -216,8 +214,6 @@ body {
 
 .footer ul li {
 	margin-bottom: 6px;
-	font-family: var(--sansation-font);
-	font-weight: 500;
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
 	letter-spacing: var(--letter-spacing);
@@ -408,10 +404,20 @@ body.modal-active::after {
 	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
 	pointer-events: auto;
 }
-
+.modal-content-360view{
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background: #000000c0;
+	padding: 20px;
+	border-radius: 24px;
+	text-align: start;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+	pointer-events: auto;
+}
 
 .modal-content h2 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -430,7 +436,6 @@ body.modal-active::after {
 }
 
 .pincode-label {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -605,14 +610,14 @@ body.modal-active::after {
 	font-weight: 500;
 	bottom: 20px;
 	right: 20px;
-	z-index: 1; /* ↓ Lower than backdrop */
+	/* z-index: 1; */
 	padding: 5px 16px;
 	position: absolute; /* ensure this is positioned right */
 }
 
 .backgournd-img-overlay {
 	background-image: url('../img/tiles-design/9c585b943de015c0db6bd2dc1fdd4e84.jpg');
-	width: 99%;
+	width: 100%;
 	height: 340px;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -620,9 +625,9 @@ body.modal-active::after {
 	border-radius: var(--normal-border-radius);
 	position: relative; /* needed for stacking context */	
 }
-.modal-backdrop {
+/* .modal-backdrop {
 	z-index: 1050 !important;
-}
+} */
 
 /* .z-index-custom {
     z-index: -1;
@@ -677,7 +682,6 @@ body.modal-active::after {
 	padding: 10px;
 	box-sizing: border-box;
 	font-size: var(--normal-font-size);
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	line-height: var(--line-height);
 }
@@ -685,7 +689,6 @@ body.modal-active::after {
 
 /*4.4 Description */
 .Mockup-text-content h2 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -694,7 +697,6 @@ body.modal-active::after {
 }
 
 .Mockup-text-content p {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -712,7 +714,6 @@ body.modal-active::after {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -731,7 +732,6 @@ body.modal-active::after {
 
 /* <!--4.6 Blogs --> */
 .blogs-header {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -754,7 +754,6 @@ body.modal-active::after {
 }
 
 .blog-card-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 20px;
 	line-height: 28px;
@@ -763,7 +762,6 @@ body.modal-active::after {
 }
 
 .blog-card-text {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -780,7 +778,6 @@ body.modal-active::after {
 	padding-left: 12px;
 	gap: 6px;
 	border-width: 1px;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -798,7 +795,6 @@ body.modal-active::after {
 	border: none;
 	border-radius: 25px;
 	cursor: pointer;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -881,7 +877,6 @@ body.modal-active::after {
 	font-weight: var(--font-weight-normal-dark);
 	margin-bottom: 20px;
 	color: var(--primary-color);
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -996,7 +991,6 @@ body.modal-active::after {
 	padding-bottom: 9px;
 	padding-left: 20px;
 	gap: 6px;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1028,7 +1022,6 @@ body.modal-active::after {
 
 /* 5.6. Similar Mockups */
 .inquiry-form-modal-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -1037,7 +1030,6 @@ body.modal-active::after {
 }
 
 .inquiry-from-label {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -1046,7 +1038,6 @@ body.modal-active::after {
 }
 
 .inquiry-from-control {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1068,7 +1059,6 @@ body.modal-active::after {
 }
 
 .Similar-Mockups h2 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -1110,7 +1100,6 @@ body.modal-active::after {
 
 /* 6.2 bog breadcrumb */
 .blog-breadcrumb {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1122,7 +1111,6 @@ body.modal-active::after {
 }
 
 .blog-breadcrumb span {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1132,7 +1120,6 @@ body.modal-active::after {
 }
 
 .blog-main-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 60px;
 	line-height: 84px;
@@ -1169,7 +1156,6 @@ body.modal-active::after {
 	padding: 18px 16px 18px 50px;
 	border: none;
 	outline: none;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	line-height: 24px;
 }
@@ -1187,7 +1173,6 @@ body.modal-active::after {
 
 /* 7.1 blog details breadcrumb */
 .blogDetails-breadcrumb {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1199,7 +1184,6 @@ body.modal-active::after {
 }
 
 .blogDetails-breadcrumb span {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1210,7 +1194,6 @@ body.modal-active::after {
 
 /* 7.2 blog details main title */
 .blogDetails-main-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 32px;
 	line-height: 48px;
@@ -1220,7 +1203,6 @@ body.modal-active::after {
 
 /* 7.3 blog details data view */
 .blogdetail-date-view {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -1250,7 +1232,6 @@ body.modal-active::after {
 }
 /* 7.5 blog details introduction section */
 .blog-details-introduction h1 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -1259,7 +1240,6 @@ body.modal-active::after {
 }
 
 .blog-details-introduction h2 {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 20px;
 	line-height: 28px;
@@ -1268,7 +1248,6 @@ body.modal-active::after {
 }
 
 .blog-details-introduction p {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -1286,7 +1265,6 @@ body.modal-active::after {
 }
 
 .blogdetails-col-4-section-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -1295,7 +1273,6 @@ body.modal-active::after {
 }
 
 .see-all {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1401,7 +1378,6 @@ body.modal-active::after {
 }
 
 .contact-page-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -1412,7 +1388,6 @@ body.modal-active::after {
 .contact-page-description {
 	color: var(--dark-gray);
 	margin-bottom: 30px;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -1429,7 +1404,6 @@ body.modal-active::after {
 	align-items: center;
 	gap: 12px;
 	margin-bottom: 16px;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -1454,7 +1428,6 @@ body.modal-active::after {
 
 .form-control-contact {
 	padding: 13px 20px;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1476,7 +1449,6 @@ body.modal-active::after {
 	padding: 12px 16px;
 	border-radius: 8px;
 	color: #6D7076;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -1513,7 +1485,6 @@ textarea.form-control-contact {
 }
 
 .contact-form-label {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 16px;
 	line-height: var(--line-height);
@@ -1532,7 +1503,6 @@ textarea.form-control-contact {
 	border-radius: 1rem;
 	display: inline-block;
 	margin-bottom: 1rem;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 12px;
 	line-height: 18px;
@@ -1550,7 +1520,6 @@ textarea.form-control-contact {
 
 .about-heading {
 	margin-bottom: 1.5rem;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -1559,7 +1528,6 @@ textarea.form-control-contact {
 }
 
 .about-text {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -1631,7 +1599,6 @@ textarea.form-control-contact {
 }
 
 .mission-heading {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -1642,7 +1609,6 @@ textarea.form-control-contact {
 
 .mission-text {
 	color: var(--white-color);
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -1731,7 +1697,6 @@ textarea.form-control-contact {
 	font-size: 2.5rem;
 	margin-bottom: 1rem;
 	text-align: center;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -1759,7 +1724,6 @@ textarea.form-control-contact {
 }
 
 .offer-title {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 24px;
 	line-height: 36px;
@@ -1771,7 +1735,6 @@ textarea.form-control-contact {
 .offer-description {
 	color: var(--dark-gray);
 	font-size: 1rem;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -1904,7 +1867,6 @@ textarea.form-control-contact {
 }
 
 .testimonial-heading {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -1919,7 +1881,6 @@ textarea.form-control-contact {
 }
 
 .testimonial-heading {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -2004,7 +1965,6 @@ textarea.form-control-contact {
 }
 
 .testimonial-text {
-	font-family: var(--sansation-font);
 	font-weight: 400;
 	font-style: italic;
 	font-size: 32px;
@@ -2123,7 +2083,6 @@ textarea.form-control-contact {
 }
 
 .partners-heading {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -2184,7 +2143,6 @@ textarea.form-control-contact {
 }
 
 .logo-placeholder {
-	font-family: var(--sansation-font);
 	font-weight: 800;
 	font-size: 30.77px;
 	line-height: 40px;
@@ -2213,7 +2171,6 @@ textarea.form-control-contact {
 }
 
 .partner-cta-heading {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: 40px;
 	line-height: 52px;
@@ -2254,7 +2211,6 @@ textarea.form-control-contact {
 }
 
 .partner-cta-description {
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-light);
 	font-size: var(--normal-big-font-size);
 	line-height: 24px;
@@ -2271,7 +2227,6 @@ textarea.form-control-contact {
 	display: inline-block;
 	font-weight: var(--font-weight-normal-dark);
 	transition: transform 0.2s;
-	font-family: var(--sansation-font);
 	font-weight: var(--font-weight-dark);
 	font-size: var(--normal-font-size);
 	line-height: var(--line-height);
@@ -2295,7 +2250,6 @@ textarea.form-control-contact {
 }
 
 .filter-title {
-	font-family: Sansation;
 	font-weight: 700;
 	font-size: 16px;
 	line-height: 30px;
@@ -2403,9 +2357,22 @@ textarea.form-control-contact {
 .tiles-design-page .tiles-design-image-container .img-box {
 	max-width: 100%;
 	height: 100%;
-	max-height: 220px;
 }
-
+.recommended-design-card {
+	height: 100%;
+}
+.inquiry-btn-design{
+	border: 1px solid #4169E1;
+	border-radius: 20px;
+	background-color: transparent;
+	padding: 7px;
+	color: #4169E1;
+}
+.inquiry-btn-design:hover{
+	background-color: #4169E1;
+	color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
 .tiles-design-page .tiles-design-image-container .img-box img {
 	max-width: 100%;
 	height: 100%;
@@ -2433,7 +2400,7 @@ textarea.form-control-contact {
 	border-radius: 10px;
 }
 
-.tiles-design-page .tiles-design-overlay-text-second {
+/* .tiles-design-page .tiles-design-overlay-text-second {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -2449,8 +2416,8 @@ textarea.form-control-contact {
 	pointer-events: none;
 	text-align: center;
 	border-radius: 0 0 10px 10px;
-}
-
+} */
+/* 
 .tiles-design-page .img-box::after {
 	content: "";
 	position: absolute;
@@ -2462,7 +2429,7 @@ textarea.form-control-contact {
 	border-radius: 0 0 10px 10px;
 	pointer-events: none;
 	z-index: 2;
-}
+} */
 
 .main-product-page .img-container {
 	position: relative;
@@ -2544,7 +2511,7 @@ textarea.form-control-contact {
 } */
 
 #backdrop {
-  display: none; /* Backdrop hidden by default */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -2552,6 +2519,16 @@ textarea.form-control-contact {
   bottom: 0;
   background-color: rgba(0,0,0,0.5);
 }
+#filterbackdrop {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+}
+
 .home-backdrop{
 	z-index: 3 !important;
 }
@@ -2613,3 +2590,121 @@ textarea.form-control-contact {
 .nav-item.dropdown {
     position: relative;
 }
+.lastfooterpadding{
+	padding: .5rem 23px .5rem 19px !important;
+}
+.grid-gallery{
+	padding-top: 12px;
+}
+
+.recommended-design-image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      border-radius: 1rem;
+    }
+
+    .recommended-design-image-wrapper img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s;
+      border-radius: 1rem;
+    }
+
+    .recommended-design-card:hover img {
+      transform: scale(1.05);
+    }
+
+    .recommended-design-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+    }
+
+    .recommended-design-card:hover .recommended-design-overlay {
+      opacity: 1;
+    }
+
+    .recommended-design-overlay a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  background: #4169E1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  padding: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+
+    .recommended-design-overlay a:hover {
+      background: #4169e188;
+	  border: 1px solid #4169E1;
+    }
+	        
+         .filter-backdrop {
+         position: fixed;
+         top: 0;
+         left: 0;
+         height: 100vh;
+         width: 100vw;
+         background-color: rgba(0,0,0,0.5);
+         z-index: 998;
+         display: none;
+         }
+         .filter-backdrop.show {
+         display: block;
+         }
+       
+         .filter-sidebar.show {
+         transform: translateX(0);
+         }
+         /* Desktop: inside col-2 and sticky */
+         @media (min-width: 992px) {
+         .filter-sidebar {
+         position: sticky;
+         top: 0;
+         height: 100vh;
+         transform: none !important;
+         box-shadow: none;
+         z-index: auto;
+         }
+         .filter-container,
+         .filter-backdrop {
+         display: none !important;
+         }
+         }
+		  .modal-content-360view {
+      backdrop-filter: blur(10px);
+    }
+    .close-btn-blur {
+      backdrop-filter: blur(8px);
+      background-color: rgba(0, 0, 0, 0.4);
+      border-radius: 10px;
+    }
+
+    /* Responsive image container */
+    .viewer-container {
+      height: 70vh;
+      min-height: 400px;
+      background-color: #000;
+    }
+
+    @media (max-width: 576px) {
+      .viewer-container {
+        height: 60vh;
+        min-height: 300px;
+      }
+    }

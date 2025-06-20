@@ -547,6 +547,15 @@ body.modal-active::after {
 	border-radius: var(--normal-border-radius);
 	position: absolute; /* make sure it's positioned correctly */
 }
+.img-pri-360-overlay .image-content{
+	height: 340px;
+	max-width: 700px;
+	width: 100%;
+}
+.img-pri-360-overlay img{
+	height: 100%;
+	width: 100%;
+}
 
 .tiles-design-image-container-first .img-box {
 	position: relative;
@@ -2661,7 +2670,7 @@ textarea.form-control-contact {
          height: 100vh;
          width: 100vw;
          background-color: rgba(0,0,0,0.5);
-         z-index: 998;
+         z-index: 1040;    
          display: none;
          }
          .filter-backdrop.show {
@@ -2671,6 +2680,9 @@ textarea.form-control-contact {
          .filter-sidebar.show {
          transform: translateX(0);
          }
+		 .no-scroll {
+ 		overflow: hidden;
+		}
          /* Desktop: inside col-2 and sticky */
          @media (min-width: 992px) {
          .filter-sidebar {
@@ -2708,3 +2720,7 @@ textarea.form-control-contact {
         min-height: 300px;
       }
     }
+	.tiles-design-360preview-close-btn{
+		background-color: transparent;
+		border: none;
+	}

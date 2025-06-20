@@ -504,6 +504,9 @@
 	.navlink-width-second {
 		width: 90px;
 	}
+	.flex-direction-custom{
+		flex-direction: column;
+	}
 }
 
 .close-btn {

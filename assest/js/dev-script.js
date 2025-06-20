@@ -24,7 +24,18 @@
 //       });
 //    }
 // });
-
+// filter icon click op[en side bar]
+function openFilter() {
+           document.getElementById('filterSidebar').classList.add('show');
+           document.getElementById('filterBackdrop').classList.add('show');
+           document.body.classList.add('no-scroll');
+         }
+         
+         function closeFilter() {
+           document.getElementById('filterSidebar').classList.remove('show');
+           document.getElementById('filterBackdrop').classList.remove('show');
+           document.body.classList.remove('no-scroll');
+         }
 
 // 2. backdrop add in phone view nav
   function toggleMenu() {
@@ -32,10 +43,10 @@
     const backdrop = document.getElementById("backdrop");
     const isOpen = menu.classList.toggle("active");
     backdrop.style.display = isOpen ? "block" : "none";
-    closeFdsilter();
+    closeFilterMenu();
   }
   
-function closeFimklkmlter() {
+function closeFilterMenu() {
   const filter = document.getElementById("filterSidebar");
 
   filter.classList.remove("active");
@@ -43,14 +54,6 @@ function closeFimklkmlter() {
 }
 
 
-// 3. filterbtn open sliderk
-//   function openFilter() {
-//     document.querySelector('.filter-home-col-2').classList.add('active');
-//   }
-
-//   function closeFilter() {
-//     document.querySelector('.filter-home-col-2').classList.remove('active');
-//   }
 
 // 4. popup model script
 

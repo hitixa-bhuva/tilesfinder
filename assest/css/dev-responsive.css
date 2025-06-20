@@ -248,7 +248,11 @@
         /* height: 100%; */
         /* max-height: 300px; */
     }
-
+    .img-pri-360-overlay .image-content{
+	height: 340px;
+	max-width: 500px;
+	width: 100%;
+}
     /* 4.1 about us page */
     /* 4.1.1  About TilesFinders */
     .about-section {

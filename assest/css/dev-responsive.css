@@ -212,8 +212,8 @@
 
     /* home page side nav  */
     .filter-section h6 {
-        font-weight: 700;
-        font-size: 12px;
+        font-weight: 500;
+        font-size: 14px;
         line-height: 15px;
     }
 
@@ -252,6 +252,9 @@
 	height: 340px;
 	max-width: 500px;
 	width: 100%;
+}
+.footer ul li{
+    font-size: 14px;
 }
     /* 4.1 about us page */
     /* 4.1.1  About TilesFinders */
@@ -719,7 +722,7 @@
     /* 5.4 footer */
     /* 5.4.1 second footer  */
     .second-footer p {
-        font-size: 8px;
+        font-size: 12px;
     }
 
     .menu-footer-a {
@@ -858,7 +861,11 @@
     /* 5.8 product detial page */
     /* 5.8.1 OHG Kitchen Niche Fruit Walnut HL */
     .btn-inquiry {
-        width: 50% !important; 
+        width: 54% !important; 
+    }
+    .MakeanInquiry{
+        display: flex !important;
+        justify-content: center !important;
     }
     .img-box-blogdetails{
         height: 167px;

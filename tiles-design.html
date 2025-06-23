@@ -21,6 +21,7 @@
             <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
    </head>
    <body>
       <div class="d-lg-block home-first-nav">
@@ -213,13 +214,13 @@
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
                </svg>
                <input type="text" placeholder="Search for tiles" />
-               <span class="filter-container" onclick="openFilter()">
+               <!-- <span class="filter-container" onclick="openFilter()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel"
                      viewBox="0 0 16 16">
                      <path
                         d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z" />
                   </svg>
-               </span>
+               </span> -->
             </div>
          </div>
          <!-- Filter Sidebar (Slider) -->
@@ -424,13 +425,13 @@
                            <div class="row">
                               <div class="col-6">
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Size</h6>
+                                    <h6 class="dropdown-header">Size</h6>
                                     <a class="dropdown-item" href="#">395×395 mm</a>
                                     <a class="dropdown-item" href="#">800×800 mm</a>
                                     <a class="dropdown-item" href="#">200×1200 mm</a>
                                  </div>
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Area</h6>
+                                    <h6 class="dropdown-header">Area</h6>
                                     <a class="dropdown-item" href="#">Bathroom</a>
                                     <a class="dropdown-item" href="#">Parking</a>
                                     <a class="dropdown-item" href="#">Kitchen</a>
@@ -438,7 +439,7 @@
                                     <a class="dropdown-item" href="#">Room</a>
                                  </div>
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Look</h6>
+                                    <h6 class="dropdown-header">Look</h6>
                                     <a class="dropdown-item" href="#">Marble</a>
                                     <a class="dropdown-item" href="#">Texture</a>
                                     <a class="dropdown-item" href="#">Mosaic</a>
@@ -449,14 +450,14 @@
                               </div>
                               <div class="col-6">
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Finish</h6>
+                                    <h6 class="dropdown-header">Finish</h6>
                                     <a class="dropdown-item" href="#">Matt</a>
                                     <a class="dropdown-item" href="#">Glossy</a>
                                     <a class="dropdown-item" href="#">Super Glossy</a>
                                     <a class="dropdown-item" href="#">Sugar Finish</a>
                                  </div>
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Category</h6>
+                                    <h6 class="dropdown-header">Category</h6>
                                     <a class="dropdown-item" href="#">Ceramic</a>
                                     <a class="dropdown-item" href="#">Digital</a>
                                     <a class="dropdown-item" href="#">PGVT</a>
@@ -464,7 +465,7 @@
                                     <a class="dropdown-item" href="#">DGVT</a>
                                  </div>
                                  <div>
-                                    <h6 class="dropdown-header">Tiles By Color</h6>
+                                    <h6 class="dropdown-header">Color</h6>
                                     <a class="dropdown-item" href="#">Pink</a>
                                     <a class="dropdown-item" href="#">White</a>
                                     <a class="dropdown-item" href="#">Grey</a>
@@ -492,7 +493,7 @@
          <div class="row d-flex justify-content-center" >
          <div class="col-md-10 filter-home-col-10 ">
             <!-- 360° View -->
-            <div class="relative w-full max-w-5xl mx-auto rounded-2xl overflow-hidden mt-3">
+            <div class="relative w-full max-w-5xl  -auto rounded-2xl overflow-hidden mt-3">
                <div class="absolute inset-0 bg-cover bg-center backgournd-img-overlay">
                   <div id="overlay" class="img-pri-360-overlay">
                      <div class="d-flex justify-content-center">
@@ -505,90 +506,211 @@
                </div>
             </div>
             <!-- second content  -->
-            <div class="tiles-design-page z-index-custom">
-               <div class=" tiles-design-image-container tiles-design-image-container-first p-0">
-                  <div class="img-box shadow-sm">
-                     <div class="recommended-design-card card rounded-4 shadow-sm border-1">
-                       <div class="p-1">
-                         <div class="recommended-design-image-wrapper">
-                           <img src="data:image/jpeg;base64,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" alt="Tile Image" class="card-img-top">
-                           <div class="recommended-design-overlay">
-                             <a href="home.html"><img src="./assest/img/icon/Eye-fill.svg" class="text-white" alt=""></a>
+   
+               <div class="tiles-design-page z-index-custom">
+                  <div class="container-fluid pe-0 ps-0 custom-padding">
+                           <div id="grid-gallery" class="grid-gallery ">
+                              <section class="grid-wrap m-0 p-0 ">
+                                 <ul class="grid">
+                                       <li class="grid-sizer"></li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="data:image/jpeg;base64,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" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoZAYKEdWY6BJ5GmTVzsnB9Vv0jxl40PZWA&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoU2CBtTKuUw8zJiViFRvq87z0jvB2dSwaPQ&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQh0iWtrccoz25gv2mEHe6s_kShOF1jZgmB-w&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFh6LXmt1qIHvCEPHqG3be05yCtloDjV4-Sw&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiFmmZhi1slBnbjghd6uG4ldR3u7JwWDdYA&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2_w_9U3Dkxn0HZ92xVnxAa3sqBUQSBih1Sw&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0gDNlBLp_4JltQisHPa12devTKVqpwdSLsQ&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                       <li class="tile-item p-1">
+                                       <div class="tile-card shadow-sm rounded-3 border">
+                                          <div class="tile-img-container">
+                                             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuoZAYKEdWY6BJ5GmTVzsnB9Vv0jxl40PZWA&s" alt="img01" class="tile-img">
+                                             <div class="tile-overlay">
+                                             <a href="tiles-design.html" class="tile-eye-icon">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                                   <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                                   <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                                </svg>
+                                             </a>
+                                             </div>
+                                          </div>
+                                          <div class="tile-details d-flex justify-content-between align-items-center p-2">
+                                             <span class="tile-name">Tile Name</span>
+                                             <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
+                                          </div>
+                                       </div>
+                                       </li>
+                                 </ul>
+                              </section>
+                              <section class="slideshow d-none">
+                                 <ul></ul>
+                              </section>
                            </div>
-                         </div>
-                       </div>
-                       <div class="card-body d-flex justify-content-between align-items-center text-center mt-1 p-2 flex-direction-custom">
-                         <h6 class="card-title text-start">Classic Tile </h6>
-                         <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
-                       </div>
                      </div>
-                  </div>
-                  <div class="img-box shadow-sm">
-                     <div class="recommended-design-card card rounded-4 shadow-sm border-1">
-                       <div class="p-1">
-                         <div class="recommended-design-image-wrapper">
-                           <img src="data:image/jpeg;base64,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" alt="Tile Image" class="card-img-top">
-                           <div class="recommended-design-overlay">
-                             <a href="home.html"><img src="./assest/img/icon/Eye-fill.svg" class="text-white" alt=""></a>
-                           </div>
-                         </div>
-                       </div>
-                       <div class="card-body d-flex justify-content-between align-items-center text-center mt-1 p-2 flex-direction-custom">
-                         <h6 class="card-title text-start">Classic Tile Design</h6>
-                         <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
-                       </div>
-                     </div>
-                  </div>
-                  <div class="img-box shadow-sm">
-                     <div class="recommended-design-card card rounded-4 shadow-sm border-1">
-                       <div class="p-1">
-                         <div class="recommended-design-image-wrapper">
-                           <img src="https://cdnb.artstation.com/p/assets/panos/images/021/910/717/large/paulo-fernando-torres-santos-bathroom-360.jpg?1573417193" alt="Tile Image" class="card-img-top">
-                           <div class="recommended-design-overlay">
-                             <a href="home.html"><img src="./assest/img/icon/Eye-fill.svg" class="text-white" alt=""></a>
-                           </div>
-                         </div>
-                       </div>
-                       <div class="card-body d-flex justify-content-between align-items-center text-center mt-1 p-2 flex-direction-custom">
-                         <h6 class="card-title text-start">Classic Tile Design</h6>
-                         <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
-                       </div>
-                     </div>
-                  </div>
-                  <div class="img-box shadow-sm">
-                     <div class="recommended-design-card card rounded-4 shadow-sm border-1">
-                       <div class="p-1">
-                         <div class="recommended-design-image-wrapper">
-                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzBsUoZLEioJqjUAIL2rfcuSqjGgLl6nEHBg&s" alt="Tile Image" class="card-img-top">
-                           <div class="recommended-design-overlay">
-                             <a href="home.html"><img src="./assest/img/icon/Eye-fill.svg" class="text-white" alt=""></a>
-                           </div>
-                         </div>
-                       </div>
-                       <div class="card-body d-flex justify-content-between align-items-center text-center mt-1 p-2 flex-direction-custom">
-                         <h6 class="card-title text-start">Classic Tile Design</h6>
-                         <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
-                       </div>
-                     </div>
-                  </div>
-                  <div class="img-box shadow-sm">
-                     <div class="recommended-design-card card rounded-4 shadow-sm border-1">
-                       <div class="p-1">
-                         <div class="recommended-design-image-wrapper">
-                           <img src="https://cdn.bluent.com/images/tile-mockup-designs-1.webp" alt="Tile Image" class="card-img-top">
-                           <div class="recommended-design-overlay">
-                             <a href="home.html"><img src="./assest/img/icon/Eye-fill.svg" class="text-white" alt=""></a>
-                           </div>
-                         </div>
-                       </div>
-                       <div class="card-body d-flex justify-content-between align-items-center text-center mt-1 p-2 flex-direction-custom">
-                         <h6 class="card-title text-start">Classic Tile Design</h6>
-                         <button class="inquiry-btn-design btn-sm btn p-0 px-3 py-1">Inquire</button>
-                       </div>
-                     </div>
-                  </div>
                </div>
-            </div>
             <!-- Description -->
             <div class="Mockup-text-content container-fluid py-5 py-sm-1 mt-4 p-0">
                <h2>Description</h2>
@@ -598,172 +720,7 @@
                   it's stupid be to size a know first pay you of least run as facility in case of has.
                </p>
             </div>
-            <!-- Similar Mockups -->
-            <div
-               class="Mockup-text-content container-fluid py-5 py-sm-1 mb-5 p-0">
-               <h2 class="mb-0">Similar Mockups</h2>
-               <div class="container-fluid p-0">
-                  <div id="grid-gallery" class="grid-gallery">
-                     <section class="grid-wrap m-0 p-0">
-                        <ul class="grid">
-                           <li class="grid-sizer"></li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <a href="tiles-design.html">
-                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                                fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                <path
-                                                   d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                             </svg>
-                                          </a>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" alt="img02" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" alt="img03" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg" alt="img05" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg"
-                                       alt="img03" />
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                             fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path
-                                                d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                        </ul>
-                     </section>
-                     <section class="slideshow d-none">
-                        <ul></ul>
-                     </section>
-                  </div>
-               </div>
-               <div class="text-center">
-                  <a href="tiles-design.html">
-                     <button id="viewMoreBlogBtn"
-                        class="btn btn-view-more">
-                        View More
-                         <img src="./assest/img/icon/ArrowRight.svg" alt="">
-                     </button>
-                  </a>
-               </div>
-            </div>
-            <!-- Blogs -->
+           <!-- Blogs -->
             <div class="container-fluid py-5 py-sm-1 p-0">
                <h2 class="mb-4 blogs-header">Blogs</h2>
                <div class="row">
@@ -869,152 +826,372 @@
                   </a>
                </div>
             </div>
+            </div>
          </div>
       </section>
       <!-- footer -->
-      <footer class="footer">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Area</h5>
-                  <ul class="list-unstyled">
-                     <li>Bathroom</li>
-                     <li>Kitchen</li>
-                     <li>Parking</li>
-                     <li>Swimming Pool</li>
-                     <li>Balcony</li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Look</h5>
-                  <ul class="list-unstyled">
-                     <li>Marble</li>
-                     <li>Texture</li>
-                     <li>Mosaic</li>
-                     <li>Pattern</li>
-                     <li>Stone</li>
-                     <li>Cement</li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Category</h5>
-                  <ul class="list-unstyled">
-                     <li>Ceramic</li>
-                     <li>Digital</li>
-                     <li>PGVT</li>
-                     <li>GVT</li>
-                     <li>DGVT</li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Color</h5>
-                  <ul class="list-unstyled">
-                     <li>Pink</li>
-                     <li>White</li>
-                     <li>Grey</li>
-                     <li>Brown</li>
-                     <li>Blue</li>
-                     <li>Yellow</li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Size</h5>
-                  <ul class="list-unstyled">
-                     <li>395×395 mm</li>
-                     <li>800×800 mm</li>
-                     <li>200×1200 mm</li>
-                  </ul>
-               </div>
-               <div class="col-md-2 col-6">
-                  <h5>Tiles By Finish</h5>
-                  <ul class="list-unstyled">
-                     <li>Matt</li>
-                     <li>Glossy</li>
-                     <li>Super Glossy</li>
-                     <li>Sugar Finish</li>
-                  </ul>
-               </div>
+    <footer class="footer desktopviewfooter d-none d-md-block">
+        <div class="container-fluid">
+            <div class="row ">
+
+                <div class="col-md-2 col-6">
+                    <h5>Area</h5>
+                    <ul class="list-unstyled">
+                        <li>Bathroom</li>
+                        <li>Kitchen</li>
+                        <li>Parking</li>
+                        <li>Swimming Pool</li>
+                        <li>Balcony</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Look</h5>
+                    <ul class="list-unstyled">
+                        <li>Marble</li>
+                        <li>Texture</li>
+                        <li>Mosaic</li>
+                        <li>Pattern</li>
+                        <li>Stone</li>
+                        <li>Cement</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Category</h5>
+                    <ul class="list-unstyled">
+                        <li>Ceramic</li>
+                        <li>Digital</li>
+                        <li>PGVT</li>
+                        <li>GVT</li>
+                        <li>DGVT</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Color</h5>
+                    <ul class="list-unstyled">
+                        <li>Pink</li>
+                        <li>White</li>
+                        <li>Grey</li>
+                        <li>Brown</li>
+                        <li>Blue</li>
+                        <li>Yellow</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Size</h5>
+                    <ul class="list-unstyled">
+                        <li>395×395 mm</li>
+                        <li>800×800 mm</li>
+                        <li>200×1200 mm</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Finish</h5>
+                    <ul class="list-unstyled">
+                        <li>Matt</li>
+                        <li>Glossy</li>
+                        <li>Super Glossy</li>
+                        <li>Sugar Finish</li>
+                    </ul>
+                </div>
             </div>
+
             <hr class="divider">
+
             <div class="row align-items-center justify-content-between footer-section">
-               <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center">
-                  <h3 class="logo">
-                     <img
-                        src="./assest/img/logo/TilesFinder 1.svg"
-                        alt="TilesFinder Logo">
-                  </h3>
-               </div>
-               <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
-                  <a href="aboutUs.html">About Us</a>
-                  <a href="contact.html">Contact Us</a>
-                  <a href="blog.html">Blogs</a>
-               </div>
-               <div class="col-lg-4 col-md-12 col-sm-12   text-end follo-link-footer">
-                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg" alt="Facebook"></a>
-                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg" alt="Instagram"></a>
-                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg" alt="LinkedIn"></a>
-                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
-                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg" alt="YouTube"></a>
-               </div>
-            </div>
-         </div>
-      </footer>
-      <footer class="second-footer">
-         <div class="container-fluid">
-            <div class="row text-center">
-               <div class="col-md-12  justify-content-space-between p-2">
-                  <p class="mb-0">Copyright © 2025 <a href="index.html" target="_blank" class="text-white text-decoration-none"> TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/" target="_blank" class="text-white text-decoration-none">Unique IT Solution</a> </p>
-                  <p class="mb-0"><a href="privacypolicy.html" class="privacypolicy-text">Privacy Policy</a></p>
-               </div>
-            </div>
-         </div>
-      </footer>
-     
-  <!-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-      <div class="modal-content-360view rounded-4 border-0 shadow">
 
-        <div class="modal-header-icon position-absolute top-0 end-0 m-3 p-0 border-0 bg-transparent" style="background-color: #fff; z-index: 1;">
-        <button type="button" class="btn-close btn-close-white fs-5" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center">
+                    <h3 class="logo">
+                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                    </h3>
+                </div>
 
-        <div class="modal-body p-0">
-          <div class="bg-dark w-100" style="height: 70vh; min-height: 500px;">
-            <img 
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFk_mwD8dFsf-uhRyyetYfkB9pi9XXPsDdaCIWS3hiyLIEpWGQgICrLK4clOhzsNklws0&usqp=CAU" 
-              alt="360° Interior View" 
-              class="w-100 h-100 object-fit-cover"
-              style="cursor: grab;"
-            >
-          </div>
+                <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="blog.html">Blogs</a>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12   text-end follo-link-footer">
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                            alt="Facebook"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                            alt="Instagram"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                            alt="LinkedIn"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                            alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <footer class="footer d-block d-md-none p-0">
+    <div class="container-fluid p-0">
+        <div class="row">
         </div>
 
-        <div class="modal-footer bg-light border-0 rounded-bottom-4">
-          <div class="text-muted d-flex align-items-center">
-            <i class="fas fa-info-circle me-2"></i>
-            <small>Use mouse or touch gestures to navigate the 360° interior view</small>
-          </div>
-        </div>
+        <!-- Mobile View: Accordion -->
+         <div class="">
+            <div class="accordion" id="footerAccordion">
+                <!-- Area -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingArea">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseArea" aria-expanded="false" aria-controls="collapseArea">
+                            Area
+                        </button>
+                    </h2>
+                    <div id="collapseArea" class="accordion-collapse collapse" aria-labelledby="headingArea"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">Bathroom  
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Kitchen 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Parking 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Swimming  Pool 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Balcony 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
 
-      </div>
+                <!-- Look -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingLook">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseLook" aria-expanded="false" aria-controls="collapseLook">
+                            Look
+                        </button>
+                    </h2>
+                    <div id="collapseLook" class="accordion-collapse collapse" aria-labelledby="headingLook"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">Marble 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Texture 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Mosaic 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Pattern 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Stone 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Cement 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Category -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingCategory">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                            Category
+                        </button>
+                    </h2>
+                    <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">Ceramic 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Digital 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">PGVT 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">GVT 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">DGVT 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Color -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingColor">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                            Color
+                        </button>
+                    </h2>
+                    <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">Pink 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">White 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Grey 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Brown 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Blue 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Yellow 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Size -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSize">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+                            Size
+                        </button>
+                    </h2>
+                    <div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">395×395 mm 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">800×800 mm 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">200×1200 mm 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Finish -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFinish">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFinish" aria-expanded="false" aria-controls="collapseFinish">
+                            Finish
+                        </button>
+                    </h2>
+                    <div id="collapseFinish" class="accordion-collapse collapse" aria-labelledby="headingFinish"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">Matt 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Glossy 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Super Glossy 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                                <li class="d-flex align-items-center">Sugar Finish 
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="row align-items-center justify-content-between footer-section">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center mt-4">
+                    <h3 class="logo text-center">
+                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                    </h3>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="blog.html">Blogs</a>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12   text-center follo-link-footer mb-4">
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                            alt="Facebook"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                            alt="Instagram"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                            alt="LinkedIn"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                            alt="YouTube"></a>
+                </div>
+            </div>
     </div>
-  </div> -->
-  <!-- Enhanced 360° Modal -->
-     <div class="modal fade" id="modern360Modal" tabindex="-1" aria-labelledby="modern360ModalLabel" aria-hidden="true">
-<div class="modal-dialog modal-xl modal-dialog-centered">
-<div class="modal-content tiles-design-360preview-modal-content rounded-4 border-0">
-<!-- Modal Header -->
-<div class="modal-header tiles-design-360preview-header border-0">
-<button type="button" class="tiles-design-360preview-close-btn" data-bs-dismiss="modal" aria-label="Close"><img src="./assest/img/icon/X.svg" alt=""></button>
-</div>
-<!-- Modal Body -->
-<div class="modal-body p-3">
-<div id="imageContainer" class="tiles-design-360preview-image-container d-flex justify-content-center align-items-center position-relative overflow-hidden" style="height: auto; min-height: 500px; max-height: 80vh;">
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKJLCSl8-ID6qFRrSIIcXzRoxhBv396s6S5YVeD2rM_nB7d3Rv6x602HOdRMMIla2TBl4&usqp=CAU" alt="360 Preview" class="img-fluid" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
-</div>
-</div>
-</div>
-</div>
+    </footer>
+    <footer class="second-footer">
+        <div class="container-fluid">
+
+            <div class="row text-center">
+                <div class="col-md-12  justify-content-space-between p-2">
+                    <p class="mb-0 text-white">Copyright © 2025 <a href="index.html" target="_blank"
+                            class="text-white text-decoration-none">
+                            TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/"
+                            target="_blank" class="text-white text-decoration-none">Unique
+                            IT Solution</a> </p>
+                    <p class="mb-0"><a href="privacypolicy.html" class="privacypolicy-text">Privacy
+                            Policy</a></p>
+                </div>
+            </div>
+        </div>
+    </footer> 
+     
+<!-- Modal -->
+<div class="modal fade" id="modern360Modal" tabindex="-1" aria-labelledby="modern360ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content tiles-design-360preview-modal-content rounded-4 border-0" style="width: 500px; height: 400px;">
+      
+      <!-- Modal Header -->
+      <div class="modal-header tiles-design-360preview-header border-0">
+        <button type="button" class="tiles-design-360preview-close-btn ms-auto" data-bs-dismiss="modal" aria-label="Close"><img src="./assest/img/icon/X-black.svg" alt=""></button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="modal-body p-3">
+        <div id="imageContainer" class="tiles-design-360preview-image-container d-flex justify-content-center align-items-center position-relative overflow-hidden" >
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThu_IiH_pAKwfgtsCZrun9cgcjbvS7QVFPxA&s" alt="360 Preview" class="img-fluid" style="width: 500px; height: 332px;">
+        </div>
+      </div>
+
+    </div>
+  </div>
 </div>
 
       <script src="./assest/js/imagesloaded.pkgd.min.js"></script>

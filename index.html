@@ -21,6 +21,12 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   <style>
+.sticky-sidebar {
+      position: sticky;
+      top: 20px;
+    }
+   </style>
    </head>
    <body>
       <div class="d-lg-block home-first-nav">
@@ -185,7 +191,6 @@
                <a href="blog.html" class="toggle-menu-item"> Blogs </a>
                <a href="privacypolicy.html" class="toggle-menu-item"> Privacy Policy </a>
             </div>
-            <!-- Footer Section -->
     <div class="toggle-menu-footer mt-4 p-3 text-center ">
         <p class="mb-1">Copyright © 2025 TilesFinders </p>
     </div>
@@ -211,14 +216,11 @@
                      <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
                   </svg>
                </span>
-               <!--filter Backdrops -->
                <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
-               <!--toggle Backdrops -->
                <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
             </div>
          </div>
-         <!-- Filter Sidebar (Slider) -->
-         <!-- second nab bar  -->
+       
          <nav class="navbar navbar-expand-lg secondary-nav">
             <div  id="openFilter">
                <div class="navbar-collapse justify-content-center" id="secondaryNavContent">
@@ -296,11 +298,13 @@
                </div>
             </div>
          </nav>
-      </div>
+      </div> 
       <section class="mb-5">
          <div class="row">
             <!-- desktop view side bar -->
-            <div class="col-md-2 filter-home-col-2 filter-sidebar p-0" id="filterSidebar">
+            <!-- Sticky Sidebar -->
+      <div class="col-md-2 filter-home-col-2 filter-sidebar p-0" id="filterSidebar">
+            <div class="sticky-sidebar"> 
                <div class="filter-section">
                   <div class="filter-header Filter-custom-space">
                      <!-- Close button (mobile only) -->
@@ -434,9 +438,10 @@
                   </div>
                </div>
                <hr />
-              
-            </div>
-            <div class="col-md-10 filter-home-col-10 p-0">
+         </div>
+      </div>
+
+       <div class="col-md-10 filter-home-col-10 p-0">
                <div class="container-fluid">
                   <div id="grid-gallery" class="grid-gallery">
                      <section class="grid-wrap m-0 p-0">

@@ -3159,7 +3159,6 @@ textarea.form-control-contact {
   opacity: 1;
 }
 
-/* Eye icon centered */
 .mockup-icon {
   position: absolute;
   top: 50%;
@@ -3167,7 +3166,6 @@ textarea.form-control-contact {
   transform: translate(-50%, -50%);
 }
 
-/* Tile name overlay at bottom */
 .tile-name-overlay {
   position: absolute;
   bottom: 0;
@@ -3180,11 +3178,10 @@ textarea.form-control-contact {
   padding: 16px 10px;
   z-index: 1;
   transition: opacity 0.3s ease;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 40%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0) 100%);
   border-radius: 16px;
 }
 
-/* Hide tile name on hover */
 .img-container:hover .tile-name-overlay {
   opacity: 0;
 }

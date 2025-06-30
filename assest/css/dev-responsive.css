@@ -447,9 +447,8 @@
 
     /* 4.6.4  Similar Mockups*/
     .grid li {
-        width: 24.3%;
+        width: 25%;
     }
-
     .grid-wrap-tiles::before {
         top: 131%;
         right: 8%;
@@ -1786,16 +1785,16 @@
     }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
     .grid-gallery .grid li {
         width: calc(50% - 10px);
     }
-}
+} */
 
 @media (max-width: 600px) {
-    .grid-gallery .grid li {
+    /* .grid-gallery .grid li {
         width: calc(50% - 16px);
-    }
+    } */
     .custom-padding{
         padding-left: 21px !important;
     }
@@ -1884,5 +1883,20 @@
 
     .Similar-Mockups .row.g-3 {
         --bs-gutter-x: 0.75rem; 
+    }
+}
+
+
+/* Small devices: 2 per row */
+@media (max-width: 600px) {
+    .grid-gallery .grid li {
+        width: 50%;
+    }
+}
+
+/* Extra small devices: 1 per row */
+@media (max-width: 400px) {
+    .grid-gallery .grid li {
+        width: 50%;
     }
 }

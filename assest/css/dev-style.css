@@ -119,9 +119,11 @@ body {
 
 .row {
 	margin: 0;
+	/* overflow: hidden; */
+}
+.container-fluid{
 	overflow: hidden;
 }
-
 .text-sm-start {
 	text-align: start !important;
 }
@@ -277,12 +279,15 @@ body {
 .img-container {
 	position: relative;
 	display: inline-block;
+	max-width: 391px;
 	width: 100%;
 }
 
 .img-container img {
 	transition: all 0.3s ease;
 	display: block;
+	max-width: 391px;
+	width: 100%;
 }
 
 .mockup-overlay {
@@ -3184,4 +3189,303 @@ textarea.form-control-contact {
 
 .img-container:hover .tile-name-overlay {
   opacity: 0;
+}
+.sticky-sidebar {
+  position: sticky;
+  top: 2px;
+  border-right: 1px solid #DFDFE8;
+  background-color: #ffffff;
+}
+.tile-300x450{
+   height: 333px;
+}
+.tile-300x600{
+  height: 520px;
+}
+.tile-600x1200{
+  height: 520px;
+}
+.tile-600x600{
+  height: 222px;
+}
+.tile-600x1800{
+  height: 444px;
+}
+
+.tile-800x800{
+  height: 222px;
+}
+.tile-800x1600{
+	
+	height: 444px;
+}
+.tile-200x1000{
+
+height: 950px;
+}
+@media (min-width: 2560px) {
+  .tile-600x600{
+  height: 300px !important;
+}
+.tile-800x800 {
+    height: 300px !important;
+  }
+}
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .tile-800x800 {
+    height: 300px !important;
+  }
+  .tile-600x600 {
+    height: 300px !important;
+  }
+}
+
+ /* @media (max-width: 600px) {
+  .tile-800x800 {
+    height: 192px;
+  }
+  .tile-600x600{
+  height: 192px;
+}
+} */
+ /* @media (min-width: 2560px) {
+  .tile-600x600{
+  height: 300px !important;
+}
+.tile-800x800 {
+    height: 300px !important;
+  }
+}
+@media (min-width: 2560px) and (max-width: 3839px) {
+  .tile-800x800 {
+    height: 300px !important;
+  }
+  .tile-600x600 {
+    height: 300px !important;
+  }
+}
+@media (max-width: 320px) {
+    .tile-600x600 {
+        height: 140px;
+    }
+	.tile-800x800 {
+    height: 140px;
+  }
+    .tile-name-overlay{
+        font-size: 10px;
+    }
+}
+@media (max-width: 380px) {
+    .tile-600x600 {
+        height: 167px;
+    }
+	.tile-800x800 {
+    height: 167px;
+  }
+    .tile-name-overlay{
+        font-size: 12px;
+    }
+}
+@media (max-width: 430px) {
+    .tile-600x600 {
+        height: 192px;
+    }
+    .tile-800x800 {
+        height: 192px;
+    }
+}
+ */
+
+
+
+
+/* Base desktop default */
+.tile-600x600,
+.tile-800x800 {
+  height: 222px;
+}
+
+/* 4K screens only */
+@media (min-width: 2560px) {
+  .tile-600x600,
+  .tile-800x800 {
+    height: 300px !important;
+  }
+}
+
+/* Mobile – very small (up to 320px) */
+@media (max-width: 320px) {
+  .tile-600x600,
+  .tile-800x800 {
+    height: 140px !important;
+  }
+  .tile-name-overlay {
+    font-size: 10px;
+  }
+}
+
+/* Mobile – small (321px to 380px) */
+@media (min-width: 321px) and (max-width: 380px) {
+  .tile-600x600,
+  .tile-800x800 {
+    height: 167px !important;
+  }
+  .tile-name-overlay {
+    font-size: 12px;
+  }
+}
+
+/* Mobile – medium (381px to 430px) */
+@media (min-width: 381px) and (max-width: 430px) {
+  .tile-600x600,
+  .tile-800x800 {
+    height: 192px !important;
+  }
+}
+
+/* new mockuppage style */
+.profile-container {
+      border-radius: 20px;
+      padding: 1rem;
+    }
+    
+    .mockup-contact-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      padding: 1.5rem;
+      border: 1px solid #667eea;
+    }
+    
+    .mockup-contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 5px;
+      padding: 15px 15px 15px 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s ease;
+    }
+    .mockup-contact-item i {
+      color: #667eea;
+      width: 20px;
+      margin-right: 1rem;
+    }
+    
+    .map-container {
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      height: 300px;
+	  width: 100%;
+    }
+    
+    .map-container iframe {
+      border: 0;
+      width: 100%;
+      height: 100%;
+    }
+    
+    .portfolio-section {
+      background: white;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      margin: 2rem 0;
+    }
+    
+    .portfolio-item {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .portfolio-item:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+    
+    .portfolio-item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .portfolio-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(135deg, rgba(21, 22, 26, 0.577), rgba(16, 12, 21, 0.44));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+    }
+    
+    .portfolio-item:hover .portfolio-overlay {
+      opacity: 1;
+    }
+    
+    .mockup-view-more-btn {
+      background: #4169E1;
+      border: none;
+      padding: 0.8rem 2rem;
+      border-radius: 25px;
+      color: white;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    }
+    
+    .mockup-view-more-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+      color: white;
+    }
+    
+    .description-section {
+      background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+      border-radius: 15px;
+      padding: 1.5rem;
+    }
+    
+    .section-title {
+      color: #333;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(135deg, #4169E1 0%, #4169E1 100%);
+      border-radius: 2px;
+    }
+    
+    @media (max-width: 768px) {
+      .profile-container {
+        margin: 1rem;
+        padding: 1.5rem;
+      }
+      
+      .map-container {
+        height: 250px;
+        margin-top: 1rem;
+      }
+    }
+.contect-details-title{
+	font-size: 16px;
 }

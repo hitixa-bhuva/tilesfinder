@@ -64,13 +64,46 @@
     cursor: pointer;
     /* max-width: 246px !important; */
 }
+
 @media (min-width: 1920px) {
   .grid li {
     width: 20%; 
   }
 }
+/* @media (min-width: 1030px) {
+  .grid li {
+    width: 25%; 
+  }
+} */
 .grid-sizer {
   width: 25%;
+}
+.grid > li {
+  width: 100%; /* default */
+}
+
+@media (min-width: 425px) {
+  .grid > li {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid > li {
+    width: 33.33%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid > li {
+    width: 25%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .grid > li {
+    width: 20%;
+  }
 }
 
 @media (min-width: 1920px) {
@@ -78,6 +111,7 @@
     width: 20%;
   }
 }
+
 .grid-wrap {
   width: 100%;
   /* max-width: 100%; */
@@ -90,7 +124,7 @@
 }
 
 .grid figure {
-    padding: 10px 10px 10px 10px;
+    padding: 8.2px;
     -webkit-transition: opacity 0.2s;
     transition: opacity 0.2s;
 }

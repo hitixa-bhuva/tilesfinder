@@ -522,6 +522,7 @@
 
 /* 5. 425 screen size */
 @media (max-width: 428px) {
+   
 .custom-padding-top-right{
     padding: 16px;
 }
@@ -759,6 +760,8 @@
 
 .navbar-toggler {
     z-index: 1;
+    width: 40px;
+    height: 40px;
 }
 
     /* 5.5 blog details page */
@@ -812,7 +815,9 @@
     .blogdetails-col-4-section {
         margin-top: 10px;
     }
-
+    .grid-gallery-custom-padding{
+        padding: 0 !important;
+    }
     .p-sm-0 {
         padding: 0;
     }
@@ -832,7 +837,11 @@
     .grid-gallery-second {
         display: none;
     }
+    .grid-gallery {
 
+  padding: 0; /* or remove padding */
+
+}
     .tiles-design-image-container-first img {
         width: 189px;
     }
@@ -912,9 +921,11 @@
     }
 
     .grid figure {
-        padding: 5px !important;
+        padding: 8px !important;
     }
-
+    .custom-around-padding-small{
+        padding: 8px;
+    }
     .why-choose-about-col-6 {
         padding: 0 14px;
     }
@@ -1121,7 +1132,9 @@
 
 /* 6. 375 screen size */
 @media (max-width: 380px) {
-
+.grid figure {
+        padding: 8px !important;
+    }
     /* 6.1 about us page */
     /* 6.1.1 About TilesFinders */
     .about-heading {
@@ -1264,6 +1277,15 @@
 
 /* 7. 320 screen size */
 @media (max-width: 320px) {
+    .grid figure {
+        padding: 5px 5px 0 5px !important;
+    }
+    .custom-around-padding-small{
+        padding: 11px;
+    }
+    /* .img-container{
+    width: 136px !important;
+} */
         .thumbnail{
         width: 45px;
         height: 45px;
@@ -1768,7 +1790,7 @@
         padding: 12px 15px;
         display: flex;
         align-items: center;
-        margin: 1rem 0;
+        margin: 0 0 10px 0;
         position: relative;
         width: 100%;
         max-width: 100%;

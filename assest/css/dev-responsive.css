@@ -1,6 +1,12 @@
 @import url("./dev-style.css");
 
 /* 1. 2524 screen size */
+@media screen and (min-width: 2560px) {
+.custom-width-height-model {
+    width: 1000px;
+    height: 900px;
+}
+}
 @media screen and (max-width: 2560px) {
 
     /* 1.9 home page style */
@@ -921,10 +927,10 @@
     }
 
     .grid figure {
-        padding: 8px !important;
+        padding: 4px 4px 0 4px !important;
     }
     .custom-around-padding-small{
-        padding: 8px;
+        padding: 0px;
     }
     .why-choose-about-col-6 {
         padding: 0 14px;
@@ -1133,7 +1139,7 @@
 /* 6. 375 screen size */
 @media (max-width: 380px) {
 .grid figure {
-        padding: 8px !important;
+        padding: 4px 4px 0 4px !important;
     }
     /* 6.1 about us page */
     /* 6.1.1 About TilesFinders */
@@ -1278,10 +1284,10 @@
 /* 7. 320 screen size */
 @media (max-width: 320px) {
     .grid figure {
-        padding: 5px 5px 0 5px !important;
+        padding: 4px 4px 0 4px !important;
     }
     .custom-around-padding-small{
-        padding: 11px;
+        padding: 0px;
     }
     /* .img-container{
     width: 136px !important;
@@ -1770,10 +1776,30 @@
     .tiles-design-page .tiles-design-image-container {
         grid-template-columns: repeat(2, 1fr);
     }
-
+.custom-width-height-model{
+    width: 300px; 
+    height: 400px;
 }
+.custome-padding-remove{
+    padding: 0 !important;
+}
+.modal-header {
+    width: 40px;
+    height: 40px;
+}
+.tiles-design-360preview-header {
+    top: -5% !important;
+    right: -2% !important;
+    position: absolute;
+}
+}
+/* @media (max-width: 994px) {
+    .min-screen-991-display-none {
+        display: none !important;
+    }
+} */
 
-@media (max-width: 993px) {
+@media (max-width: 770px) {
     .min-screen-991-display-none {
         display: none !important;
     }
@@ -1790,7 +1816,7 @@
         padding: 12px 15px;
         display: flex;
         align-items: center;
-        margin: 0 0 10px 0;
+        margin: 0 0 12px 0;
         position: relative;
         width: 100%;
         max-width: 100%;

@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+   <head>
       <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>TilesFinder</title>
       <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
       <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
       <meta name="author" content="Codrops" />
-      <meta name="robots" content="noindex, nofollow" />
+      <meta name="robots" content="noindex, nofollow">
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
       <link rel="stylesheet" href="./assest/css/nav-bar.css" />
-      <link rel="stylesheet" href="./assest/css/dev-style.css" />
-      <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
-      <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg" />
+      <link rel="stylesheet" href="./assest/css/dev-style.css">
+      <link rel="stylesheet" href="./assest/css/dev-responsive.css">
+      <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg">
       <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
       <script src="./assest/js/modernizr.custom.js"></script>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+      <!-- Pannellum CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.css">
 
-</head>
-<body>
-<div class="d-lg-block home-first-nav">
-         <!-- Home top navrbar  --> 
-         <nav class="navbar navbar-expand-lg navbar-light top-nav">
+   </head>
+   <body>
+      <div class="d-lg-block home-first-nav">
+         <!-- Home top navrbar  -->
+         <nav class="navbar navbar-expand-lg navbar-light top-nav min-screen-991-display-none">
             <div class="container-fluid px-3">
                <a class="navbar-brand" href="index.html">
                <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder" />
@@ -37,7 +39,11 @@
                <div class="collapse navbar-collapse" id="navbarContent">
                   <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
                      <div class="search-container">
-                        <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                           class="search-icon" viewBox="0 0 16 16">
+                           <path
+                              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                        </svg>
                         <input type="text" placeholder="Search for tiles" />
                      </div>
                   </div>
@@ -47,14 +53,18 @@
                         <a href="mailto:mannhachkt08@gmail.com">mannhachkt08@gmail.com</a>
                      </div>
                      <div>
-                        <img src="./assest/img/icon/Phone.svg" alt="">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                           viewBox="0 0 16 16">
+                           <path
+                              d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                        </svg>
                         <a href="tel:(308)555-0121">(308) 555-0121</a>
                      </div>
                   </div>
                </div>
             </div>
-         </nav> 
-         <!-- Home second navrbar  --> 
+         </nav>
+         <!-- Home second navrbar  -->
          <nav class="navbar navbar-expand-lg secondary-nav">
             <div class="container">
                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#secondaryNavContent">
@@ -62,7 +72,7 @@
                </button>
                <div class="collapse navbar-collapse justify-content-center" id="secondaryNavContent">
                   <ul class="navbar-nav">
-                     <!-- <li class="nav-item dropdown" style="width: 150px;">
+                     <li class="nav-item dropdown" style="width: 150px;">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#" id="tilesDropdown">
                            <img src="./assest/img/icon/categories.png" alt="categories" class="navmenu-icon me-1">
                             Categories
@@ -131,7 +141,7 @@
                               </div>
                            </div>
                         </div>
-                     </li> -->
+                     </li>
                      <li class="nav-item">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="product.html" id="tilesDropdown">
                        <img src="./assest/img/icon/design.png" alt="design"  class="navmenu-icon me-1"> 
@@ -144,7 +154,7 @@
                             Mockups
                         </a>
                      </li>
-                     <!-- <li class="nav-item">
+                     <li class="nav-item">
                         <a class="nav-link" href="aboutUs.html">
                        <img src="./assest/img/icon/info.png" alt="design"  class="navmenu-icon"> 
                            About Us</a>
@@ -160,34 +170,36 @@
                             <img src="./assest/img/icon/blogging.png" alt=""  class="navmenu-icon">
                             Blogs
                         </a>
-                     </li> -->
+                     </li>
                   </ul>
                </div>
             </div>
          </nav>
       </div>
       <!-- 768 after show  -->
+      <!-- Toggle Menu -->
       <div class="d-lg-none d-md-block">
          <div class="toggle-menu" id="toggleMenu">
-            <div>
+            <div class="">
                <button class="close-btn" onclick="toggleMenu()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-x-lg" viewBox="0 0 16 16">
+                     <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
                   </svg>
                </button>
                <div class="contact-item mt-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
                      <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                        />
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
                   </svg>
                   <span>manhhachkt08@gmail.com</span>
                </div>
                <div class="contact-item">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#4169E1" viewBox="0 0 16 16">
                      <path
-                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                        ></path>
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+                     </path>
                   </svg>
                   <span>(308) 555-0121</span>
                </div>
@@ -197,12 +209,10 @@
                <a href="aboutUs.html" class="toggle-menu-item"> About Us </a>
                <a href="contact.html" class="toggle-menu-item"> Contact Us </a>
                <a href="blog.html" class="toggle-menu-item"> Blogs </a>
-               <a href="privacypolicy.html" class="toggle-menu-item"> Privacy Policy </a>
             </div>
-    <div class="toggle-menu-footer mt-4 p-3 text-center ">
-        <p class="mb-1">Copyright © 2025 TilesFinders </p>
-    </div>
          </div>
+         <!-- Backdrop (Blur Background) -->
+         <div class="modal-backdrop" id="backdrop" onclick="toggleMenu()"></div>
          <nav class="navbar mobile-nav">
             <div class="container-fluid p-0">
                <button class="navbar-toggler" type="button" onclick="toggleMenu()">
@@ -218,26 +228,212 @@
                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
                   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
                </svg>
-               <input type="text" placeholder="Search for tiles" />           
-               <span class="filter-container" onclick="openFilter()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                     <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+               <input type="text" placeholder="Search for tiles" />
+               <!-- <span class="filter-container" onclick="openFilter()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel"
+                     viewBox="0 0 16 16">
+                     <path
+                        d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z" />
                   </svg>
-               </span>
-               <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
-               <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+               </span> -->
             </div>
          </div>
-       
+         <!-- Filter Sidebar (Slider) -->
+         <div class="filter-menu" id="filterMenu">
+            <div class="filter-header">
+               <h5 class="mb-0">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel"
+                     viewBox="0 0 16 16">
+                     <path
+                        d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z">
+                     </path>
+                  </svg>
+                  Filter
+               </h5>
+               <button class="filter-close" onclick="closeFilter()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                     class="bi bi-x-lg" viewBox="0 0 16 16">
+                     <path
+                        d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z">
+                     </path>
+                  </svg>
+               </button>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header">
+                  Applied filters <span class="count-cleare">Clear all</span>
+               </h6>
+               <div>
+                  <div class="filter-options">
+                     <span class="filter-badge">395×395 mm ×</span>
+                     <span class="filter-badge">Ceramic ×</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byType" role="button"
+                  aria-controls="byType">
+                  <div class="header-title">By Type <span class="count">3</span></div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byType">
+                  <div class="filter-options">
+                     <span class="filter-option">Manufacturer</span>
+                     <span class="filter-option">Wholesaler</span>
+                     <span class="filter-option">Admin</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button"
+                  aria-controls="bySize">
+                  <div class="header-title">By Size <span class="count">3</span></div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="bySize">
+                  <div class="filter-options">
+                     <span class="filter-option selected">395×395 mm</span>
+                     <span class="filter-option">800×800 mm</span>
+                     <span class="filter-option">200×1200 mm</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory"
+                  role="button" aria-controls="byCategory">
+                  <div class="header-title">
+                     By Category <span class="count">5</span>
+                  </div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byCategory">
+                  <div class="filter-options">
+                     <span class="filter-option">Marble</span>
+                     <span class="filter-option">Texture</span>
+                     <span class="filter-option">Mosaic</span>
+                     <span class="filter-option">Pattern</span>
+                     <span class="filter-option">Stone</span>
+                     <span class="filter-option">Cement</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button"
+                  aria-controls="byLook">
+                  <div class="header-title">By Look <span class="count">6</span></div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byLook">
+                  <div class="filter-options">
+                     <span class="filter-option">Marble</span>
+                     <span class="filter-option">Texture</span>
+                     <span class="filter-option">Mosaic</span>
+                     <span class="filter-option">Pattern</span>
+                     <span class="filter-option">Stone</span>
+                     <span class="filter-option">Cement</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button"
+                  aria-controls="byFinish">
+                  <div class="header-title">
+                     By Finish <span class="count">4</span>
+                  </div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byFinish">
+                  <div class="filter-options">
+                     <span class="filter-option">Matt</span>
+                     <span class="filter-option">Glossy</span>
+                     <span class="filter-option">Super Glossy</span>
+                     <span class="filter-option">Sugar Finish</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button"
+                  aria-controls="byColor">
+                  <div class="header-title">
+                     By Color <span class="count">6</span>
+                  </div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byColor">
+                  <div class="filter-options">
+                     <span class="filter-option">Pink</span>
+                     <span class="filter-option">White</span>
+                     <span class="filter-option">Grey</span>
+                     <span class="filter-option">Brown</span>
+                     <span class="filter-option">Blue</span>
+                     <span class="filter-option">Yellow</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button"
+                  aria-controls="byArea">
+                  <div class="header-title">By Area <span class="count">5</span></div>
+                  <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd"
+                        d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                  </svg>
+               </h6>
+               <div class="collapse" id="byArea">
+                  <div class="filter-options">
+                     <span class="filter-option">Bathroom</span>
+                     <span class="filter-option">Parking</span>
+                     <span class="filter-option">Kitchen</span>
+                     <span class="filter-option">WashBasin</span>
+                     <span class="filter-option">Room</span>
+                  </div>
+               </div>
+            </div>
+            <hr />
+            <div class="filter-section">
+               <div class="row apply-filter-btn">
+                  <button>Apply</button>
+               </div>
+            </div>
+         </div>
          <nav class="navbar navbar-expand-lg secondary-nav">
-            <div  id="openFilter">
+            <div class="">
                <div class="navbar-collapse justify-content-center" id="secondaryNavContent">
                   <ul class="navbar-nav">
-                     <!-- <li class="nav-item dropdown">
-                        <a class="nav-link d-flex justify-content-center align-items-center navlink-width" href="#" id="tilesDropdown">
-                           Categories
-                           <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down ms-1 transition" viewBox="0 0 16 16">
-                              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                     <li class="nav-item dropdown">
+                        <a class="nav-link d-flex justify-content-center align-items-center navlink-width" href="#"
+                           id="tilesDropdown">
+                           All Categories
+                           <svg id="chevron-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                              fill="currentColor" class="bi bi-chevron-down ms-1 transition" viewBox="0 0 16 16">
+                              <path fill-rule="evenodd"
+                                 d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                            </svg>
                         </a>
                         <div class="dropdown-menu mega-dropdown">
@@ -295,426 +491,42 @@
                               </div>
                            </div>
                         </div>
-                     </li> -->
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Designs</a>
                      </li>
                      <li class="nav-item">
-                        <a class="nav-link navlink-width-second" href="mockup.html">Mockup</a>
+                        <a class="nav-link" href="#">By Design</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link navlink-width-second" href="mockup.html">By Mockup</a>
                      </li>
                   </ul>
                </div>
             </div>
          </nav>
-      </div> 
- 
-  <!-- Page Layout -->
-<div class="container-fluid">
-<div class="row">
-<!-- Sidebar -->
-<div class="col-md-2 filter-home-col-2  sticky-sidebar-parent">
-<div class="sticky-sidebar">
-<div class="filter-section">
-                  <div class="filter-header Filter-custom-space">
-                     <!-- Close button (mobile only) -->
-                     <button class="close-btn " onclick="closeFilter()">
-                        <img src="./assest/img/icon/X.svg" alt="close">
-                     </button>
-                     <h5 class="d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                           <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
-                        </svg>
-                        Filter
-                     </h5>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header">Applied filters <span class="count-cleare">Clear all</span></h6>
-                  <div>
-                     <div class="filter-options">
-                        <span class="filter-badge">395×395 mm ×</span>
-                        <span class="filter-badge">Ceramic ×</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button" aria-controls="byArea">
-                     <div class="header-title"> Area <span class="count">5</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byArea">
-                     <div class="filter-options">
-                        <span class="filter-option">Bathroom</span>
-                        <span class="filter-option">Parking</span>
-                        <span class="filter-option">Kitchen</span>
-                        <span class="filter-option">WashBasin</span>
-                        <span class="filter-option">Room</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button" aria-controls="bySize">
-                     <div class="header-title"> Size <span class="count">3</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="bySize">
-                     <div class="filter-options">
-                        <span class="filter-option selected">395×395 mm</span>
-                        <span class="filter-option">800×800 mm</span>
-                        <span class="filter-option">200×1200 mm</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria-controls="byCategory">
-                     <div class="header-title"> Category <span class="count">5</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byCategory">
-                     <div class="filter-options">
-                        <span class="filter-option">Marble</span>
-                        <span class="filter-option">Texture</span>
-                        <span class="filter-option">Mosaic</span>
-                        <span class="filter-option">Pattern</span>
-                        <span class="filter-option">Stone</span>
-                        <span class="filter-option">Cement</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button" aria-controls="byLook">
-                     <div class="header-title"> Look <span class="count">6</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byLook">
-                     <div class="filter-options">
-                        <span class="filter-option">Marble</span>
-                        <span class="filter-option">Texture</span>
-                        <span class="filter-option">Mosaic</span>
-                        <span class="filter-option">Pattern</span>
-                        <span class="filter-option">Stone</span>
-                        <span class="filter-option">Cement</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button" aria-controls="byFinish">
-                     <div class="header-title"> Finish <span class="count">4</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byFinish">
-                     <div class="filter-options">
-                        <span class="filter-option">Matt</span>
-                        <span class="filter-option">Glossy</span>
-                        <span class="filter-option">Super Glossy</span>
-                        <span class="filter-option">Sugar Finish</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button" aria-controls="byColor">
-                     <div class="header-title"> Color <span class="count">6</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byColor">
-                     <div class="filter-options">
-                        <span class="filter-option">Pink</span>
-                        <span class="filter-option">White</span>
-                        <span class="filter-option">Grey</span>
-                        <span class="filter-option">Brown</span>
-                        <span class="filter-option">Blue</span>
-                        <span class="filter-option">Yellow</span>
-                     </div>
-                  </div>
-               </div>
-               <hr />
-</div>
-</div>
-    <div class="col-md-10 filter-home-col-10 p-0 col-lg-8">
-      <div class="profile-container">
-       
-        <!-- Contact Information + Map Card -->
-         <!-- Portfolio Section -->
-        <div class="portfolio-section">
-          <h3 class="section-title">Portfolio</h3>
-          
-                <div class="container-fluid p-0">
-                        <div id="grid-gallery" class="grid-gallery ">
-                            <section class="grid-wrap m-0 p-0 ">
-                                <ul class="grid">
-                                    <li class="grid-sizer"></li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <a href="tiles-design.html">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                                <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                                <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" alt="img02" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                    <li>
-                                        <figure>
-                                            <div class="img-container">
-                                                <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" alt="img01" />
-                                                <div class="overlay mockup-overlay">
-                                                    <div class="mockup-icon">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </figure>
-                                    </li>
-                                </ul>
-                            <!-- <div class="grid-bottom-shadow"></div> -->
-
-                            </section>
-                            <section class="slideshow d-none">
-                                <ul></ul>
-                            </section>
-                        </div>
-                        
-                    </div>
-          
-          <div class="text-center mt-4">
-            <button class="btn mockup-view-more-btn">
-              <i class="fas fa-plus-circle me-2"></i>
-              View More
-            </button>
-          </div>
-        </div>
-        <div class="mockup-contact-section mb-4">
-          <h3 class="section-title">Shree Bapasitaram marketing</h3>
-          <div class="row">
-            <div class="col-lg-7 mb-4 mb-lg-0 col-div">
-              
-              <div class="mockup-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" class="bi bi-geo-alt-fill mx-2 me-4" viewBox="0 0 16 16">
-<path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6" />
-</svg> 
-                <div>
-                  <strong class="contect-details-title">Address:</strong><br>
-                  <span>132, Daya Road Gandhidham Kutch 363602</span>
-                </div>
-              </div>
-              
-              <div class="mockup-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" class="bi bi-buildings-fill mx-2 me-4" viewBox="0 0 16 16">
-<path d="M15 .5a.5.5 0 0 0-.724-.447l-8 4A.5.5 0 0 0 6 4.5v3.14L.342 9.526A.5.5 0 0 0 0 10v5.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V14h1v1.5a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5zM2 11h1v1H2zm2 0h1v1H4zm-1 2v1H2v-1zm1 0h1v1H4zm9-10v1h-1V3zM8 5h1v1H8zm1 2v1H8V7zM8 9h1v1H8zm2 0h1v1h-1zm-1 2v1H8v-1zm1 0h1v1h-1zm3-2v1h-1V9zm-1 2h1v1h-1zm-2-4h1v1h-1zm3 0v1h-1V7zm-2-2v1h-1V5zm1 0h1v1h-1z" />
-</svg> 
-                <div>
-                  <strong class="contect-details-title">City:</strong><br>
-                  <span>Kutch</span>
-                </div>
-              </div>
-              
-              <div class="mockup-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" class="bi bi-flag-fill mx-2 me-4" viewBox="0 0 16 16">
-<path d="M14.778.085A.5.5 0 0 1 15 .5V8a.5.5 0 0 1-.314.464L14.5 8l.186.464-.003.001-.006.003-.023.009a12 12 0 0 1-.397.15c-.264.095-.631.223-1.047.35-.816.252-1.879.523-2.71.523-.847 0-1.548-.28-2.158-.525l-.028-.01C7.68 8.71 7.14 8.5 6.5 8.5c-.7 0-1.638.23-2.437.477A20 20 0 0 0 3 9.342V15.5a.5.5 0 0 1-1 0V.5a.5.5 0 0 1 1 0v.282c.226-.079.496-.17.79-.26C4.606.272 5.67 0 6.5 0c.84 0 1.524.277 2.121.519l.043.018C9.286.788 9.828 1 10.5 1c.7 0 1.638-.23 2.437-.477a20 20 0 0 0 1.349-.476l.019-.007.004-.002h.001" />
-</svg>
-                <div>
-                  <strong class="contect-details-title">State & Zip:</strong><br>
-                  <span>Gujrat, 94102</span>
-                </div>
-              </div>
-              
-              <div class="mockup-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" class="bi bi-envelope-fill mx-2 me-4" viewBox="0 0 16 16">
-<path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
-</svg>
-                <div>
-                  <strong class="contect-details-title">Email:</strong><br>
-                  <span>Nati@gmail.com</span>
-                </div>
-              </div>
-              <div class="mockup-contact-item">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" class="bi bi-telephone-fill mx-2 me-4" viewBox="0 0 16 16">
-<path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-</svg>
-                <div>
-                  <strong class="contect-details-title">Contact Number:</strong><br>
-                  <span>78745 79457</span>
-                </div>
-              </div>
-            </div>
-            
-            <div class="col-lg-5 d-flex justify-content-center align-items-center">
-              <div class="map-container">
-                <iframe 
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019603418214!2d-122.42067908467815!3d37.77492927975914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c8e6f4561%3A0x8a8f0e050d8c0b5e!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1629640484862!5m2!1sen!2sus" 
-                  allowfullscreen 
-                  loading="lazy">
-                </iframe>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        
-        
-        <!-- Description Section -->
-        <div class="description-section">
-          <h3 class="section-title">Description</h3>
-          <p>
-            Passionate full-stack developer with 8+ years of experience creating innovative web and mobile applications. I specialize in modern JavaScript frameworks, cloud architecture, and user-centered design principles. My expertise spans across React, Node.js, Python, and AWS services. I have successfully led cross-functional teams to deliver scalable solutions for startups and Fortune 500 companies. I'm particularly interested in emerging technologies like AI/ML integration, progressive web apps, and sustainable software development practices. When I'm not coding, you can find me contributing to open-source projects, mentoring junior developers, or exploring the latest trends in technology and design.
-          </p>
-        </div>
-        
       </div>
-    </div>
-  </div>
-</div>
- <!-- footer -->
-      <footer class="footer desktopviewfooter d-none d-md-block">
+ 
+      <section>
+         <div class="row d-flex justify-content-center" >
+         <div class="col-md-10 filter-home-col-10 ">
+            <!-- 360° View -->
+            <div class="relative w-full max-w-5xl  -auto rounded-2xl overflow-hidden mt-3">
+               <div class="absolute inset-0 bg-cover bg-center backgournd-img-overlay">
+                  <div id="overlay" class="img-pri-360-overlay">
+                     <div class="d-flex justify-content-center">
+                        <div class="image-content d-flex justify-content-center">
+                        <img src="./assest/img/10015-10f163ba-9a5d-4923-b186-0dfe01b685c0.jpg" class="img-fluid">
+                        </div>
+                     </div>
+                     <button type="button" class="btn btn-primary model-preview-view-btn" data-bs-toggle="modal" data-bs-target="#modern360Modal">360° View </button>
+                  </div>
+               </div>
+            </div>
+            <!-- second content  -->
+
+            </div>
+         </div>
+      </section>
+      <!-- footer -->
+    <footer class="footer desktopviewfooter d-none d-md-block">
         <div class="container-fluid">
             <div class="row ">
 
@@ -1040,7 +852,7 @@
             </div>
     </div>
     </footer>
-     <footer class="second-footer d-none d-md-block">
+    <footer class="second-footer">
         <div class="container-fluid">
 
             <div class="row text-center">
@@ -1056,33 +868,66 @@
             </div>
         </div>
     </footer> 
-   
-    <footer class="second-footer d-block d-md-none">
-        <div class="container-fluid">
-
-            <div class="row text-center">
-                <div class="col-md-12  p-2">
-                    <p class="mb-0 text-white"> Developed by <a href="https://theuniqueitsolution.com/"
-                            target="_blank" class="text-white text-decoration-none">Unique
-                            IT Solution</a> </p>
-                </div>
-            </div>
+     
+<!-- Modal -->
+<!-- 360 Modal -->
+<div class="modal fade" id="modern360Modal" tabindex="-1" aria-labelledby="modern360ModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content tiles-design-360preview-modal-content rounded-4 border-0 custom-width-height-model">
+      
+      <!-- Modal Header -->
+      <div class="modal-header tiles-design-360preview-header border-0">
+        <button type="button" class="tiles-design-360preview-close-btn ms-auto" data-bs-dismiss="modal" aria-label="Close">
+          <img src="./assest/img/icon/X-black.svg" alt="">
+        </button>
+      </div>
+      
+      <!-- Modal Body -->
+      <div class="modal-body p-3 custome-padding-remove">
+        <div id="imageContainer" class="tiles-design-360preview-image-container d-flex justify-content-center align-items-center position-relative overflow-hidden" style="width: 100%; height: 100%;">
+          <div id="panorama" style="width: 100%; height: 100%; border-radius: 8px;"></div>
         </div>
-    </footer> 
- <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
+      </div>
+
+    </div>
+  </div>
+</div>
+<!-- Pannellum Init Script -->
+<script>
+  const modal = document.getElementById('modern360Modal');
+  let viewerInitialized = false;
+
+  modal.addEventListener('shown.bs.modal', function () {
+    if (!viewerInitialized) {
+      pannellum.viewer('panorama', {
+        type: "equirectangular",
+        panorama: "https://pannellum.org/images/alma.jpg", // Replace with your 360 image URL
+        autoLoad: true,
+        compass: false,
+        showControls: true
+      });
+      viewerInitialized = true;
+    }
+  });
+</script>
+
+      <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
       <script src="./assest/js/masonry.pkgd.min.js"></script>
       <script src="./assest/js/classie.js"></script>
       <script src="./assest/js/cbpGridGallery.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
       <script src="./assest/js/dev-script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/pannellum@2.5.6/build/pannellum.js"></script>
+
       <script>
          // 9. image grid gallery
-         new CBPGridGallery(document.getElementById("grid-gallery"));
+         new CBPGridGallery(document.getElementById('grid-gallery'));
+         
       </script>
       <script>
-         document.addEventListener("DOMContentLoaded", function () {
-             new CBPGridGallery(document.getElementById("grid-gallery"));
+         document.addEventListener('DOMContentLoaded', function () {
+           new CBPGridGallery(document.getElementById('grid-gallery'));
          });
       </script>
-</body>
+   </body>
 </html>

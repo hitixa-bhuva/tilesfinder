@@ -875,7 +875,7 @@
     /* 5.8 product detial page */
     /* 5.8.1 OHG Kitchen Niche Fruit Walnut HL */
     .btn-inquiry {
-        width: 54% !important; 
+        width: 67% !important; 
     }
     .MakeanInquiry{
         display: flex !important;
@@ -1138,6 +1138,9 @@
 
 /* 6. 375 screen size */
 @media (max-width: 380px) {
+        .custompadding-border {
+    padding: 10px;
+}
 .grid figure {
         padding: 4px 4px 0 4px !important;
     }
@@ -1791,6 +1794,15 @@
     top: -5% !important;
     right: -2% !important;
     position: absolute;
+}
+.tile-details{
+    flex-direction: column;
+}
+.inquiry-btn-design{
+    margin-top: 5px;
+}
+.tile-name{
+    text-align: center;
 }
 }
 /* @media (max-width: 994px) {

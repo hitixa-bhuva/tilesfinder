@@ -38,21 +38,32 @@ function openFilter() {
          }
 
 // 2. backdrop add in phone view nav
-  function toggleMenu() {
-    const menu = document.getElementById("toggleMenu");
-    const backdrop = document.getElementById("backdrop");
-    const isOpen = menu.classList.toggle("active");
-    backdrop.style.display = isOpen ? "block" : "none";
-    closeFilterMenu();
-  }
-  
+
+function toggleMenu() {
+  const menu = document.getElementById("toggleMenu");
+  const backdrop = document.getElementById("backdrop");
+  const isOpen = menu.classList.toggle("active");
+
+  backdrop.style.display = isOpen ? "block" : "none";
+  backdrop.classList.toggle("show", isOpen);
+
+  document.body.classList.toggle("no-scroll", isOpen);
+
+  closeFilterMenu();
+}
+
 function closeFilterMenu() {
   const filter = document.getElementById("filterSidebar");
+  const backdrop = document.getElementById("backdrop");
 
   filter.classList.remove("active");
   backdrop.classList.remove("show");
+  const menu = document.getElementById("toggleMenu");
+  if (!menu.classList.contains("active") && !filter.classList.contains("active")) {
+    document.body.classList.remove("no-scroll");
+    backdrop.style.display = "none";
+  }
 }
-
 
 
 // 4. popup model script

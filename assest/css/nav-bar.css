@@ -141,12 +141,12 @@
 }
 
 .dropdown-item {
-	padding: 10px 0 10px 0;
+	padding: 10px 0 5px 0;
 }
 
-.dropdown-item:hover {
+/* .dropdown-item:hover {
 	background-color: #f8f9fa;
-}
+} */
 
 @media (max-width: 768px) {
 	.dropdown:hover .dropdown-menu {
@@ -433,11 +433,12 @@
    		overflow-wrap: break-word !important;
 	    white-space: inherit !important;
 	}
-
+ 
 	.dropdown-item:hover {
-		background: #f0f0f0;
+		background: transparent !important;
+		color: #4169E1;
 	}
-	
+	 
 
 	.navbar-nav {
 		display: flex;

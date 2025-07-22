@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TilesFinder</title>
+      <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+      <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+      <meta name="author" content="Codrops" />
+      <meta name="robots" content="noindex, nofollow" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./assest/css/nav-bar.css" />
+      <link rel="stylesheet" href="./assest/css/dev-style.css" />
+      <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
+      <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg" />
+      <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
+      <script src="./assest/js/modernizr.custom.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="d-lg-block home-first-nav">
+         <!-- Home top navrbar  -->
+         <nav class="navbar navbar-expand-lg navbar-light top-nav">
+            <div class="container-fluid px-3">
+               <a class="navbar-brand" href="index.html">
+               <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder" />
+               </a>
+               <div class="row">
+                  <div class="d-flex align-items-center">
+                     <div>
+                        <img src="./assest/img/icon/map-icon.svg" class="me-1" alt="map">
+                     </div>
+                     <div>
+                        <p class="current-pincode-text mb-0">Current Pincode</p>
+                        <h2 class="current-pincode-code mb-0">123 356</h2>
+                     </div>
+                  </div>
+               </div>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarContent">
+                  <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
+                    <div class="search-container">
+                      <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
+                      <input type="text" id="searchInput1" placeholder="Search for tiles" />
+                    </div>
+                  </div>
+                  <div class="contact-info ms-auto">
+                     <div>
+                        <img src="./assest/img/icon/EnvelopeSimple.svg" alt="">
+                        <a href="mailto:mannhachkt08@gmail.com">mannhachkt08@gmail.com</a>
+                     </div>
+                     <div>
+                        <img src="./assest/img/icon/Phone.svg" alt="">
+                        <a href="tel:(308)555-0121">(308) 555-0121</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </div>
+      <!-- 768 after show  -->
+      <div class="d-lg-none d-md-block">
+         <div class="toggle-menu" id="toggleMenu">
+            <div>
+               <button class="close-btn" onclick="toggleMenu()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
+                  </svg>
+               </button>
+               <div class="contact-item mt-4">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
+                     <path
+                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+                        />
+                  </svg>
+                  <span>manhhachkt08@gmail.com</span>
+               </div>
+               <div class="contact-item">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
+                     <path
+                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                        ></path>
+                  </svg>
+                  <span>(308) 555-0121</span>
+               </div>
+            </div>
+            <hr />
+            <div class="toggle-menu-content">
+               <a href="aboutUs.html" class="toggle-menu-item"> About Us </a>
+               <a href="contact.html" class="toggle-menu-item"> Contact Us </a>
+               <a href="blog.html" class="toggle-menu-item"> Blogs </a>
+            </div>
+         </div>
+         <nav class="navbar mobile-nav">
+            <div class="container-fluid p-0">
+               <button class="navbar-toggler" type="button" onclick="toggleMenu()">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <a class="navbar-brand" href="#">
+               <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinders" />
+               </a>
+            </div>
+         </nav>
+         <div class="container-fluid px-3">
+            <div class="search-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+              </svg>
+              <input type="text" id="searchInput2" placeholder="Search for tiles" />
+              <span class="filter-container" onclick="openFilter()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
+                  <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                </svg>
+              </span>
+              <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
+              <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+            </div>
+         </div>
+         <!-- Filter Sidebar (Slider) -->
+      </div>
+      <section class="mb-5">
+         <!-- home hero banner section start -->
+         <section class="Find-Perfect-hero-section">
+            <div class="container">
+               <div class="row align-items-center min-vh-100 find-perfect-tiles-bannenr">
+                  <div class="col-lg-6 col-md-12 order-2 order-lg-1">
+                     <div class="Find-Perfect-hero-content">
+                        <h1 class="Find-Perfect-title">
+                           Find the Perfect<br>
+                           Tile for Any Space
+                        </h1>
+                        <p class="Find-Perfect-subtitle">
+                           Browse styles, compare options, and visualize tiles in your room — all in one place
+                        </p>
+                        <div class="Find-Perfect-button-main">
+                           <button class="btn Find-Perfect-button">
+                        <i class="fas fa-search me-2"></i>
+                        Find Your Tiles
+                        </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-6 col-md-12 order-1 order-lg-2 d-flex justify-content-end">
+                     <img src="./assest/img/home/home-banner.svg" alt="Tile illustration" class="img-fluid">
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- home hero banner section end -->
+          <div class="custom-margin-top-20"></div>
+         <!-- about use section start -->
+         <div class="container about-section">
+            <div class="row align-items-center who-we-are-about-section-row">
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6 who-we-are-col-6">
+                  <div class="who-we-are-badge">WHO WE ARE</div>
+                  <h1 class="about-heading">About TilesFinders</h1>
+                  <p class="about-text">
+                     We are a leading tile manufacturing company
+                     committed to
+                     delivering high-quality, innovative, and durable
+                     tiles for homes,
+                     offices, and commercial spaces. With years of
+                     experience in the
+                     industry, we take pride in our craftsmanship,
+                     cutting-edge
+                     technology, and passion for excellence. Our wide
+                     range of tiles
+                     includes ceramic, porcelain, vitrified, and
+                     decorative tiles, designed
+                     to elevate any space with style and functionality.
+                  </p>
+                  <div class="row mb-3">
+                     <div class="col-md-6">
+                        <ul class="features-list">
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Uncompromised Quality
+                           </li>
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Trendsetting Designs
+                           </li>
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Eco-Conscious Approach
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="col-md-6">
+                        <ul class="features-list">
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Competitive Pricing
+                           </li>
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Reliable Network
+                           </li>
+                           <li class="feature-item">
+                              <span class="check-icon">
+                              <img src="./assest/img/about-us/icon/checked 1.svg" alt="checked">
+                              </span>
+                              Expert Guidance
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <a href="">
+                  <button id="viewMoreBtnblog" class="btn btn-view-more">
+                  Find Your Tiles
+                  </button>
+                  </a>
+               </div>
+               <div class="col-lg-6 col-md-12 col-sm-12 col-xl-6">
+                  <div class="team-image-container team-image-container-abour-small">
+                     <img src="./assest/img/about-us/image (14).png" alt="TilesFinders Team" class="img-fluid ">
+                     <div class="blue-accent"><img src="./assest/img/about-us/image (15).png" alt="about tiles">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- about use section end -->
+          <div class="custom-margin-top-20"></div>
+          <div class="custom-margin-top-small-70"></div>
+         <!-- Tiles for Every Space section start -->
+         <div class="header text-center">
+            <span class="Tiles-Every-Area-section-badge">CATEGORIES</span>
+            <h1 class="TilesEvery-Space-main-title">Tiles for Every Space</h1>
+         </div>
+         <div class="TilesEvery-Space-tiles-container">
+            <div class="TilesEvery-Space-tiles-grid">
+               <!-- Tile 1 - Left tall bathroom -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/10-image.png" alt="Bathroom with geometric tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 2 - Top middle mosaic -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/11-image.png" alt="Blue mosaic tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 3 - Top right kitchen -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/12-image.png" alt="Kitchen with white tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 4 - Right tall bathroom -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/13-image.png" alt="Modern bathroom with pattern tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 5 - Bottom left bathroom -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/14-image.png" alt="Bathroom with blue accent tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 6 - Large center kitchen -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/15-image.png" alt="Modern kitchen with white subway tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 7 - Right middle bathroom -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/16-image.png" alt="Bathroom with mosaic tiles" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 8 - Bottom middle left bathroom -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/17-image.png" alt="Bathroom with geometric pattern" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 9 - Bottom middle right kitchen -->
+               <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/18-image.png" alt="Kitchen backsplash" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Tile 10 - Bottom right kitchen -->
+               <!-- <div class="TilesEvery-Space-tile-item">
+                  <img src="./assest/img/mockup/19-image.png" alt="Modern kitchen design" class="TilesEvery-Space-tile-image">
+                  <div class="TilesEvery-Space-tile-overlay">
+                     <div class="TilesEvery-Space-tile-title">
+                        Subway Tiles
+                        <div class="TilesEvery-Space-tile-arrow">
+                           <img src="./assest/img/icon/ArrowUpRight-white.svg" alt="">
+                        </div>
+                     </div>
+                  </div>
+               </div> -->
+            </div>
+         </div>
+         <!-- Tiles for Every Space section end -->
+          <div class="custom-margin-top-20"></div>
+         <!-- Tiles for Every Area -->
+         <section class="py-5 pb-small-0">
+            <div class="TilesEvery-Space-tiles-container">
+               <div class="text-center mb-2">
+                  <span class="Tiles-Every-Area-section-badge">AREAS</span>
+                  <h2 class="Tiles-Every-Area-section-title">Tiles for Every Area</h2>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="card Tiles-Every-Area-tile-card">
+                        <img src="./assest/img/icon/Car.svg" class="Tiles-Every-Area-tile-icon" alt="car">
+                        <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="arrow">
+                        <h3 class="Tiles-Every-Area-tile-title">Parking</h3>
+                        <p class="Tiles-Every-Area-tile-description">A perfect blend of durability and elegance.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="card Tiles-Every-Area-tile-card">
+                        <img src="./assest/img/icon/ForkKnife.svg" class="Tiles-Every-Area-tile-icon" alt="ForkKnife">
+                        <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="arrow">
+                        <h3 class="Tiles-Every-Area-tile-title">Kitchen</h3>
+                        <p class="Tiles-Every-Area-tile-description">Unique patterns and textures for a distinctive touch.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="card Tiles-Every-Area-tile-card">
+                        <img src="./assest/img/icon/Bed.svg" class="Tiles-Every-Area-tile-icon" alt="Bed">
+                        <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="arrow">
+                        <h3 class="Tiles-Every-Area-tile-title">Living Room</h3>
+                        <p class="Tiles-Every-Area-tile-description">Low-maintenance solutions built to last.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="card Tiles-Every-Area-tile-card">
+                        <img src="./assest/img/icon/Lego.svg" class="Tiles-Every-Area-tile-icon" alt="Lego">
+                        <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="arrow">
+                        <h3 class="Tiles-Every-Area-tile-title">Kids Room</h3>
+                        <p class="Tiles-Every-Area-tile-description">Custom-made solutions for architects, builders, and large-scale projects.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Explore By Categories starty -->
+          <div class="custom-margin-top"></div>
+         <section class="py-5">
+            <div class="TilesEvery-Space-tiles-container">
+               <div class="text-center mb-5 Tiles-Every-Area-section-div">
+                  <span class="Tiles-Every-Area-section-badge">TILES</span>
+                  <h2 class="Tiles-Every-Area-section-title">Explore By Categories</h2>
+               </div>
+               <!-- Category Tabs -->
+               <ul class="nav nav-pills Tiles-Every-Area-category-tabs justify-content-center mb-4" id="tileTabs" role="tablist">
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link active Tiles-Every-Area-category-tab" data-bs-toggle="pill" data-bs-target="#TilesBySize" type="button" role="tab">Tiles by Size</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link Tiles-Every-Area-category-tab" data-bs-toggle="pill" data-bs-target="#TilesByFinish" type="button" role="tab">Tiles by Finish</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link Tiles-Every-Area-category-tab" data-bs-toggle="pill" data-bs-target="#TilesByCategory" type="button" role="tab">Tiles by Category</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link Tiles-Every-Area-category-tab" data-bs-toggle="pill" data-bs-target="#TilesByLook" type="button" role="tab">Tiles by Look</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                     <button class="nav-link Tiles-Every-Area-category-tab" data-bs-toggle="pill" data-bs-target="#TilesByColor" type="button" role="tab">Tiles by Color</button>
+                  </li>
+               </ul>
+               <!-- Tab Content -->
+               <div class="tab-content" id="tileTabContent">
+                  <!-- Size -->
+                  <div class="tab-pane fade show active" id="TilesBySize" role="tabpanel">
+                     <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <img src="./assest/img/icon/ArrowsOut.svg" class="Tiles-Every-Area-size-icon" alt="Area size icon">
+                              <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">395×395 mm</h3>
+                              <p class="Tiles-Every-Area-size-description">A perfect blend of durability and elegance.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <img src="./assest/img/icon/ArrowsOut.svg" class="Tiles-Every-Area-size-icon" alt="Area size icon">
+                              <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">800×800 mm</h3>
+                              <p class="Tiles-Every-Area-size-description">Unique patterns and textures for a distinctive touch.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <img src="./assest/img/icon/ArrowsOut.svg" class="Tiles-Every-Area-size-icon" alt="Area size icon">
+                              <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">800×800 mm</h3>
+                              <p class="Tiles-Every-Area-size-description">Unique patterns and textures for a distinctive touch.</p>
+                           </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <img src="./assest/img/icon/ArrowsOut.svg" class="Tiles-Every-Area-size-icon" alt="Area size icon">
+                              <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">800×800 mm</h3>
+                              <p class="Tiles-Every-Area-size-description">Unique patterns and textures for a distinctive touch.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Finish -->
+                  <div class="tab-pane fade" id="TilesByFinish" role="tabpanel">
+                     <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <i class="fas fa-gem Tiles-Every-Area-size-icon"></i>
+                                <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">Glossy Finish</h3>
+                              <p class="Tiles-Every-Area-size-description">High-shine surface that reflects light beautifully.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Category -->
+                  <div class="tab-pane fade" id="TilesByCategory" role="tabpanel">
+                     <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <i class="fas fa-home Tiles-Every-Area-size-icon"></i>
+                                <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">Ceramic Tiles</h3>
+                              <p class="Tiles-Every-Area-size-description">Traditional and versatile for any space.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Look -->
+                  <div class="tab-pane fade" id="TilesByLook" role="tabpanel">
+                     <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <i class="fas fa-tree Tiles-Every-Area-size-icon"></i>
+                                <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">Wood Look</h3>
+                              <p class="Tiles-Every-Area-size-description">Natural wood appearance with tile durability.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Color -->
+                  <div class="tab-pane fade" id="TilesByColor" role="tabpanel">
+                     <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                           <div class="card Tiles-Every-Area-size-card bg-transparent">
+                              <i class="fas fa-circle Tiles-Every-Area-size-icon"></i>
+                                <img src="./assest/img/icon/ArrowUpRight.svg" class="Tiles-Every-Area-arrow-icon" alt="Tiles Every Area arrow">
+                              <h3 class="Tiles-Every-Area-size-title">White & Light</h3>
+                              <p class="Tiles-Every-Area-size-description">Bright and airy color palette.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Tiles for Every Area -->
+         <!-- Enter your pin code and explore start -->
+         <section class="property-section">
+            <div class="TilesEvery-Space-tiles-container">
+               <div class="row justify-content-center">
+                  <div class="col-12">
+                     <div class="property-container">
+                        <!-- 3D Cards -->
+                        <div class="property-cards-wrapper">
+                           <!-- Shadow behind cards -->
+                           <div class="cards-overlay-shadow"></div>
+                           <div class="property-card card-1">
+                              <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=1000&q=80" alt="Living Room">
+                           </div>
+                           <div class="property-card card-2">
+                              <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?auto=format&fit=crop&w=1000&q=80" alt="Kitchen">
+                           </div>
+                           <div class="property-card card-3">
+                              <img src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=1000&q=80" alt="Bedroom">
+                           </div>
+                        </div>
+                        <!-- Location Icon -->
+                        <div class="location-pin">
+                           <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h1 class="property-title">
+                           Enter your pin code and explore<br>
+                           mockups near you
+                        </h1>
+                        <button class="btn property-btn">
+                        Enter Pincode
+                        </button> 
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- Enter your pin code and explore end -->
+         <!-- Built for Creators of Beautiful Spaces start -->
+         <div class="home-main-who-can-use-container">
+            <div class="TilesEvery-Space-tiles-container">
+               <div class="home-main-who-can-use-title">
+                  <span class="Tiles-Every-Area-section-badge">WHO CAN USE</span>
+                  <h1 class="home-main-who-can-use-heading">Built for Creators of Beautiful Spaces</h1>
+               </div>
+               <div class="row g-4">
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="home-main-who-can-use-card">
+                        <div class="home-main-who-can-use-icon">
+                           <img src="./assest/img/icon/Ruler.svg" alt="Ruler">
+                        </div>
+                        <h3>Architects</h3>
+                        <p>Unique patterns and textures for a distinctive touch.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="home-main-who-can-use-card">
+                        <div class="home-main-who-can-use-icon">
+                           <img src="./assest/img/icon/GearSix.svg" alt="GearSix">
+                        </div>
+                        <h3>Manufacturers</h3>
+                        <p>Unique patterns and textures for a distinctive touch.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="home-main-who-can-use-card">
+                        <div class="home-main-who-can-use-icon">
+                           <img src="./assest/img/icon/Storefront.svg" alt="Storefront">
+                        </div>
+                        <h3>Dealers</h3>
+                        <p>Unique patterns and textures for a distinctive touch.</p>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="home-main-who-can-use-card">
+                        <div class="home-main-who-can-use-icon">
+                           <img src="./assest/img/icon/House.svg" alt="house">
+                        </div>
+                        <h3>Home Builders</h3>
+                        <p>Unique patterns and textures for a distinctive touch.</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- Built for Creators of Beautiful Spaces end -->
+         <!-- Your Guide to Finding the Right Tile start -->
+         <section class="Finding-Right-Tile-section">
+            <div class="Finding-Right-Tile-subtitle">How to Use</div>
+            <h2 class="Finding-Right-Tile-title">Your Guide to Finding the Right Tile</h2>
+            <div class="Finding-Right-Tile-wrapper">
+               <!-- Line -->
+               <div class="Finding-Right-Tile-line"></div>
+               <!-- Step 1 -->
+               <div class="Finding-Right-Tile-step">
+                  <div class="Finding-Right-Tile-dot"></div>
+                  <div class="Finding-Right-Tile-step-number">Step 1</div>
+                  <div class="Finding-Right-Tile-icon">
+                     <img src="./assest/img/icon/MapPin-white.svg" alt="MapPin">
+                  </div>
+                  <div class="Finding-Right-Tile-text">Enter Your Pincode</div>
+               </div>
+               <!-- Step 2 -->
+               <div class="Finding-Right-Tile-step">
+                  <div class="Finding-Right-Tile-dot"></div>
+                  <div class="Finding-Right-Tile-step-number">Step 2</div>
+                  <div class="Finding-Right-Tile-icon">
+                     <img src="./assest/img/icon/MagnifyingGlass-white.svg" alt="MagnifyingGlass">
+                  </div>
+                  <div class="Finding-Right-Tile-text">Discover Nearby Mockups</div>
+               </div>
+               <!-- Step 3 -->
+               <div class="Finding-Right-Tile-step">
+                  <div class="Finding-Right-Tile-dot"></div>
+                  <div class="Finding-Right-Tile-step-number">Step 3</div>
+                  <div class="Finding-Right-Tile-icon">
+                     <img src="./assest/img/icon/SquaresFour.svg" alt="SquaresFour">
+                  </div>
+                  <div class="Finding-Right-Tile-text">Explore Mockup Details</div>
+               </div>
+            </div>
+         </section>
+         <!-- Your Guide to Finding the Right Tile end -->
+         <!-- faq section start -->
+         <div class="main-home-faq-container">
+            <div class="text-center">
+               <span class="main-home-faq-badge">FAQS</span>
+               <h1 class="main-home-faq-title">Need Help?</h1>
+            </div>
+            <div class="accordion" id="faqAccordion">
+               <div class="accordion-item main-home-accordion-item main-home-first-item">
+                  <h2 class="accordion-header" id="headingOne">
+                     <button class="accordion-button main-home-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                     What is this platform used for?
+                     </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show main-home-accordion-collapse" data-bs-parent="#faqAccordion">
+                     <div class="accordion-body main-home-accordion-body">
+                        This platform allows service-based businesses to accept online bookings, manage schedules, and automate communication with clients.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item main-home-accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                     <button class="accordion-button main-home-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                     Can I customize services and timings?
+                     </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse main-home-accordion-collapse" data-bs-parent="#faqAccordion">
+                     <div class="accordion-body main-home-accordion-body">
+                        Yes, you can fully customize your service offerings, time slots, staff availability, and pricing from the admin panel.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item main-home-accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                     <button class="accordion-button main-home-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+                     Is there a mobile app?
+                     </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse main-home-accordion-collapse" data-bs-parent="#faqAccordion">
+                     <div class="accordion-body main-home-accordion-body">
+                        Yes, both business owners and clients can use our mobile apps for scheduling, notifications, and real-time updates.
+                     </div>
+                  </div>
+               </div>
+               <div class="accordion-item main-home-accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                     <button class="accordion-button main-home-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour">
+                     Is there a free trial?
+                     </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse main-home-accordion-collapse" data-bs-parent="#faqAccordion">
+                     <div class="accordion-body main-home-accordion-body">
+                        Yes, we offer a 7-day free trial so you can explore all features before subscribing to a plan.
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- faq section end -->
+      </section>
+      <!-- footer -->
+     <footer class="footer desktopviewfooter d-none d-md-block" id="pageFooter">
+        <div class="container-fluid">
+            <div class="row ">
+
+                <div class="col-md-2 col-6">
+                    <h5>Area</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">Bathroom </a></li>
+                        <li><a href="#">Kitchen </a></li>
+                        <li><a href="#">Parking </a></li>
+                        <li><a href="#">Swimming Pool </a></li>
+                        <li><a href="#">Balcony </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Look</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">Marble </a></li>
+                        <li><a href="#">Texture </a></li>
+                        <li><a href="#">Mosaic </a></li>
+                        <li><a href="#">Pattern </a></li>
+                        <li><a href="#">Stone </a></li>
+                        <li><a href="#">Cement </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Category</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">Ceramic </a></li>
+                        <li><a href="#">Digital </a></li>
+                        <li><a href="#">PGVT </a></li>
+                        <li><a href="#">GVT </a></li>
+                        <li><a href="#">DGVT </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Color</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">Pink </a></li>
+                        <li><a href="#">White </a></li>
+                        <li><a href="#">Grey </a></li>
+                        <li><a href="#">Brown </a></li>
+                        <li><a href="#">Blue </a></li>
+                        <li><a href="#">Yellow </a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Size</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">395×395 </a> mm</li>
+                        <li><a href="#">800×800 </a> mm</li>
+                        <li><a href="#">200×1200 </a> mm</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-2 col-6">
+                    <h5>Finish</h5>
+                    <ul class="list-unstyled footer-menu">
+                        <li><a href="#">Matt </a></li>
+                        <li><a href="#">Glossy </a></li>
+                        <li><a href="#">Super </a> Glossy</li>
+                        <li><a href="#">Sugar </a> Finish</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="row align-items-center justify-content-between footer-section">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center">
+                    <h3 class="logo">
+                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                    </h3>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="blog.html">Blogs</a>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-sm-12   text-end follo-link-footer">
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                            alt="Facebook"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                            alt="Instagram"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                            alt="LinkedIn"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                            alt="YouTube"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+      <footer class="footer d-block d-md-none p-0">
+         <div class="container-fluid p-0">
+            <div class="row">
+            </div>
+            <!-- Mobile View: Accordion -->
+            <div class="">
+               <div class="accordion" id="footerAccordion">
+                  <!-- Area -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingArea">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseArea" aria-expanded="false" aria-controls="collapseArea">
+                        Area
+                        </button>
+                     </h2>
+                     <div id="collapseArea" class="accordion-collapse collapse" aria-labelledby="headingArea"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Bathroom  
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Kitchen 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Parking 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Swimming  Pool 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Balcony 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Look -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingLook">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseLook" aria-expanded="false" aria-controls="collapseLook">
+                        Look
+                        </button>
+                     </h2>
+                     <div id="collapseLook" class="accordion-collapse collapse" aria-labelledby="headingLook"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Marble 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Texture 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Mosaic 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Pattern 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Stone 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Cement 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Category -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingCategory">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                        Category
+                        </button>
+                     </h2>
+                     <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Ceramic 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Digital 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 PGVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 GVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 DGVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Color -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingColor">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                        Color
+                        </button>
+                     </h2>
+                     <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Pink 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 White 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Grey 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Brown 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Blue 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Yellow 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Size -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingSize">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+                        Size
+                        </button>
+                     </h2>
+                     <div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 395×395 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 800×800 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 200×1200 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Finish -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFinish">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseFinish" aria-expanded="false" aria-controls="collapseFinish">
+                        Finish
+                        </button>
+                     </h2>
+                     <div id="collapseFinish" class="accordion-collapse collapse" aria-labelledby="headingFinish"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Matt 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Glossy 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Super Glossy 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Sugar Finish 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="row align-items-center justify-content-between footer-section">
+               <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center mt-4">
+                  <h3 class="logo text-center">
+                     <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                  </h3>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="blog.html">Blogs</a>
+               </div>
+               <div class="col-lg-4 col-md-12 col-sm-12   text-center follo-link-footer mb-4">
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                     alt="Facebook"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                     alt="Instagram"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                     alt="LinkedIn"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                     alt="YouTube"></a>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <footer class="second-footer">
+         <div class="container-fluid">
+            <div class="row text-center">
+               <div class="col-md-12  justify-content-space-between p-2">
+                  <p class="mb-0 text-white">Copyright © 2025 <a href="index.html" target="_blank"
+                     class="text-white text-decoration-none">
+                     TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/"
+                        target="_blank" class="text-white text-decoration-none">Unique
+                     IT Solution</a> 
+                  </p>
+                  <p class="mb-0"><a href="privacypolicy.html" class="privacypolicy-text">Privacy
+                     Policy</a>
+                  </p>
+               </div>
+            </div>
+         </div>
+      </footer>
+      </div>
+      <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
+      <script src="./assest/js/masonry.pkgd.min.js"></script>
+      <script src="./assest/js/classie.js"></script>
+      <script src="./assest/js/cbpGridGallery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
+      <script src="./assest/js/dev-script.js"></script>
+        <script src="./assest/js/placeholder.js"></script>
+        <script src="./assest/js/fullscreen.js"></script>
+      <script>
+         // 9. image grid gallery
+         new CBPGridGallery(document.getElementById("grid-gallery"));
+      </script>
+   </body>
+</html>

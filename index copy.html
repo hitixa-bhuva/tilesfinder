@@ -49,7 +49,7 @@
                   <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
                     <div class="search-container">
                       <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
-                      <input type="text" id="searchInput1" placeholder="Search for tiles" />
+                      <input type="text" id="checkSearchText" placeholder="Search for tiles" />
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@
                </button>
                <div class="collapse navbar-collapse justify-content-center" id="secondaryNavContent">
                   <ul class="navbar-nav">
-                     <li class="nav-item dropdown" style="width: 150px;">
+                     <li class="nav-item dropdown">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#" id="tilesDropdown">
                            <img src="./assest/img/icon/categories.png" alt="categories" class="navmenu-icon me-1">
                             Categories
@@ -252,11 +252,11 @@
       </div>
 
   <!-- Main Content -->
-  <main class="container-fluid">
+  <main class="container-fluid p-0">
     <div class="row">
       
       <!-- Sidebar -->
-       <aside class="col-md-2 filter-home-col-2 sidebar-left">
+       <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
       <div style="position: sticky; top: 0%;">
         <div class="filter-section">
                   <div class="filter-header Filter-custom-space">

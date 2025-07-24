@@ -49,7 +49,7 @@
                   <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
                     <div class="search-container">
                       <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
-                      <input type="text" id="searchInput1" placeholder="Search for tiles" />
+                      <input type="text" id="checkSearchText" placeholder="Search for tiles" />
                     </div>
                   </div>
 
@@ -74,7 +74,7 @@
                </button>
                <div class="collapse navbar-collapse justify-content-center" id="secondaryNavContent">
                   <ul class="navbar-nav">
-                     <li class="nav-item dropdown" style="width: 150px;">
+                     <li class="nav-item dropdown">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#" id="tilesDropdown">
                            <img src="./assest/img/icon/categories.png" alt="categories" class="navmenu-icon me-1">
                             Categories
@@ -341,11 +341,11 @@
       </div>
 
   <!-- Main Content -->
-  <main class="container-fluid ">
+  <main class="container-fluid p-0">
     <div class="row section-mobile-desktop">
       
       <!-- Sidebar -->
-       <aside class="col-md-2 filter-home-col-2 sidebar-left">
+      <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
       <div style="position: sticky; top: 0%;">
         <div class="filter-section">
                   <div class="filter-header Filter-custom-space">
@@ -906,9 +906,9 @@
                 <div class="col-md-2 col-6">
                     <h5>Size</h5>
                     <ul class="list-unstyled footer-menu">
-                        <li><a href="#">395×395 </a> mm</li>
-                        <li><a href="#">800×800 </a> mm</li>
-                        <li><a href="#">200×1200 </a> mm</li>
+                        <li><a href="#">395×395 mm</a></li>
+                        <li><a href="#">800×800 mm</a></li>
+                        <li><a href="#">200×1200 mm</a></li>
                     </ul>
                 </div>
 
@@ -917,8 +917,8 @@
                     <ul class="list-unstyled footer-menu">
                         <li><a href="#">Matt </a></li>
                         <li><a href="#">Glossy </a></li>
-                        <li><a href="#">Super </a> Glossy</li>
-                        <li><a href="#">Sugar </a> Finish</li>
+                        <li><a href="#">Super Glossy</a> </li>
+                        <li><a href="#">Sugar Finish</a> </li>
                     </ul>
                 </div>
             </div>

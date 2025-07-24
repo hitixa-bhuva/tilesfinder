@@ -177,7 +177,9 @@
 	opacity: 1;
 	max-height: 350px;
 	height: auto;
-	overflow: auto;
+	overflow-y: auto;
+	/* overflow-x: hidden;
+	padding: 10px !important; */
 }
 
 

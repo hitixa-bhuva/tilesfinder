@@ -3,7 +3,7 @@
   let currentPhrase = 0;
   let currentChar = 0;
 
-  const input1 = document.getElementById("searchInput1");
+  const input1 = document.getElementById("checkSearchText");
   const input2 = document.getElementById("searchInput2");
 
   function typePlaceholder() {

@@ -757,6 +757,7 @@
     left: 50%; /* Position its left edge at the horizontal center */
     transform: translateX(-50%);
     margin: 0; 
+    padding: 0;
 }
 
 .navbar-toggler {
@@ -1748,16 +1749,21 @@
 }
 @media (max-width: 992px) {
     .grid-gallery .grid li {
-        width: calc(50% - 10px);
+        width: calc(50% - 1px);
     }
 }
 
 @media (max-width: 600px) {
     .grid-gallery .grid li {
-        width: calc(50% - 16px);
+        width: calc(50% - 1px);
     }
     .custom-padding{
         padding-left: 21px !important;
+    }
+}
+@media (max-width: 430px) {
+    .grid-gallery .grid li {
+        width: 50% !important;
     }
 }
 @media (max-width: 993px) {

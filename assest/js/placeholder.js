@@ -29,46 +29,25 @@
 
 
 // second mobile nav bar
-  const bottomNav = document.getElementById("bottomNav");
-  const footer = document.getElementById("pageFooter");
+  document.addEventListener("DOMContentLoaded", function () {
+    const bottomNav = document.getElementById("bottomNav");
+    const footer = document.getElementById("pageFooter");
 
-  let lastScrollY = window.scrollY;
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          bottomNav.classList.add("hide");
+        } else {
+          bottomNav.classList.remove("hide");
+        }
+      });
+    }, {
+      root: null, // viewport
+      threshold: 0 // as soon as any part is visible
+    });
 
-  window.addEventListener("scroll", () => {
-    const currentScrollY = window.scrollY;
-    const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-    const windowBottom = currentScrollY + window.innerHeight;
-
-    const isNearFooter = windowBottom >= footerTop;
-
-    if (isNearFooter) {
-      // Hide when near footer
-      bottomNav.classList.add("hide");
-    } else if (currentScrollY < lastScrollY) {
-      // Show when scrolling up
-      bottomNav.classList.remove("hide");
-    } else {
-      // Optional: hide on scroll down
-      // bottomNav.classList.add("hide");
-    }
-
-    lastScrollY = currentScrollY;
+    observer.observe(footer);
   });
-
 
 // active in active menu phone view design and mockup
 
-  document.addEventListener("DOMContentLoaded", function () {
-    const navLinks = document.querySelectorAll('.bottom-nav a');
-    const currentPage = window.location.pathname.split("/").pop();
-
-    navLinks.forEach(link => {
-      const linkPage = link.getAttribute("href").split("/").pop();
-
-      if (linkPage === currentPage) {
-        link.classList.add("active");
-      } else {
-        link.classList.remove("active");
-      }
-    });
-  });

@@ -41,7 +41,7 @@
                      </div>
                   </div>
                </div>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+               <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarContent">
@@ -210,7 +210,7 @@
             </div>
          </div>
          <nav class="navbar mobile-nav">
-            <div class="container-fluid p-0">
+            <div class="container-fluid p-0 disply-none-desktop-mobile">
                <button class="navbar-toggler" type="button" onclick="toggleMenu()">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -219,7 +219,7 @@
                </a>
             </div>
          </nav>
-         <div class="container-fluid px-3">
+         <div class="container-fluid px-3 search-container-mobile-desktop">
             <div class="search-container">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -250,7 +250,7 @@
       <section class="mb-5">
          <div class="row">
             <!-- desktop view side bar -->
-            <div class="col-md-2 filter-home-col-2 filter-sidebar p-0 sticky-sidebar-parent" id="filterSidebar">
+           <div class="col-md-2 filter-home-col-2 filter-sidebar p-0 sidebar-left" id="filterSidebar">
                <div class="filter-section">
                   <div class="filter-header Filter-custom-space">
                      <!-- Close button (mobile only) -->
@@ -944,7 +944,7 @@
             </div>
         </div>
         <!-- footer -->
-       <footer class="footer desktopviewfooter d-none d-md-block" id="pageFooter">
+       <footer class="footer desktopviewfooter d-none d-md-block">
         <div class="container-fluid">
             <div class="row ">
 
@@ -1044,7 +1044,7 @@
             </div>
         </div>
     </footer>
-    <footer class="footer d-block d-md-none p-0">
+   <footer class="footer d-block d-md-none p-0" id="pageFooter">
     <div class="container-fluid p-0">
         <div class="row">
         </div>
@@ -1294,6 +1294,7 @@
         <script src="./assest/js/dev-script.js"></script>
         <script src="./assest/js/placeholder.js"></script>
         <script src="./assest/js/fullscreen.js"></script>
+  <script src="./assest/js/side-bar-collapse.js"></script>
         <script>
             // 9. image grid gallery
             new CBPGridGallery(document.getElementById("grid-gallery"));

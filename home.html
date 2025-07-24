@@ -41,7 +41,7 @@
                      </div>
                   </div>
                </div>
-               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+               <button class="navbar-toggler p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
                <span class="navbar-toggler-icon"></span>
                </button>
                <div class="collapse navbar-collapse" id="navbarContent">
@@ -67,37 +67,123 @@
       </div>
       <!-- 768 after show  -->
       <div class="d-lg-none d-md-block">
-         <div class="toggle-menu" id="toggleMenu">
-            <div>
-               <button class="close-btn" onclick="toggleMenu()">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
-                     <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z" />
-                  </svg>
-               </button>
-               <div class="contact-item mt-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
-                     <path
-                        d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-                        />
-                  </svg>
-                  <span>manhhachkt08@gmail.com</span>
-               </div>
-               <div class="contact-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
-                     <path
-                        d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                        ></path>
-                  </svg>
-                  <span>(308) 555-0121</span>
-               </div>
-            </div>
-            <hr />
-            <div class="toggle-menu-content">
-               <a href="aboutUs.html" class="toggle-menu-item"> About Us </a>
-               <a href="contact.html" class="toggle-menu-item"> Contact Us </a>
-               <a href="blog.html" class="toggle-menu-item"> Blogs </a>
-            </div>
-         </div>
+         <div class="toggle-menu active" id="toggleMenu">
+      <div>
+        <button class="close-btn" onclick="toggleMenu()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+            <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"></path>
+          </svg>
+        </button>
+        <div class="contact-item mt-4">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
+            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"></path>
+          </svg>
+          <span>manhhachkt08@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#4169E1" viewBox="0 0 16 16">
+            <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z">
+            </path>
+          </svg>
+          <span>(308) 555-0121</span>
+        </div>
+      </div>
+      <hr>
+      <div class="toggle-menu-content">
+        <a href="aboutUs.html" class="toggle-menu-item">About Us</a>
+        <a href="contact.html" class="toggle-menu-item">Contact Us</a>
+        <a href="blog.html" class="toggle-menu-item">Blog</a>
+
+        <!-- Main Dropdown: Categories -->
+        <a class="toggle-menu-item  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#categoriesDropdown" role="button" aria-expanded="false" aria-controls="categoriesDropdown">
+          Categories
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down ms-1 " viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+          </svg>
+        </a>
+
+        <div class="collapse" id="categoriesDropdown">
+
+          <!-- Size with Sub-dropdown -->
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#sizeDropdown" role="button" aria-expanded="false" aria-controls="sizeDropdown">
+            Size
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="sizeDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+
+          <!-- Size with Sub-dropdown -->
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#LookDropdown" role="button" aria-expanded="false" aria-controls="LookDropdown">
+            Look
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="LookDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#FinishDropdown" role="button" aria-expanded="false" aria-controls="FinishDropdown">
+            Finish
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="FinishDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#CategoryDropdown" role="button" aria-expanded="false" aria-controls="CategoryDropdown">
+            Category
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="CategoryDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+          <!-- with Sub-dropdown -->
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#ColorDropdown" role="button" aria-expanded="false" aria-controls="ColorDropdown">
+            Color
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="ColorDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+          <a class="toggle-menu-item small  d-flex justify-content-between align-items-center ps-3" data-bs-toggle="collapse" href="#areaDropdown" role="button" aria-expanded="false" aria-controls="areaDropdown">
+            Area
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-chevron-down rotate-chevron ms-1" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"></path>
+            </svg>
+          </a>
+          <div class="collapse ps-4" id="areaDropdown">
+            <a href="#" class="toggle-menu-item small">395×395 mm</a>
+            <a href="#" class="toggle-menu-item small">800×800 mm</a>
+            <a href="#" class="toggle-menu-item small">200×1200 mm</a>
+          </div>
+
+        </div>
+
+        <a href="privacypolicy.html" class="toggle-menu-item">Privacy Policy</a>
+      </div>
+
+      <div class="toggle-menu-footer mt-4 p-3 text-center ">
+        <p class="mb-1">Copyright © 2025 TilesFinders </p>
+      </div>
+    </div>
          <nav class="navbar mobile-nav">
             <div class="container-fluid p-0">
                <button class="navbar-toggler" type="button" onclick="toggleMenu()">
@@ -108,7 +194,7 @@
                </a>
             </div>
          </nav>
-         <div class="container-fluid px-3">
+         <div class="container-fluid px-3 search-container-mobile-desktop">
             <div class="search-container">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
@@ -717,7 +803,7 @@
          <!-- faq section end -->
       </section>
       <!-- footer -->
-     <footer class="footer desktopviewfooter d-none d-md-block" id="pageFooter">
+     <footer class="footer desktopviewfooter d-none d-md-block">
         <div class="container-fluid">
             <div class="row ">
 
@@ -817,7 +903,7 @@
             </div>
         </div>
     </footer>
-      <footer class="footer d-block d-md-none p-0">
+     <footer class="footer d-block d-md-none p-0" id="pageFooter">
          <div class="container-fluid p-0">
             <div class="row">
             </div>
@@ -1176,6 +1262,7 @@
       <script src="./assest/js/dev-script.js"></script>
         <script src="./assest/js/placeholder.js"></script>
         <script src="./assest/js/fullscreen.js"></script>
+  <script src="./assest/js/side-bar-collapse.js"></script>
       <script>
          // 9. image grid gallery
          new CBPGridGallery(document.getElementById("grid-gallery"));

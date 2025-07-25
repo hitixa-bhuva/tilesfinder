@@ -1,4 +1,4 @@
-/* @import url("./dev-style.css"); */
+@import url("./dev-style.css");
 
 /* home nave bar  */
 .top-nav {
@@ -123,9 +123,9 @@
 	border-radius: 28px;
 }
 
-.secondary-nav .nav-item {
+/* .secondary-nav .nav-item {
 	width: 109px;
-}
+} */
 
 .dropdown:hover .dropdown-menu {
 	display: block;

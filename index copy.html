@@ -1,30 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>TilesFinder</title>
-        <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
-        <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
-        <meta name="author" content="Codrops" />
-        <meta name="robots" content="noindex, nofollow" />
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
-        <link rel="stylesheet" href="./assest/css/nav-bar.css" />
-        <link rel="stylesheet" href="./assest/css/dev-style.css" />
-        <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
-        <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg" />
-        <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
-        <script src="./assest/js/modernizr.custom.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
-              <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Caramel&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-</head>
-<body>
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>TilesFinder</title>
+      <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+      <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+      <meta name="author" content="Codrops" />
+      <meta name="robots" content="noindex, nofollow" />
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+      <link rel="stylesheet" href="./assest/css/nav-bar.css" />
+      <link rel="stylesheet" href="./assest/css/dev-style.css" />
+      <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
+      <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg" />
+      <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
+      <script src="./assest/js/modernizr.custom.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <style>
 
- <div class="d-lg-block home-first-nav">
+
+    @media (max-width: 768px) {
+      .filter-container {
+        display: inline-block;
+      }
+    }
+  </style>
+   </head>
+   <body>
+      <div class="d-lg-block home-first-nav">
          <!-- Home top navrbar  -->
          <nav class="navbar navbar-expand-lg navbar-light top-nav">
             <div class="container-fluid px-3">
@@ -47,12 +56,8 @@
                </button>
                <div class="collapse navbar-collapse" id="navbarContent">
                   <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarContent">
-                    <div class="search-container">
-                      <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
-                      <input type="text" id="checkSearchText" placeholder="Search for tiles" />
-                    </div>
+                     <div class="insert-search"></div>
                   </div>
-
                   <div class="contact-info ms-auto">
                      <div>
                         <img src="./assest/img/icon/EnvelopeSimple.svg" alt="">
@@ -76,9 +81,9 @@
                   <ul class="navbar-nav">
                      <li class="nav-item dropdown">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="#" id="tilesDropdown">
-                           <img src="./assest/img/icon/categories.png" alt="categories" class="navmenu-icon me-1">
-                            Categories
-                           <img src="./assest/img/icon/CaretDown.svg" alt="CaretDown">
+                        <img src="./assest/img/icon/categories.png" alt="categories" class="navmenu-icon me-1">
+                        Categories
+                        <img src="./assest/img/icon/CaretDown.svg" alt="CaretDown">
                         </a>
                         <div class="dropdown-menu mega-dropdown main-screen-second-navbar" style="width: 850px;">
                            <div class="row">
@@ -146,31 +151,31 @@
                      </li>
                      <li class="nav-item">
                         <a class="nav-link d-flex justify-content-center align-items-center" href="designs.html" id="tilesDropdown">
-                       <img src="./assest/img/icon/design.png" alt="design"  class="navmenu-icon me-1"> 
-                       Designs
+                        <img src="./assest/img/icon/design.png" alt="design"  class="navmenu-icon me-1"> 
+                        Designs
                         </a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="mockup.html">
-                            <img src="./assest/img/icon/mockup.png" alt=""  class="navmenu-icon">
-                            Mockups
+                        <img src="./assest/img/icon/mockup.png" alt=""  class="navmenu-icon">
+                        Mockups
                         </a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="aboutUs.html">
-                       <img src="./assest/img/icon/info.png" alt="design"  class="navmenu-icon"> 
-                           About Us</a>
+                        <img src="./assest/img/icon/info.png" alt="design"  class="navmenu-icon"> 
+                        About Us</a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="contact.html">
-                            <img src="./assest/img/icon/phone-call.png" alt=""  class="navmenu-icon">
-                            Contact us
+                        <img src="./assest/img/icon/phone-call.png" alt=""  class="navmenu-icon">
+                        Contact us
                         </a>
                      </li>
                      <li class="nav-item">
                         <a class="nav-link" href="blog.html">
-                            <img src="./assest/img/icon/blogging.png" alt=""  class="navmenu-icon">
-                            Blogs
+                        <img src="./assest/img/icon/blogging.png" alt=""  class="navmenu-icon">
+                        Blogs
                         </a>
                      </li>
                   </ul>
@@ -222,183 +227,178 @@
             </div>
          </nav>
          <div class="container-fluid px-3 search-container-mobile-desktop">
-            <div class="search-container">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg>
-              <input type="text" id="searchInput2" placeholder="Search for tiles" />
-              <span class="filter-container" onclick="openFilter()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                  <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
-                </svg>
-              </span>
-              <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
-              <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
-            </div>
+            <!-- <div class="search-container">
+               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+                  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+               </svg>
+               <input type="text" id="searchInput2" placeholder="Search for tiles" />
+               <span class="filter-container" onclick="openFilter()">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
+                     <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                  </svg>
+               </span>
+            </div> -->
+           <div class="insert-search"></div>
+            <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+            <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
          </div>
          <!-- Filter Sidebar (Slider) -->
          <!-- second nab bar  -->
-        <nav class="bottom-nav" id="bottomNav">
-  <a href="designs.html" class="active">
-    <img src="./assest/img/tiles (1).png" alt="">
-    <span>Designs</span>
-  </a>
-  <a href="mockup.html">
-    <img src="./assest/img/tiles (2).png" alt="">
-    <span>Mockups</span>
-  </a>
-</nav>
-
+         <nav class="bottom-nav" id="bottomNav">
+            <a href="designs.html" class="active">
+            <img src="./assest/img/tiles (1).png" alt="">
+            <span>Designs</span>
+            </a>
+            <a href="mockup.html">
+            <img src="./assest/img/tiles (2).png" alt="">
+            <span>Mockups</span>
+            </a>
+         </nav>
       </div>
-
-  <!-- Main Content -->
-  <main class="container-fluid p-0">
-    <div class="row">
-      
-      <!-- Sidebar -->
-       <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
-      <div style="position: sticky; top: 0%;">
-        <div class="filter-section">
-                  <div class="filter-header Filter-custom-space">
-                     <!-- Close button (mobile only) -->
-                     <button class="close-btn " onclick="closeFilter()">
+      <!-- Main Content -->
+      <main class="container-fluid p-0">
+         <div class="row">
+            <!-- Sidebar -->
+            <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
+               <div style="position: sticky; top: 0%;">
+                  <div class="filter-section">
+                     <div class="filter-header Filter-custom-space">
+                        <!-- Close button (mobile only) -->
+                        <button class="close-btn " onclick="closeFilter()">
                         <img src="./assest/img/icon/X.svg" alt="close">
-                     </button>
-                     <h5 class="d-flex align-items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                           <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
+                        </button>
+                        <h5 class="d-flex align-items-center">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
+                              <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"></path>
+                           </svg>
+                           Filter
+                        </h5>
+                     </div>
+                  </div>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header">Applied filters <span class="count-cleare">Clear all</span></h6>
+                     <div>
+                        <div class="filter-options">
+                           <span class="filter-badge">395×395 mm ×</span>
+                           <span class="filter-badge">Ceramic ×</span>
+                        </div>
+                     </div>
+                  </div>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button" aria-controls="byArea">
+                        <div class="header-title"> Area <span class="count">5</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                         </svg>
-                        Filter
-                     </h5>
-                  </div>
-               </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header">Applied filters <span class="count-cleare">Clear all</span></h6>
-                  <div>
-                     <div class="filter-options">
-                        <span class="filter-badge">395×395 mm ×</span>
-                        <span class="filter-badge">Ceramic ×</span>
+                     </h6>
+                     <div class="collapse" id="byArea">
+                        <div class="filter-options">
+                           <span class="filter-option">Bathroom</span>
+                           <span class="filter-option">Parking</span>
+                           <span class="filter-option">Kitchen</span>
+                           <span class="filter-option">WashBasin</span>
+                           <span class="filter-option">Room</span>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <hr class="noMargin" />
-                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button" aria-controls="byArea">
-                     <div class="header-title"> Area <span class="count">5</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byArea">
-                     <div class="filter-options">
-                        <span class="filter-option">Bathroom</span>
-                        <span class="filter-option">Parking</span>
-                        <span class="filter-option">Kitchen</span>
-                        <span class="filter-option">WashBasin</span>
-                        <span class="filter-option">Room</span>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button" aria-controls="bySize">
+                        <div class="header-title"> Size <span class="count">3</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                     </h6>
+                     <div class="collapse" id="bySize">
+                        <div class="filter-options">
+                           <span class="filter-option selected">395×395 mm</span>
+                           <span class="filter-option">800×800 mm</span>
+                           <span class="filter-option">200×1200 mm</span>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button" aria-controls="bySize">
-                     <div class="header-title"> Size <span class="count">3</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="bySize">
-                     <div class="filter-options">
-                        <span class="filter-option selected">395×395 mm</span>
-                        <span class="filter-option">800×800 mm</span>
-                        <span class="filter-option">200×1200 mm</span>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria-controls="byCategory">
+                        <div class="header-title"> Category <span class="count">5</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                     </h6>
+                     <div class="collapse" id="byCategory">
+                        <div class="filter-options">
+                           <span class="filter-option">Marble</span>
+                           <span class="filter-option">Texture</span>
+                           <span class="filter-option">Mosaic</span>
+                           <span class="filter-option">Pattern</span>
+                           <span class="filter-option">Stone</span>
+                           <span class="filter-option">Cement</span>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria-controls="byCategory">
-                     <div class="header-title"> Category <span class="count">5</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byCategory">
-                     <div class="filter-options">
-                        <span class="filter-option">Marble</span>
-                        <span class="filter-option">Texture</span>
-                        <span class="filter-option">Mosaic</span>
-                        <span class="filter-option">Pattern</span>
-                        <span class="filter-option">Stone</span>
-                        <span class="filter-option">Cement</span>
-                        
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button" aria-controls="byLook">
+                        <div class="header-title"> Look <span class="count">6</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                     </h6>
+                     <div class="collapse" id="byLook">
+                        <div class="filter-options">
+                           <span class="filter-option">Marble</span>
+                           <span class="filter-option">Texture</span>
+                           <span class="filter-option">Mosaic</span>
+                           <span class="filter-option">Pattern</span>
+                           <span class="filter-option">Stone</span>
+                           <span class="filter-option">Cement</span>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button" aria-controls="byLook">
-                     <div class="header-title"> Look <span class="count">6</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byLook">
-                     <div class="filter-options">
-                        <span class="filter-option">Marble</span>
-                        <span class="filter-option">Texture</span>
-                        <span class="filter-option">Mosaic</span>
-                        <span class="filter-option">Pattern</span>
-                        <span class="filter-option">Stone</span>
-                        <span class="filter-option">Cement</span>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button" aria-controls="byFinish">
+                        <div class="header-title"> Finish <span class="count">4</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                     </h6>
+                     <div class="collapse" id=  "byFinish">
+                        <div class="filter-options">
+                           <span class="filter-option">Matt</span>
+                           <span class="filter-option">Glossy</span>
+                           <span class="filter-option">Super Glossy</span>
+                           <span class="filter-option">Sugar Finish</span>
+                        </div>
                      </div>
                   </div>
-               </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button" aria-controls="byFinish">
-                     <div class="header-title"> Finish <span class="count">4</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id=  "byFinish">
-                     <div class="filter-options">
-                        <span class="filter-option">Matt</span>
-                        <span class="filter-option">Glossy</span>
-                        <span class="filter-option">Super Glossy</span>
-                        <span class="filter-option">Sugar Finish</span>
+                  <hr class="noMargin" />
+                  <div class="filter-section">
+                     <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button" aria-controls="byColor">
+                        <div class="header-title"> Color <span class="count">6</span></div>
+                        <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                     </h6>
+                     <div class="collapse" id="byColor">
+                        <div class="filter-options">
+                           <span class="filter-option">Pink</span>
+                           <span class="filter-option">White</span>
+                           <span class="filter-option">Grey</span>
+                           <span class="filter-option">Brown</span>
+                           <span class="filter-option">Blue</span>
+                           <span class="filter-option">Yellow</span>
+                        </div>
                      </div>
                   </div>
+                  <hr class="noMargin" />
                </div>
-               <hr class="noMargin" />
-               <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button" aria-controls="byColor">
-                     <div class="header-title"> Color <span class="count">6</span></div>
-                     <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                     </svg>
-                  </h6>
-                  <div class="collapse" id="byColor">
-                     <div class="filter-options">
-                        <span class="filter-option">Pink</span>
-                        <span class="filter-option">White</span>
-                        <span class="filter-option">Grey</span>
-                        <span class="filter-option">Brown</span>
-                        <span class="filter-option">Blue</span>
-                        <span class="filter-option">Yellow</span>
-                     </div>
-                  </div>
-               </div>
-               <hr class="noMargin" />
-              
-      </div>
-    </aside>
-
-      <!-- Main Content Area -->
-      <section class="col-md-10 filter-home-col-10">
-         <div class="container-fluid p-0">
+            </aside>
+            <!-- Main Content Area -->
+            <section class="col-md-10 filter-home-col-10">
+               <div class="container-fluid p-0">
                   <div id="grid-gallery" class="grid-gallery p-0">
                      <section class="grid-wrap m-0 p-0">
                         <ul class="grid">
@@ -408,8 +408,8 @@
                                  <div class="img-container">
                                     <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <a href="mockup-details.html">
@@ -428,8 +428,8 @@
                                  <div class="img-container">
                                     <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -446,8 +446,8 @@
                                  <div class="img-container">
                                     <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -459,14 +459,13 @@
                                  </div>
                               </figure>
                            </li>
-                           
                            <li>
                               <figure>
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -486,9 +485,9 @@
                                        alt="img05"
                                        />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                       <div class="overlay mockup-overlay">
+                                       <small>600 x 600 mm</small>
+                                    </div>
+                                    <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
@@ -504,8 +503,8 @@
                                  <div class="img-container">
                                     <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -522,8 +521,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -540,8 +539,8 @@
                                  <div class="img-container">
                                     <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -558,8 +557,8 @@
                                  <div class="img-container">
                                     <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -576,8 +575,8 @@
                                  <div class="img-container">
                                     <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -594,8 +593,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -612,8 +611,8 @@
                                  <div class="img-container">
                                     <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -630,8 +629,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -648,8 +647,8 @@
                                  <div class="img-container">
                                     <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -666,8 +665,8 @@
                                  <div class="img-container">
                                     <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -684,8 +683,8 @@
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -702,8 +701,8 @@
                                  <div class="img-container">
                                     <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -720,8 +719,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -738,8 +737,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -756,8 +755,8 @@
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -774,8 +773,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -792,8 +791,8 @@
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -813,9 +812,9 @@
                                        alt="img05"
                                        />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                       <div class="overlay mockup-overlay">
+                                       <small>600 x 600 mm</small>
+                                    </div>
+                                    <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
                                              <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
@@ -831,8 +830,8 @@
                                  <div class="img-container">
                                     <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -849,8 +848,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -867,8 +866,8 @@
                                  <div class="img-container">
                                     <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -885,8 +884,8 @@
                                  <div class="img-container">
                                     <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -903,8 +902,8 @@
                                  <div class="img-container">
                                     <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -921,8 +920,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -939,8 +938,8 @@
                                  <div class="img-container">
                                     <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -957,8 +956,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -975,8 +974,8 @@
                                  <div class="img-container">
                                     <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -993,8 +992,8 @@
                                  <div class="img-container">
                                     <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1011,8 +1010,8 @@
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1029,8 +1028,8 @@
                                  <div class="img-container">
                                     <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1047,8 +1046,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1065,8 +1064,8 @@
                                  <div class="img-container">
                                     <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1083,8 +1082,8 @@
                                  <div class="img-container">
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1101,8 +1100,8 @@
                                  <div class="img-container">
                                     <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1119,8 +1118,8 @@
                                  <div class="img-container">
                                     <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                       <small>600 x 600 mm</small>
+                                    </div>
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1139,367 +1138,518 @@
                      </section>
                   </div>
                </div>
-      </section>
-    </div>
-  </main>
-
-  <!-- Footer -->
-    <footer class="footer desktopviewfooter d-none d-md-block">
-        <div class="container-fluid">
+            </section>
+         </div>
+      </main>
+      <!-- Footer -->
+      <footer class="footer desktopviewfooter d-none d-md-block">
+         <div class="container-fluid">
             <div class="row ">
-
-                <div class="col-md-2 col-6">
-                    <h5>Area</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">Bathroom </a></li>
-                        <li><a href="#">Kitchen </a></li>
-                        <li><a href="#">Parking </a></li>
-                        <li><a href="#">Swimming Pool </a></li>
-                        <li><a href="#">Balcony </a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-6">
-                    <h5>Look</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">Marble </a></li>
-                        <li><a href="#">Texture </a></li>
-                        <li><a href="#">Mosaic </a></li>
-                        <li><a href="#">Pattern </a></li>
-                        <li><a href="#">Stone </a></li>
-                        <li><a href="#">Cement </a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-6">
-                    <h5>Category</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">Ceramic </a></li>
-                        <li><a href="#">Digital </a></li>
-                        <li><a href="#">PGVT </a></li>
-                        <li><a href="#">GVT </a></li>
-                        <li><a href="#">DGVT </a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-6">
-                    <h5>Color</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">Pink </a></li>
-                        <li><a href="#">White </a></li>
-                        <li><a href="#">Grey </a></li>
-                        <li><a href="#">Brown </a></li>
-                        <li><a href="#">Blue </a></li>
-                        <li><a href="#">Yellow </a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-6">
-                    <h5>Size</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">395×395 </a> mm</li>
-                        <li><a href="#">800×800 </a> mm</li>
-                        <li><a href="#">200×1200 </a> mm</li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2 col-6">
-                    <h5>Finish</h5>
-                    <ul class="list-unstyled footer-menu">
-                        <li><a href="#">Matt </a></li>
-                        <li><a href="#">Glossy </a></li>
-                        <li><a href="#">Super </a> Glossy</li>
-                        <li><a href="#">Sugar </a> Finish</li>
-                    </ul>
-                </div>
+               <div class="col-md-2 col-6">
+                  <h5>Area</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">Bathroom </a></li>
+                     <li><a href="#">Kitchen </a></li>
+                     <li><a href="#">Parking </a></li>
+                     <li><a href="#">Swimming Pool </a></li>
+                     <li><a href="#">Balcony </a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-6">
+                  <h5>Look</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">Marble </a></li>
+                     <li><a href="#">Texture </a></li>
+                     <li><a href="#">Mosaic </a></li>
+                     <li><a href="#">Pattern </a></li>
+                     <li><a href="#">Stone </a></li>
+                     <li><a href="#">Cement </a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-6">
+                  <h5>Category</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">Ceramic </a></li>
+                     <li><a href="#">Digital </a></li>
+                     <li><a href="#">PGVT </a></li>
+                     <li><a href="#">GVT </a></li>
+                     <li><a href="#">DGVT </a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-6">
+                  <h5>Color</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">Pink </a></li>
+                     <li><a href="#">White </a></li>
+                     <li><a href="#">Grey </a></li>
+                     <li><a href="#">Brown </a></li>
+                     <li><a href="#">Blue </a></li>
+                     <li><a href="#">Yellow </a></li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-6">
+                  <h5>Size</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">395×395 </a> mm</li>
+                     <li><a href="#">800×800 </a> mm</li>
+                     <li><a href="#">200×1200 </a> mm</li>
+                  </ul>
+               </div>
+               <div class="col-md-2 col-6">
+                  <h5>Finish</h5>
+                  <ul class="list-unstyled footer-menu">
+                     <li><a href="#">Matt </a></li>
+                     <li><a href="#">Glossy </a></li>
+                     <li><a href="#">Super </a> Glossy</li>
+                     <li><a href="#">Sugar </a> Finish</li>
+                  </ul>
+               </div>
             </div>
-
             <hr class="noMargin" class="divider">
-
             <div class="row align-items-center justify-content-between footer-section">
-
-                <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center">
-                    <h3 class="logo">
-                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
-                    </h3>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
-                    <a href="aboutUs.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="blog.html">Blogs</a>
-                    <a href="privacypolicy.html">Privacy Policy</a>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12   text-end follo-link-footer">
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
-                            alt="Facebook"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
-                            alt="Instagram"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
-                            alt="LinkedIn"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
-                            alt="YouTube"></a>
-                </div>
+               <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center">
+                  <h3 class="logo">
+                     <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                  </h3>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="blog.html">Blogs</a>
+                  <a href="privacypolicy.html">Privacy Policy</a>
+               </div>
+               <div class="col-lg-4 col-md-12 col-sm-12   text-end follo-link-footer">
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                     alt="Facebook"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                     alt="Instagram"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                     alt="LinkedIn"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                     alt="YouTube"></a>
+               </div>
             </div>
-        </div>
-    </footer>
-   <footer class="footer d-block d-md-none p-0" id="pageFooter" >
-    <div class="container-fluid p-0">
-        <div class="row">
-        </div>
-
-        <!-- Mobile View: Accordion -->
-         <div class="">
-            <div class="accordion" id="footerAccordion">
-                <!-- Area -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingArea">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseArea" aria-expanded="false" aria-controls="collapseArea">
-                            Area
-                        </button>
-                    </h2>
-                    <div id="collapseArea" class="accordion-collapse collapse" aria-labelledby="headingArea"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">Bathroom  
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Kitchen 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Parking 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Swimming  Pool 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Balcony 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Look -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingLook">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseLook" aria-expanded="false" aria-controls="collapseLook">
-                            Look
-                        </button>
-                    </h2>
-                    <div id="collapseLook" class="accordion-collapse collapse" aria-labelledby="headingLook"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">Marble 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Texture 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Mosaic 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Pattern 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Stone 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Cement 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Category -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingCategory">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
-                            Category
-                        </button>
-                    </h2>
-                    <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">Ceramic 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Digital 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">PGVT 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">GVT 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">DGVT 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Color -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingColor">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
-                            Color
-                        </button>
-                    </h2>
-                    <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">Pink 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">White 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Grey 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Brown 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Blue 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Yellow 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Size -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingSize">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
-                            Size
-                        </button>
-                    </h2>
-                    <div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">395×395 mm 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">800×800 mm 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">200×1200 mm 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Finish -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingFinish">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseFinish" aria-expanded="false" aria-controls="collapseFinish">
-                            Finish
-                        </button>
-                    </h2>
-                    <div id="collapseFinish" class="accordion-collapse collapse" aria-labelledby="headingFinish"
-                        data-bs-parent="#footerAccordion">
-                        <div class="accordion-body">
-                            <ul class="list-unstyled">
-                                <li class="d-flex align-items-center">Matt 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Glossy 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Super Glossy 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                                <li class="d-flex align-items-center">Sugar Finish 
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">  <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>  <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/></svg>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+         </div>
+      </footer>
+      <footer class="footer d-block d-md-none p-0" id="pageFooter" >
+         <div class="container-fluid p-0">
+            <div class="row">
             </div>
-        </div>
+            <!-- Mobile View: Accordion -->
+            <div class="">
+               <div class="accordion" id="footerAccordion">
+                  <!-- Area -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingArea">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseArea" aria-expanded="false" aria-controls="collapseArea">
+                        Area
+                        </button>
+                     </h2>
+                     <div id="collapseArea" class="accordion-collapse collapse" aria-labelledby="headingArea"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Bathroom  
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Kitchen 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Parking 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Swimming  Pool 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Balcony 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Look -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingLook">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseLook" aria-expanded="false" aria-controls="collapseLook">
+                        Look
+                        </button>
+                     </h2>
+                     <div id="collapseLook" class="accordion-collapse collapse" aria-labelledby="headingLook"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Marble 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Texture 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Mosaic 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Pattern 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Stone 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Cement 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Category -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingCategory">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
+                        Category
+                        </button>
+                     </h2>
+                     <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="headingCategory"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Ceramic 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Digital 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 PGVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 GVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 DGVT 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Color -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingColor">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseColor" aria-expanded="false" aria-controls="collapseColor">
+                        Color
+                        </button>
+                     </h2>
+                     <div id="collapseColor" class="accordion-collapse collapse" aria-labelledby="headingColor"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Pink 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 White 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Grey 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Brown 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Blue 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Yellow 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Size -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingSize">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseSize" aria-expanded="false" aria-controls="collapseSize">
+                        Size
+                        </button>
+                     </h2>
+                     <div id="collapseSize" class="accordion-collapse collapse" aria-labelledby="headingSize"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 395×395 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 800×800 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 200×1200 mm 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- Finish -->
+                  <div class="accordion-item">
+                     <h2 class="accordion-header" id="headingFinish">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                           data-bs-target="#collapseFinish" aria-expanded="false" aria-controls="collapseFinish">
+                        Finish
+                        </button>
+                     </h2>
+                     <div id="collapseFinish" class="accordion-collapse collapse" aria-labelledby="headingFinish"
+                        data-bs-parent="#footerAccordion">
+                        <div class="accordion-body">
+                           <ul class="list-unstyled">
+                              <li class="d-flex align-items-center">
+                                 Matt 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Glossy 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Super Glossy 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                              <li class="d-flex align-items-center">
+                                 Sugar Finish 
+                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" fill="currentColor" class="bi bi-box-arrow-up-right ms-2" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
+                                    <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
+                                 </svg>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
             <div class="row align-items-center justify-content-between footer-section">
-
-                <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center mt-4">
-                    <h3 class="logo text-center">
-                        <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
-                    </h3>
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
-                    <a href="aboutUs.html">About Us</a>
-                    <a href="contact.html">Contact Us</a>
-                    <a href="blog.html">Blogs</a>
-                    <a href="privacypolicy.html">Privacy Policy</a>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12   text-center follo-link-footer mb-4">
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
-                            alt="Facebook"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
-                            alt="Instagram"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
-                            alt="LinkedIn"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
-                    <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
-                            alt="YouTube"></a>
-                </div>
+               <div class="col-lg-4 col-md-6 col-sm-12 text-sm-start text-md-start text-center mt-4">
+                  <h3 class="logo text-center">
+                     <img src="./assest/img/logo/TilesFinder 1.svg" alt="TilesFinder Logo">
+                  </h3>
+               </div>
+               <div class="col-lg-4 col-md-6 col-sm-12   text-center menu-footer-a">
+                  <a href="aboutUs.html">About Us</a>
+                  <a href="contact.html">Contact Us</a>
+                  <a href="blog.html">Blogs</a>
+                  <a href="privacypolicy.html">Privacy Policy</a>
+               </div>
+               <div class="col-lg-4 col-md-12 col-sm-12   text-center follo-link-footer mb-4">
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/FacebookLogo.svg"
+                     alt="Facebook"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/InstagramLogo.svg"
+                     alt="Instagram"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/LinkedinLogo.svg"
+                     alt="LinkedIn"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/XLogo.svg" alt="X"></a>
+                  <a href="#" class="footer-a-follo-link"><img src="./assest/img/icon/YoutubeLogo.svg"
+                     alt="YouTube"></a>
+               </div>
             </div>
-    </div>
-    </footer>
-    <footer class="second-footer" >
-        <div class="container-fluid">
-
+         </div>
+      </footer>
+      <footer class="second-footer" >
+         <div class="container-fluid">
             <div class="row text-center">
-                <div class="col-md-12  justify-content-center p-2">
-                    <p class="mb-0 text-white Copyright">Copyright © 2025 <a href="index.html" target="_blank"
-                            class="text-white text-decoration-none">
-                            TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/"
-                            target="_blank" class="text-white text-decoration-none">Unique
-                            IT Solution</a> </p>
-                </div>
+               <div class="col-md-12  justify-content-center p-2">
+                  <p class="mb-0 text-white Copyright">Copyright © 2025 <a href="index.html" target="_blank"
+                     class="text-white text-decoration-none">
+                     TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/"
+                        target="_blank" class="text-white text-decoration-none">Unique
+                     IT Solution</a> 
+                  </p>
+               </div>
             </div>
-            </div>
-        </div>
-    </footer> 
+         </div>
+         </div>
+      </footer>
 
-   <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
-        <script src="./assest/js/masonry.pkgd.min.js"></script>
-        <script src="./assest/js/classie.js"></script>
-        <script src="./assest/js/cbpGridGallery.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
-        <script src="./assest/js/dev-script.js"></script>
-        <script src="./assest/js/placeholder.js"></script>
-        <script src="./assest/js/fullscreen.js"></script>
-  <script src="./assest/js/side-bar-collapse.js"></script>
-        <script>
-            // 9. image grid gallery
-            new CBPGridGallery(document.getElementById("grid-gallery"));
-        </script>
 
-</body>
+        <!-- Script to dynamically insert the search bar in all .insert-search locations -->
+ <script>
+    const searchHTML = `
+      <div class="search-container">
+        <img src="./assest/img/icon/MagnifyingGlass.svg" alt="">
+        <input type="text" class="dynamic-placeholder" placeholder="Search for tiles" />
+        <span class="filter-container" onclick="openFilter()">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
+            <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+          </svg>
+        </span>
+      </div>
+    `;
+
+    document.addEventListener("DOMContentLoaded", function () {
+      // Insert search bar
+      document.querySelectorAll(".insert-search").forEach(el => {
+        el.innerHTML = searchHTML;
+      });
+
+      // Run placeholder animation after elements are added
+      startPlaceholderAnimation();
+    });
+    function startPlaceholderAnimation() {
+      const phrases = ["Search for Bedroom tiles", "Search for Bathroom tiles", "Search for Kitchen tiles"];
+      let currentPhrase = 0;
+      let currentChar = 0;
+
+      function typePlaceholder() {
+        const text = phrases[currentPhrase];
+        const partial = text.substring(0, currentChar++);
+
+        document.querySelectorAll(".dynamic-placeholder").forEach(input => {
+          input.placeholder = partial;
+        });
+
+        if (currentChar <= text.length) {
+          setTimeout(typePlaceholder, 100);
+        } else {
+          setTimeout(() => {
+            currentChar = 0;
+            currentPhrase = (currentPhrase + 1) % phrases.length;
+            typePlaceholder();
+          }, 2000);
+        }
+      }
+
+      typePlaceholder();
+    }
+
+    // Dummy function for filter icon click
+    function openFilter() {
+      alert("Filter clicked! You can replace this with actual filter logic.");
+    }
+  </script>
+      <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
+      <script src="./assest/js/masonry.pkgd.min.js"></script>
+      <script src="./assest/js/classie.js"></script>
+      <script src="./assest/js/cbpGridGallery.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" defer></script>
+      <script src="./assest/js/dev-script.js"></script>
+      <script src="./assest/js/placeholder.js"></script>
+      <script src="./assest/js/fullscreen.js"></script>
+      <script src="./assest/js/side-bar-collapse.js"></script>
+      <script>
+         // 9. image grid gallery
+         new CBPGridGallery(document.getElementById("grid-gallery"));
+      </script>
+   </body>
 </html>

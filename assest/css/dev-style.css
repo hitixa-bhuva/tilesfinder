@@ -1,7 +1,10 @@
 
-/* * {
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+* {
 	font-family: "Rubik", sans-serif !important; 
-} */
+} 
 
 /* 1.home page css
             1.1 col custome width
@@ -338,7 +341,7 @@ body {
 
 .img-container:hover .mockup-overlay {
 	background: rgba(0, 0, 0, 0.6);
-	border-radius: 16px;
+	border-radius: 13px;
 }
 
 .img-container:hover .mockup-icon {
@@ -3225,8 +3228,8 @@ textarea.form-control-contact {
   width: 100%;
   height: 35%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2), transparent);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
   z-index: 1;
   pointer-events: none;
 }
@@ -4937,15 +4940,15 @@ text-align: center;
   #checkSearchText {
     display: block;
   }
-  #searchInput2 {
-    display: none;
-  }
+  .insert-search{
+  width: 100% !important;
 }
-
+}
+.insert-search{
+  max-width: 500px;
+}
 @media (max-width: 770px) {
-  #checkSearchText {
-    display: none;
-  }
+
   #searchInput2 {
     display: block;
   }
@@ -5261,5 +5264,33 @@ text-align: center;
 @media (max-width: 430px) {
   .custom-width-container {
     width: 100% !important;
+  }
+}
+
+/* Base styling */
+.responsive-search {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 10px auto;
+}
+
+/* Desktop styles */
+@media (min-width: 992px) {
+  .responsive-search {
+    justify-content: center;
+    max-width: 600px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 991.98px) {
+  .responsive-search {
+    padding: 0 15px;
+    justify-content: space-between;
+  }
+
+  .responsive-search input {
+    flex: 1;
   }
 }

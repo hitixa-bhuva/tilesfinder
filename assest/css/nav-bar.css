@@ -487,9 +487,9 @@
 }
 
 @media (max-width: 768px) {
-	.home-first-nav {
+	/* .home-first-nav {
 		display: none;
-	}
+	} */
 	.close-btn {
 	display: block !important;
 }

@@ -9,6 +9,6 @@
     }
 
     function closeImagePreview(event) {
-      if (event) event.stopPropagation(); // Prevent closing when clicking on image
+      if (event) event.stopPropagation(); 
       document.getElementById("fullscreenOverlay").style.display = "none";
     }

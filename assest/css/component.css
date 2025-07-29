@@ -333,15 +333,15 @@ span.nav-close:before {
     .grid li {
         width: 50%;
     }
-}
-@media (max-width: 425px) {
-  .grid-gallery,
-  .grid-wrap,
-  .grid,
-  .grid li {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    box-sizing: border-box;
-  }
-}
+    }
+    /* @media (max-width: 425px) {
+    .grid-gallery,
+    .grid-wrap,
+    .grid,
+    .grid li {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        box-sizing: border-box;
+    }
+    } */

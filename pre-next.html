@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pill Navigation Only</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 40px;
+      background: #f8f9fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .pill-nav {
+      display: flex;
+      justify-content: center;
+    }
+
+    .pill-container {
+      background: white;
+      border-radius: 9999px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+      border: 1px solid #e5e7eb;
+    }
+
+    .pill-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background: transparent;
+      color: #6b7280;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .pill-btn:not(:disabled):hover {
+      background: #f0f0f0;
+      color: #4f46e5;
+    }
+
+    .pill-btn:disabled {
+      color: #d1d5db;
+      cursor: not-allowed;
+    }
+
+    .pill-icon {
+      width: 1rem;
+      height: 1rem;
+      stroke-width: 2;
+      transition: transform 0.2s ease;
+    }
+
+    .pill-btn:not(:disabled):hover .pill-icon {
+      transform: translateX(2px);
+    }
+
+    .pill-prev:not(:disabled):hover .pill-icon {
+      transform: translateX(-2px);
+    }
+
+    .pill-divider {
+      width: 1px;
+      height: 2rem;
+      background: #e5e7eb;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="pill-nav">
+    <div class="pill-container">
+      <button class="pill-btn pill-prev" disabled>
+        <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <polyline points="15,18 9,12 15,6"></polyline>
+        </svg>
+        <span>Prev</span>
+      </button>
+
+      <div class="pill-divider"></div>
+
+      <button class="pill-btn pill-next">
+        <span>Next</span>
+        <svg class="pill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <polyline points="9,18 15,12 9,6"></polyline>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    let currentPage = 1;
+    const totalPages = 5;
+
+    const prevBtn = document.querySelector('.pill-prev');
+    const nextBtn = document.querySelector('.pill-next');
+
+    function updateButtons() {
+      prevBtn.disabled = currentPage === 1;
+      nextBtn.disabled = currentPage === totalPages;
+    }
+
+    prevBtn.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateButtons();
+        console.log("Go to page:", currentPage);
+      }
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentPage < totalPages) {
+        currentPage++;
+        updateButtons();
+        console.log("Go to page:", currentPage);
+      }
+    });
+
+    updateButtons();
+  </script>
+
+</body>
+</html>

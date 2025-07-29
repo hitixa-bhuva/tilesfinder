@@ -181,7 +181,7 @@
       </div>
       <!-- 768 after show  -->
       <div class="d-lg-none d-md-block">
-         <div class="toggle-menu" id="toggleMenu">
+         <div class="toggle-menu  d-none" id="toggleMenu">
             <div>
                <button class="close-btn" onclick="toggleMenu()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -317,11 +317,27 @@
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
               <input type="text" id="searchInput2" placeholder="Search for tiles" />
-              <span class="filter-container" onclick="openFilter()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                  <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
-                </svg>
+              <!-- HTML -->
+               <span class="filter-container d-lg-none glow-beat" onclick="openFilter()">
+                 <div class="icon-wrapper">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4169E1" class="bi bi-funnel" viewBox="0 0 16 16">
+                     <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                   </svg>
+                 </div>
+             <div class="tooltip-bubble">
+              filter tiles <span class="rotate-text">
+                <span>by color</span>
+                <span>by size</span>
+                <span>by area</span>
+                <span>by look</span>
+                <span>by Category</span>
+                <span>by Finish</span>
+                <span>by color</span>
               </span>
+            </div>
+
+               </span>
+
               <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
               <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
             </div>
@@ -346,7 +362,7 @@
     <div class="row">
       
       <!-- Sidebar -->
-       <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
+   <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left d-none d-lg-block" id="filterSidebar" >
       <div style="position: sticky; top: 0%;">
         <div class="filter-section">
                   <div class="filter-header Filter-custom-space">
@@ -485,7 +501,6 @@
               
       </div>
     </aside>
-
       <!-- Main Content Area -->
       <section class="col-md-10 filter-home-col-10">
          <div class="container-fluid p-0">
@@ -496,7 +511,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" />
+                                    <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" class="s1000x200" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -516,7 +531,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" alt="img02" />
+                                    <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" class="s400x400" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -534,26 +549,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
+                                    <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" class="s800x1600" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -571,316 +567,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img
-                                       src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg"
-                                       alt="img05"
-                                       />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                       <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" class="s300x450" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -900,7 +587,7 @@
                                  <div class="img-container">
                                     <img
                                        src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg"
-                                       alt="img05"
+                                       alt="img05" class="s1000x200"
                                        />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
@@ -919,7 +606,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s600x1200" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -937,7 +624,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
+                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" class="s600x1800" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -955,7 +642,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
+                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" class="s300x450" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -973,7 +660,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
+                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" class="s800x1600" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -991,7 +678,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" class="s1000x200" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1009,7 +696,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
+                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" class="s600x1200" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1027,7 +714,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" class="s400x400" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1045,7 +732,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
+                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" class="s1000x200" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1063,7 +750,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
+                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" class="s800x1600" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1081,7 +768,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s300x450" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1099,7 +786,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" class="s300x600" alt="img05" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1117,7 +804,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
+                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" class="s600x1200" alt="img06" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1135,7 +822,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" class="s300x450" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1153,7 +840,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" class="s400x400" alt="img02" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1171,7 +858,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" class="s400x400" alt="img03" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1189,7 +876,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
+                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" class="s300x600" alt="img04" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1207,7 +894,334 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" alt="img01" />
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" class="s300x450" alt="img04" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img
+                                       src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg"
+                                       class="s600x1800" alt="img05"
+                                       />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                       <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s300x450" alt="img06" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" class="s200x1000" alt="img01" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" class="s300x600" alt="img03" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" class="s600x1800" alt="img04" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" class="s300x450" alt="img05" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" class="s300x600" alt="img01" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" class="s600x1800" alt="img01" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" class="s200x1000" alt="img02" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" class="s200x1000" alt="img03" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s800x1600" alt="img04" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" class="s800x800" alt="img05" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" class="s800x1600" alt="img06" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" class="s200x1000" alt="img01" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" class="s800x800" alt="img02" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" class="s800x1600" alt="img03" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" class="s800x800" alt="img04" />
+                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
+                                                    <small>600 x 600 mm</small>
+                                                </div>
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" class="s200x1000" alt="img01" />
                                     <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
                                                     <small>600 x 600 mm</small>
                                                 </div>
@@ -1576,6 +1590,13 @@
             </div>
         </div>
     </footer> 
+<script>
+  // Hide tooltip after 4 seconds
+  setTimeout(() => {
+    document.querySelector('.tooltip-bubble').style.opacity = 0;
+    document.querySelector('.tooltip-bubble').style.transform = 'translateY(-10px)';
+  }, 30000);
+</script>
 
    <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
         <script src="./assest/js/masonry.pkgd.min.js"></script>

@@ -11,43 +11,68 @@
 // 10. tiles design page
 
 // 1. Enable hover dropdown on desktop
-// document.addEventListener('DOMContentLoaded', function () {
-//    if (window.innerWidth > 768) {
-//       const dropdowns = document.querySelectorAll('.dropdown');
-//       dropdowns.forEach(dropdown => {
-//          dropdown.addEventListener('mouseover', function () {
-//             this.querySelector('.dropdown-menu').classList.add('show');
-//          });
-//          dropdown.addEventListener('mouseleave', function () {
-//             this.querySelector('.dropdown-menu').classList.remove('show');
-//          });
-//       });
-//    }
-// });
-// filter icon click op[en side bar]
+
 function openFilter() {
-           document.getElementById('filterSidebar').classList.add('show');
-           document.getElementById('filterBackdrop').classList.add('show');
-           document.body.classList.add('no-scroll');
-         }
-         
-         function closeFilter() {
-           document.getElementById('filterSidebar').classList.remove('show');
-           document.getElementById('filterBackdrop').classList.remove('show');
-           document.body.classList.remove('no-scroll');
-         }
+  const filter = document.getElementById("filterSidebar");
+  const backdrop = document.getElementById("backdrop");
+
+  // Only show in mobile view
+  if (window.innerWidth < 992) {
+    filter.classList.remove("d-none");
+    setTimeout(() => {
+      filter.classList.add("active");
+    }, 10);
+
+    backdrop.classList.remove("d-none");
+    backdrop.style.display = "block";
+    backdrop.classList.add("show");
+    document.body.classList.add("no-scroll");
+  }
+}
+
+function closeFilter() {
+  const filter = document.getElementById("filterSidebar");
+  const backdrop = document.getElementById("backdrop");
+
+  if (window.innerWidth < 992) {
+    filter.classList.remove("active");
+    backdrop.classList.remove("show");
+
+    setTimeout(() => {
+      filter.classList.add("d-none");
+      backdrop.style.display = "none";
+      backdrop.classList.add("d-none");
+      document.body.classList.remove("no-scroll");
+    }, 300);
+  }
+}
+
 
 // 2. backdrop add in phone view nav
 
 function toggleMenu() {
   const menu = document.getElementById("toggleMenu");
   const backdrop = document.getElementById("backdrop");
+
+  // If menu was hidden (d-none), show it first
+  if (menu.classList.contains("d-none")) {
+    menu.classList.remove("d-none");
+    backdrop.classList.remove("d-none");
+  }
+
   const isOpen = menu.classList.toggle("active");
 
   backdrop.style.display = isOpen ? "block" : "none";
   backdrop.classList.toggle("show", isOpen);
-
   document.body.classList.toggle("no-scroll", isOpen);
+
+  if (!isOpen) {
+    // Wait for animation before hiding
+    setTimeout(() => {
+      menu.classList.add("d-none");
+      backdrop.classList.add("d-none");
+    }, 300);
+  }
 
   closeFilterMenu();
 }
@@ -55,15 +80,21 @@ function toggleMenu() {
 function closeFilterMenu() {
   const filter = document.getElementById("filterSidebar");
   const backdrop = document.getElementById("backdrop");
-
-  filter.classList.remove("active");
-  backdrop.classList.remove("show");
   const menu = document.getElementById("toggleMenu");
-  if (!menu.classList.contains("active") && !filter.classList.contains("active")) {
+
+  filter?.classList.remove("active");
+
+  if (!menu.classList.contains("active") && !filter?.classList.contains("active")) {
+    backdrop.classList.remove("show");
     document.body.classList.remove("no-scroll");
-    backdrop.style.display = "none";
+
+    setTimeout(() => {
+      backdrop.style.display = "none";
+      backdrop.classList.add("d-none");
+    }, 300);
   }
 }
+
 
 
 // 4. popup model script

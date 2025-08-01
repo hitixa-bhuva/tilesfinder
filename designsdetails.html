@@ -458,10 +458,16 @@
          </nav>
         </div>
         <section class="mb-5">
+           <!-- Left Arrow -->
+    <button class="arrow-btn left-arrow position-absolute start-0 top-50 translate-middle-y">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24" stroke-width="2">
+            <polyline points="15,18 9,12 15,6"></polyline>
+        </svg>
+    </button>
             <div class="container d-flex justify-content-center custom-width-container">
                 <div class="row product-container">
                     <!-- Thumbnails column (visible on desktop) -->
-
+                  
                     <div class="col-lg-1 col-md-2 thumbnail-container d-flex justify-content-start align-items-center">
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT747a1-VxY8x_YwIY32bUpXymA8VIFGTjt1g&s" alt="Thumbnail 1" class="thumbnail active" />
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXK84rm4mzT4w6dXiSyWVgxYUG9hroZwxVA&s" alt="Thumbnail 2" class="thumbnail" />
@@ -471,15 +477,14 @@
                     </div>
 
                     <!-- Main product image -->
-                    <div class="col-12 col-md-5 main-image-container" id="myImageBlock">
+                    <div class="col-12 col-lg-5 col-md-10 main-image-container" id="myImageBlock">
                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT747a1-VxY8x_YwIY32bUpXymA8VIFGTjt1g&s"
                             alt="OHG Kitchen Niche Fruit Walnut HL" class="main-image" />
                        <button class="zoom-btn" onclick="zoomImage(this)"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#000" class="bi bi-arrows-fullscreen" viewBox="0 0 448 512"><path d="M32 32C14.3 32 0 46.3 0 64l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-64 64 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32l96 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-64zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32l64 0 0 64c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32l-96 0zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 64-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l96 0c17.7 0 32-14.3 32-32l0-96z"/></svg></button>
                      </div>
 
-
                     <!-- Product details -->
-                    <div class="col-12 col-md-6 product-details custompadding-border">
+                    <div class="col-12 col-lg-6 col-md-12 product-details custompadding-border custom-col-small-5">
                         <h2 class="product-title">OHG Kitchen Niche Fruit Walnut HL</h2>
                         <table class="spec-table">
                             <tr>
@@ -530,9 +535,10 @@
                         </button>
                           </div>
                         <!-- Modal Structure -->
+                         <div class="custom-backdrop d-none"></div>
                         <div class="modal fade background-dark " id="tileDesign360Modal" tabindex="-1" aria-labelledby="tileDesign360ModalLabel" aria-hidden="true" >
                             <div class="modal-dialog modal-dialog-centered">
-                                <div class="modal-content">
+                                <div class="modal-content p-3">
                                     <div class="">
                                         <h5 class="inquiry-form-modal-title" id="inquiryModalLabel">Make an Inquiry</h5>
                                         <button type="button" class="btn-close model-form-close-btn" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -561,20 +567,19 @@
                             </div>
                         </div>
                     </div>
+                    
                     <!-- Thumbnails (visible on mobile) -->
                     <div class="col-12 d-md-none thumbnail-container">
                         <img src="./assest/img/mockup/blog/image (10).png" alt="Thumbnail 1" class="thumbnail active" />
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXK84rm4mzT4w6dXiSyWVgxYUG9hroZwxVA&s" alt="Thumbnail 2" class="thumbnail" />
-                        <img
-                            src="data:image/jpeg;base64,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"
-                            alt="Thumbnail 3"
-                            class="thumbnail"
-                        />
-                        <img src="./assest/img/mockup/blog/image (10).png" alt="Thumbnail 4" class="thumbnail" />
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQXK84rm4mzT4w6dXiSyWVgxYUG9hroZwxVA&s" alt="Thumbnail 5" class="thumbnail" />
+                        
                     </div>
                 </div>
             </div>
+             <button class="arrow-btn right-arrow position-absolute end-0 top-50 translate-middle-y">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" width="24" height="24" stroke-width="2">
+            <polyline points="9,18 15,12 9,6"></polyline>
+        </svg>
+    </button>
             <!-- Similar Mockups -->
             <div class="row">
                 <div class="col-12">
@@ -1129,57 +1134,48 @@
             </div>
     </div>
     </footer>
-    <footer class="second-footer">
-        <div class="container-fluid">
 
-            <div class="row text-center">
-                <div class="col-md-12  justify-content-center p-2">
-                    <p class="mb-0 text-white Copyright">Copyright © 2025 <a href="index.html" target="_blank"
-                            class="text-white text-decoration-none">
-                            TilesFinders </a>, All rights Developed by <a href="https://theuniqueitsolution.com/"
-                            target="_blank" class="text-white text-decoration-none">Unique
-                            IT Solution</a> </p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </footer>
-<script>
+<!-- <script>
   document.addEventListener('DOMContentLoaded', function () {
-    var myModal = new bootstrap.Modal(document.getElementById('tileDesign360Modal'), {
+    const customBackdrop = document.querySelector('.custom-backdrop');
+    const modalEl = document.getElementById('tileDesign360Modal');
+    const myModal = new bootstrap.Modal(modalEl, {
       backdrop: 'static',
-      keyboard: false     
+      keyboard: false
     });
+
+    // Show modal and custom backdrop
     myModal.show();
-  });
-</script>
+    customBackdrop.classList.remove('d-none');
 
-    <script>
-    function zoomImage(btn) {
-      const img = btn.closest(".main-image-container").querySelector("img");
-      const overlay = document.createElement("div");
-      overlay.className = "image-zoom-overlay";
-
-      const zoomImg = img.cloneNode(true);
-      overlay.appendChild(zoomImg);
-
-      const closeBtn = document.createElement("button");
-      closeBtn.innerHTML = "&times;";
-      closeBtn.className = "zoom-close-btn";
-      closeBtn.onclick = () => overlay.remove();
-
-      overlay.appendChild(closeBtn);
-      document.body.appendChild(overlay);
-    }
-  </script>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
-      new bootstrap.Tooltip(tooltipTriggerEl);
+    // Hide custom backdrop on modal hide
+    modalEl.addEventListener('hidden.bs.modal', function () {
+      customBackdrop.classList.add('d-none');
     });
   });
+</script> -->
+<script>
+  window.onload = function () {
+    const customBackdrop = document.querySelector('.custom-backdrop');
+    const modalEl = document.getElementById('tileDesign360Modal');
+    const myModal = new bootstrap.Modal(modalEl, {
+      backdrop: 'static',
+      keyboard: false
+    });
+
+    myModal.show();
+    customBackdrop.classList.remove('d-none');
+
+    modalEl.onhidden = function () {
+      customBackdrop.classList.add('d-none');
+    };
+
+    modalEl['onhidden.bs.modal'] = function () {
+      customBackdrop.classList.add('d-none');
+    };
+  };
 </script>
+
 
           <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
       <script src="./assest/js/masonry.pkgd.min.js"></script>
@@ -1190,6 +1186,7 @@
         <script src="./assest/js/placeholder.js"></script>
         <script src="./assest/js/fullscreen.js"></script>
   <script src="./assest/js/side-bar-collapse.js"></script>
+  <script src="./assest/js/designdetails-color-tooltip.js"></script>
       <script>
          // 9. image grid gallery
          new CBPGridGallery(document.getElementById('grid-gallery'));

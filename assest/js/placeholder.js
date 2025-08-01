@@ -29,25 +29,21 @@
 
 
 // second mobile nav bar
-  document.addEventListener("DOMContentLoaded", function () {
+ window.onload = function () {
     const bottomNav = document.getElementById("bottomNav");
-    const footer = document.getElementById("pageFooter");
+    let lastScrollTop = window.scrollY;
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          bottomNav.classList.add("hide");
-        } else {
-          bottomNav.classList.remove("hide");
-        }
-      });
-    }, {
-      root: null, // viewport
-      threshold: 0 // as soon as any part is visible
-    });
+    window.onscroll = function () {
+      const currentScroll = window.scrollY;
 
-    observer.observe(footer);
-  });
+      if (currentScroll > lastScrollTop) {
+        bottomNav.classList.add("hide");
+      } else {
+        bottomNav.classList.remove("hide");
+      }
 
+      lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
+    };
+  };
 // active in active menu phone view design and mockup
 

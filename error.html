@@ -91,31 +91,7 @@
             </div>
         </div>
     </footer>
-<script>
-  const mobileToggle = document.getElementById('mobileToggle');
-  const sidebar = document.getElementById('sidebarMenu');
-  const backdrop = document.getElementById('errorstyle-sidebarBackdrop');
 
-  mobileToggle.addEventListener('click', () => {
-    const isActive = sidebar.classList.toggle('active');
-    backdrop.classList.toggle('active', isActive);
-    mobileToggle.textContent = isActive ? '✕' : '☰';
-  });
-
-  document.querySelectorAll('.errorstyle-nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-      sidebar.classList.remove('active');
-      backdrop.classList.remove('active');
-      mobileToggle.textContent = '☰';
-    });
-  });
-
-  backdrop.addEventListener('click', () => {
-    sidebar.classList.remove('active');
-    backdrop.classList.remove('active');
-    mobileToggle.textContent = '☰';
-  });
-</script>
-
+ <script src="./assest/js/error-navbar.js"></script>
 </body>
 </html>

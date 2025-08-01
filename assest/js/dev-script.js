@@ -97,27 +97,8 @@ function closeFilterMenu() {
 
 
 
-// 4. popup model script
+// 4. popup model script mocuk up model 
 
-document.addEventListener("DOMContentLoaded", function () {
-  let modal = document.getElementById("modal");
-  let closeBtn = document.querySelector(".modal-close-btn");
-
-  if (modal) {
-    setTimeout(function () {
-      closeAllSidebars();
-
-      modal.style.display = "block";
-      document.body.classList.add("modal-open");
-    }, 5000);
-  }
-
-  if (closeBtn) {
-    closeBtn.onclick = function () {
-      modal.style.display = "none";
-      document.body.classList.remove("modal-open");
-    };
-  }
   function closeAllSidebars() {
     const menu = document.getElementById("toggleMenu");
     const backdrop = document.getElementById("backdrop");
@@ -139,31 +120,61 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.body.classList.remove("no-scroll");
   }
-});
 
+  function initModalScript() {
+    const modal = document.getElementById("modal");
+    const closeBtn = document.querySelector(".modal-close-btn");
 
-//7. product detail page
+    if (modal) {
+      setTimeout(function () {
+        closeAllSidebars();
+        modal.style.display = "block";
+        document.body.classList.add("modal-open");
+      }, 5000);
+    }
 
-document.addEventListener('DOMContentLoaded', function () {
-   const thumbnails = document.querySelectorAll('.thumbnail');
-   const mainImage = document.querySelector('.main-image');
+    if (closeBtn) {
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+        document.body.classList.remove("modal-open");
+      };
+    }
+  }
 
-   thumbnails.forEach(thumb => {
-      thumb.addEventListener('click', function () {
-         thumbnails.forEach(t => t.classList.remove('active'));
-         this.classList.add('active');
-         mainImage.src = this.src.replace('60/60', '500/500');
-      });
-   });
+  document.addEventListener('DOMContentLoaded', initModalScript);
 
-   const colorOptions = document.querySelectorAll('.color-option');
-   colorOptions.forEach(option => {
-      option.addEventListener('click', function () {
-         colorOptions.forEach(o => o.classList.remove('active'));
-         this.classList.add('active');
-      });
-   });
-});
+//7. product detail page img click open main img
+
+function initImageGallery() {
+    var thumbnails = document.querySelectorAll('.thumbnail');
+    var mainImage = document.querySelector('.main-image');
+
+    for (var i = 0; i < thumbnails.length; i++) {
+      thumbnails[i].onclick = function () {
+        for (var j = 0; j < thumbnails.length; j++) {
+          thumbnails[j].classList.remove('active');
+        }
+        this.classList.add('active');
+        mainImage.src = this.src.replace('60/60', '500/500');
+      };
+    }
+
+    var colorOptions = document.querySelectorAll('.color-option');
+    for (var k = 0; k < colorOptions.length; k++) {
+      colorOptions[k].onclick = function () {
+        for (var l = 0; l < colorOptions.length; l++) {
+          colorOptions[l].classList.remove('active');
+        }
+        this.classList.add('active');
+      };
+    }
+  }
+
+  document.onreadystatechange = function () {
+    if (document.readyState === "interactive" || document.readyState === "complete") {
+      initImageGallery();
+    }
+  };
 
 //10.  tiles design page
 // document.getElementById("viewMoreBtn").addEventListener("click", function () {
@@ -172,3 +183,123 @@ document.addEventListener('DOMContentLoaded', function () {
 //    });
 //    this.style.display = "none";
 // });
+
+// 5. design details page zoom in img 
+function zoomImage(btn) {
+   const img = btn.closest(".main-image-container").querySelector("img");
+   const overlay = document.createElement("div");
+   overlay.className = "image-zoom-overlay";
+
+   const zoomImg = img.cloneNode(true);
+   overlay.appendChild(zoomImg);
+
+   const closeBtn = document.createElement("button");
+   closeBtn.innerHTML = "&times;";
+   closeBtn.className = "zoom-close-btn";
+   closeBtn.onclick = () => overlay.remove();
+
+   overlay.appendChild(closeBtn);
+   document.body.appendChild(overlay);
+ }
+
+// 6. designdetails-color-tooltip
+  window.onload = function () {
+    var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  };
+
+// 8. search-container-mobile-desktop sticky
+  window.onscroll = function () {
+    var searchBar = document.querySelector('.search-container-mobile-desktop');
+    var scrollY = window.scrollY;
+    if (window.innerWidth <= 767) {
+      if (scrollY > 150) {
+        searchBar.classList.add('sticky-search');
+      } else {
+        searchBar.classList.remove('sticky-search');
+      }
+    } else {
+      searchBar.classList.remove('sticky-search');
+    }
+  };
+  
+// 7. about page testimonial slider sidebar
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.testimonial-slide');
+  const dots = document.querySelectorAll('.slider-dot');
+  const totalSlides = slides.length;
+  const sliderContainer = document.querySelector('.slider-container');
+
+  function updateSlider() {
+    slides.forEach((slide, index) => {
+      slide.classList.remove('prev', 'active', 'next', 'hidden');
+
+      if (index === currentSlide) {
+        slide.classList.add('active');
+      } else if (index === (currentSlide - 1 + totalSlides) % totalSlides) {
+        slide.classList.add('prev');
+      } else if (index === (currentSlide + 1) % totalSlides) {
+        slide.classList.add('next');
+      } else {
+        slide.classList.add('hidden');
+      }
+    });
+
+    dots.forEach((dot, index) => {
+      dot.classList.toggle('active', index === currentSlide);
+    });
+  }
+
+  function changeSlide(direction) {
+    currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+    updateSlider();
+  }
+
+  function goToSlide(slideIndex) {
+    currentSlide = slideIndex;
+    updateSlider();
+  }
+
+  let autoPlay = setInterval(() => {
+    changeSlide(1);
+  }, 5000);
+
+  sliderContainer.onmouseenter = function () {
+    clearInterval(autoPlay);
+  };
+
+  sliderContainer.onmouseleave = function () {
+    autoPlay = setInterval(() => {
+      changeSlide(1);
+    }, 5000);
+  };
+
+  let startX = 0;
+  let endX = 0;
+
+  sliderContainer.ontouchstart = function (e) {
+    startX = e.touches[0].clientX;
+  };
+
+  sliderContainer.ontouchend = function (e) {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+  };
+
+  function handleSwipe() {
+    const swipeThreshold = 50;
+    const diff = startX - endX;
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        changeSlide(1);
+      } else {
+        changeSlide(-1); 
+      }
+    }
+  }
+
+  updateSlider(); 
+

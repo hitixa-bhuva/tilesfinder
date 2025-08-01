@@ -25,6 +25,33 @@
 </head>
 <body>
 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TilesFinder</title>
+        <meta name="description" content="Blueprint: Blueprint: Google Grid Gallery" />
+        <meta name="keywords" content="google getting started gallery, image gallery, image grid, template, masonry" />
+        <meta name="author" content="Codrops" />
+        <meta name="robots" content="noindex, nofollow" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="./assest/css/nav-bar.css" />
+        <link rel="stylesheet" href="./assest/css/dev-style.css" />
+        <link rel="stylesheet" href="./assest/css/dev-responsive.css" />
+        <link rel="shortcut icon" href="./assest/img/logo/TilesFinder Favicon (1).svg" />
+        <link rel="stylesheet" type="text/css" href="./assest/css/component.css" />
+        <script src="./assest/js/modernizr.custom.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+              <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
  <div class="d-lg-block home-first-nav">
          <!-- Home top navrbar  -->
          <nav class="navbar navbar-expand-lg navbar-light top-nav">
@@ -181,7 +208,7 @@
       </div>
       <!-- 768 after show  -->
       <div class="d-lg-none d-md-block">
-         <div class="toggle-menu d-none" id="toggleMenu">
+         <div class="toggle-menu  d-none" id="toggleMenu">
             <div>
                <button class="close-btn" onclick="toggleMenu()">
                   <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -206,11 +233,12 @@
                </div>
             </div>
             <hr class="noMargin" />
-            <div class="toggle-menu-content">
-               <a href="aboutUs.html" class="toggle-menu-item"> About Us </a>
-               <a href="contact.html" class="toggle-menu-item"> Contact Us </a>
-               <a href="blog.html" class="toggle-menu-item"> Blogs </a>
-               <!-- Main Dropdown: Categories -->
+           <div class="toggle-menu-content">
+        <a href="aboutUs.html" class="toggle-menu-item">About Us</a>
+        <a href="contact.html" class="toggle-menu-item">Contact Us</a>
+        <a href="blog.html" class="toggle-menu-item">Blog</a>
+
+        <!-- Main Dropdown: Categories -->
         <a class="toggle-menu-item  d-flex justify-content-between align-items-center" data-bs-toggle="collapse" href="#categoriesDropdown" role="button" aria-expanded="false" aria-controls="categoriesDropdown">
           Categories
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-down ms-1 " viewBox="0 0 16 16">
@@ -294,8 +322,9 @@
         </div>
 
         <a href="privacypolicy.html" class="toggle-menu-item">Privacy Policy</a>
-            </div>
-            <div class="toggle-menu-footer mt-4 p-3 text-center ">
+      </div>
+
+      <div class="toggle-menu-footer mt-4 p-3 text-center ">
         <p class="mb-1">Copyright © 2025 TilesFinders </p>
       </div>
          </div>
@@ -315,18 +344,34 @@
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
               </svg>
               <input type="text" id="searchInput2" placeholder="Search for tiles" />
-              <span class="filter-container d-lg-none" onclick="openFilter()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#6D7076" class="bi bi-funnel" viewBox="0 0 16 16">
-                  <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
-                </svg>
+              <!-- HTML -->
+               <span class="filter-container d-lg-none glow-beat" onclick="openFilter()">
+                 <div class="icon-wrapper">
+                   <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="#4169E1" class="bi bi-funnel" viewBox="0 0 16 16">
+                     <path d="M1.5 1.5A.5.5 0 0 1 2 1h12a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.128.334L10 8.692V13.5a.5.5 0 0 1-.342.474l-3 1A.5.5 0 0 1 6 14.5V8.692L1.628 3.834A.5.5 0 0 1 1.5 3.5zm1 .5v1.308l4.372 4.858A.5.5 0 0 1 7 8.5v5.306l2-.666V8.5a.5.5 0 0 1 .128-.334L13.5 3.308V2z"/>
+                   </svg>
+                 </div>
+             <div class="tooltip-bubble">
+              <span class="rotate-text">
+                <span>by color</span>
+                <span>by size</span>
+                <span>by area</span>
+                <span>by look</span>
+                <span>by Category</span>
+                <span>by Finish</span>
+                <span>by color</span>
               </span>
+            </div>
+
+               </span>
+
               <div id="filterBackdrop" class="filter-backdrop" onclick="closeFilter()"></div>
-              <div class="backdrop" id="backdrop" onclick="toggleMenu()"></div>
+              <div class="backdrop" id="backdrop" ></div>
             </div>
          </div>
          <!-- Filter Sidebar (Slider) -->
          <!-- second nab bar  -->
-        <nav class="bottom-nav" id="bottomNav">
+ <nav class="bottom-nav" id="bottomNav">
   <a href="designs.html" class="active">
     <img src="./assest/img/tiles (1).png" alt="">
     <span>Designs</span>
@@ -344,8 +389,9 @@
     <div class="row">
       
       <!-- Sidebar -->
-      <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left" id="filterSidebar" >
+    <aside class="col-md-2 filter-home-col-2 filter-sidebar sidebar-left d-none d-lg-block" id="filterSidebar" >
       <div style="position: sticky; top: 0%;">
+         <div class="accordion" id="filterAccordion">
         <div class="filter-section">
                   <div class="filter-header Filter-custom-space">
                      <!-- Close button (mobile only) -->
@@ -370,15 +416,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                 <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button" aria-controls="byArea">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byArea" role="button"   aria-controls="byArea">
                      <div class="header-title"> Area <span class="count">5</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="byArea">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="byArea">
                      <div class="filter-options">
                         <span class="filter-option">Bathroom</span>
                         <span class="filter-option">Parking</span>
@@ -388,15 +434,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button" aria-controls="bySize">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#bySize" role="button"  aria-controls="bySize">
                      <div class="header-title"> Size <span class="count">3</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="bySize">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="bySize">
                      <div class="filter-options">
                         <span class="filter-option selected">395×395 mm</span>
                         <span class="filter-option">800×800 mm</span>
@@ -404,15 +450,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria-controls="byCategory">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byCategory" role="button" aria -controls="byCategory">
                      <div class="header-title"> Category <span class="count">5</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="byCategory">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="byCategory">
                      <div class="filter-options">
                         <span class="filter-option">Marble</span>
                         <span class="filter-option">Texture</span>
@@ -424,15 +470,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button" aria-controls="byLook">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byLook" role="button"  aria-controls="byLook">
                      <div class="header-title"> Look <span class="count">6</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="byLook">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="byLook">
                      <div class="filter-options">
                         <span class="filter-option">Marble</span>
                         <span class="filter-option">Texture</span>
@@ -443,15 +489,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button" aria-controls="byFinish">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byFinish" role="button"  aria-controls="byFinish">
                      <div class="header-title"> Finish <span class="count">4</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="byFinish">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="byFinish">
                      <div class="filter-options">
                         <span class="filter-option">Matt</span>
                         <span class="filter-option">Glossy</span>
@@ -460,15 +506,15 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
                <div class="filter-section">
-                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button" aria-controls="byColor">
+                  <h6 class="filter-header" data-bs-toggle="collapse" aria-expanded="false" href="#byColor" role="button"  aria-controls="byColor">
                      <div class="header-title"> Color <span class="count">6</span></div>
                      <svg class="chevron" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                      </svg>
                   </h6>
-                  <div class="collapse" id="byColor">
+                  <div class="collapse" data-bs-parent="#filterAccordion" id="byColor">
                      <div class="filter-options">
                         <span class="filter-option">Pink</span>
                         <span class="filter-option">White</span>
@@ -479,11 +525,11 @@
                      </div>
                   </div>
                </div>
-               <hr class="noMargin" />
+               <hr/>
+               </div>
               
       </div>
     </aside>
-
       <!-- Main Content Area -->
       <section class="col-md-10 filter-home-col-10">
          <div class="container-fluid p-0">
@@ -491,13 +537,27 @@
                      <section class="grid-wrap m-0 p-0">
                         <ul class="grid">
                            <li class="grid-sizer"></li>
+                            <li>
+                               <a href="designsdetails.html">
+                                 <figure >
+                                   <div class="img-container position-relative">
+                                     <img src="./assest/img/img-grid/200x300/DORADO CREAM.jpg" alt="ARKLITE R1" class="img-fluid" />
+                                   </div>
+                                   <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <div >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                    </div> 
+                                   </figcaption>
+                                 </figure>
+                               </a>
+                             </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://i.pinimg.com/736x/e6/77/7b/e6777ba6cc1f4adbfc32d1ee8e35a415.jpg" class="s1000x200" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <a href="mockup-details.html">
@@ -509,15 +569,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://5.imimg.com/data5/SD/HA/QI/SELLER-98008757/home-tiles.jpg" class="s400x400" alt="img02" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -527,15 +592,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://image.made-in-china.com/2f0j00VZcWGpirYMul/Beautiful-Floor-Tiles-Design-Pictures-Sofita-Gold-Cream-Natural-Marble-for-Home-Decoration.webp" class="s800x1600" alt="img03" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -545,16 +615,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
-                           
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" class="s300x450" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -564,6 +638,14 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
@@ -571,11 +653,8 @@
                                  <div class="img-container">
                                     <img
                                        src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg"
-                                       alt="img05"
+                                       alt="img05" class="s1000x200"
                                        />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
                                        <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -585,15 +664,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s600x1200" alt="img06" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -603,15 +687,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" class="s600x1800" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -621,15 +710,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" class="s300x450" alt="img03" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -639,15 +733,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" class="s800x1600" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -657,15 +756,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" class="s1000x200" alt="img05" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -675,15 +779,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" class="s600x1200" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -693,15 +802,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" class="s400x400" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -711,15 +825,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" class="s1000x200" alt="img02" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -729,15 +848,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" class="s800x1600" alt="img03" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -747,15 +871,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s300x450" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -765,15 +894,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" class="s300x600" alt="img05" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -783,15 +917,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" class="s600x1200" alt="img06" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -801,15 +940,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" class="s300x450" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -819,15 +963,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" class="s400x400" alt="img02" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -837,15 +986,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" class="s400x400" alt="img03" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -855,15 +1009,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" class="s300x600" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -873,15 +1032,20 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRX662-lhwY7J0JH2TO3WeCBNanuPIaMKzWaw&s" class="s300x450" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -891,6 +1055,14 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
@@ -898,11 +1070,8 @@
                                  <div class="img-container">
                                     <img
                                        src="https://images.livspace-cdn.com/w:3840/plain/https://d3gq2merok8n5r.cloudfront.net/abhinav/ond-1634120396-Obfdc/jfm-2023-1672723560-eFGVH/tile-design-1673335549-G864x/d-intd-jfm2023-1334-1673338761-DuJWt/living-1673338919-mJn05.jpg"
-                                       alt="img05"
+                                       class="s600x1800" alt="img05"
                                        />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
                                        <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -912,15 +1081,296 @@
                                        </div>
                                     </div>
                                  </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
                               </figure>
                            </li>
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://css.lakiq.com/site/img/item/2024/10/25/14454649/600x600.jpg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s300x450" alt="img06" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" class="s200x1000" alt="img01" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" class="s300x600" alt="img03" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" class="s600x1800" alt="img04" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" class="s300x450" alt="img05" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" class="s300x600" alt="img01" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" class="s600x1800" alt="img01" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" class="s200x1000" alt="img02" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" class="s200x1000" alt="img03" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" class="s800x1600" alt="img04" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" class="s800x800" alt="img05" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" class="s800x1600" alt="img06" />
+                                    <div class="overlay mockup-overlay">
+                                       <div class="mockup-icon">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
+                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
+                                          </svg>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <figcaption class=" px-2 bg-transparent d-flex justify-content-between align-items-center p-0 small-size-display-flax">
+                                     <small class="fw-semibold-title text-dark w-67">CR Endless Oyster Bianco</small> 
+                                     <span >
+                                         <div class=" bg-white text-dark  rounded small">
+                                       <span class="ms-2 border px-1 border-primary text-primary fw-normal   rounded small">600 x 600</span>
+                                     </div>
+                                 </span> 
+                                   </figcaption>
+                              </figure>
+                           </li>
+                           <li>
+                              <figure>
+                                 <div class="img-container">
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" class="s200x1000" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -935,10 +1385,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2021/04/image.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" class="s800x800" alt="img02" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -953,10 +1400,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://i.pinimg.com/736x/03/38/eb/0338eb22d0891f65c407e2d498e84bc6.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" class="s800x1600" alt="img03" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -971,10 +1415,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://dolphy.in/blog/media/mceu_44583601751709013875655.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" class="s800x800" alt="img04" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -989,226 +1430,7 @@
                            <li>
                               <figure>
                                  <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2023/4/297453368/FS/EI/YG/187493895/orlean-lt-lemon-jpg.jpg" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/810UaGhBDoL._AC_UF350,350_QL80_.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://5.imimg.com/data5/SELLER/Default/2022/10/YN/KG/JR/43953867/floor-and-wall-tiles.jpeg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/71A5Y6uNGSL._AC_UF350,350_QL80_.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://i.pinimg.com/474x/22/cf/61/22cf61b8e7a37a335dff6332d72b6deb.jpg" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://treetile.in/wp-content/uploads/2025/01/04-03-A-Living-Room-Tiles-by-Tree-tile-Best-Livingroom-ceramic-and-porcelain-tiles-manufacturer--1024x1024.webp" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSL_D_yhnn0tLYisykD5MckDff6rf-qLSqL0A&s" alt="img05" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://d3joggurz1vobr.cloudfront.net/static/uploads/1d1ffcf8-da97-43aa-93f9-62adb2d9ce7a-1675933163264.jpeg" alt="img06" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image27-1.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://whytile.com/wp-content/uploads/2023/08/image103.jpg" alt="img02" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR-bvVthJa6z_Eal-Qr1tet1woyRefy9hMvg&s" alt="img03" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="https://m.media-amazon.com/images/I/81hOT3UrnNL._AC_UF350,350_QL80_.jpg" alt="img04" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
-                                    <div class="overlay mockup-overlay">
-                                       <div class="mockup-icon">
-                                          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
-                                             <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0" />
-                                             <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8m8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7" />
-                                          </svg>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </figure>
-                           </li>
-                           <li>
-                              <figure>
-                                 <div class="img-container">
-                                    <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" alt="img01" />
-                                    <div class="position-absolute bg-white text-dark top-0 end-0 px-1 m-2 rounded small">
-                                                    <small>600 x 600 mm</small>
-                                                </div>
+                                    <img src="./assest/img/img-grid/600x600 Parking Preview/5012 F_.jpg" class="s200x1000" alt="img01" />
                                     <div class="overlay mockup-overlay">
                                        <div class="mockup-icon">
                                           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-eye-fill" viewBox="0 0 16 16">
@@ -1231,20 +1453,6 @@
     </div>
   </main>
 
-  <!-- model where do you live -->
-  <div class="modal popup-model" id="modal">
-     <div class="modal-content p-3">
-         <span class="modal-close-btn" onclick="closemodal()"><img src="./assest/img/icon/close.svg" alt=""></span>
-         <div class="modal-header">
-             <img src="./assest/img/icon/MapPin.svg" alt="">
-         </div>
-         <h2>Where do you live?</h2>
-         <label class="pincode-label">Pincode </label>
-         <input type="text" id="pincode" placeholder="Enter your pincode" class="input-modal" />
-         <button onclick="submitPincode()" class="modal-btn mt-2">Submit</button>
-     </div>
- </div>
- 
   <!-- Footer -->
     <footer class="footer desktopviewfooter d-none d-md-block">
         <div class="container-fluid">
@@ -1346,7 +1554,7 @@
             </div>
         </div>
     </footer>
-   <footer class="footer d-block d-md-none p-0" id="pageFooter" >
+   <footer class="footer d-block d-md-none p-0">
     <div class="container-fluid p-0">
         <div class="row">
         </div>
@@ -1588,6 +1796,13 @@
             </div>
         </div>
     </footer> 
+<script>
+  // Hide tooltip after 4 seconds
+  setTimeout(() => {
+    document.querySelector('.tooltip-bubble').style.opacity = 0;
+    document.querySelector('.tooltip-bubble').style.transform = 'translateY(-10px)';
+  }, 30000);
+</script>
 
    <script src="./assest/js/imagesloaded.pkgd.min.js"></script>
         <script src="./assest/js/masonry.pkgd.min.js"></script>
